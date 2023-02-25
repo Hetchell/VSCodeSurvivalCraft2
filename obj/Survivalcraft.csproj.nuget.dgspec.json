@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\Survivalcraft.csproj": {}
+    "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\Survivalcraft.csproj": {}
   },
   "projects": {
-    "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\Survivalcraft.csproj": {
-      "version": "1.0.0",
+    "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\Survivalcraft.csproj": {
+      "version": "2.2.40",
       "restore": {
-        "projectUniqueName": "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\Survivalcraft.csproj",
+        "projectUniqueName": "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\Survivalcraft.csproj",
         "projectName": "Survivalcraft",
-        "projectPath": "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\Survivalcraft.csproj",
-        "packagesPath": "C:\\Users\\Goh Weisheng\\.nuget\\packages\\",
-        "outputPath": "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\obj\\",
+        "projectPath": "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\Survivalcraft.csproj",
+        "packagesPath": "C:\\Users\\TBNRd\\.nuget\\packages\\",
+        "outputPath": "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Goh Weisheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TBNRd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
         }
       }
     }
