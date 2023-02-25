@@ -91,24 +91,24 @@ namespace Survivalcraft.Game.ModificationHolder
             {
                 ModificationsHolder.allowFlyingAnimal = false;
             }
-            if (input.IsKeyDownOnce(Key.Enter))
+            // if (input.IsKeyDownOnce(Key.Enter))
+            // {
+            //     ModificationsHolder.open();
+            // }
+            if (input.IsKeyDownOnce(Key.J))
             {
-                ModificationsHolder.open();
+               Console.WriteLine("output is " + repeat);
+               if (repeat == 0)
+               {
+                   fogEnable = true;
+                   repeat++;
+               }
+               else
+               {
+                   --repeat;
+                   fogEnable = false;
+               }
             }
-            //if (input.IsKeyDownOnce(Key.J))
-            //{
-            //    Console.WriteLine("output is " + repeat);
-            //    if (repeat == 0)
-            //    {
-            //        fogEnable = true;
-            //        repeat++;
-            //    }
-            //    else
-            //    {
-            //        --repeat;
-            //        fogEnable = false;
-            //    }
-            //}
         }
     }
 }
