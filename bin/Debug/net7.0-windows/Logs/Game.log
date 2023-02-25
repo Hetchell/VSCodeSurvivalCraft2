@@ -547,3 +547,30 @@ Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\
 21:19:05.956 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 21:19:05.970 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 21:19:05.970 INFO: Saved settings
+00:47:42.063 INFO: OpenGL framebuffer created, R=10 G=10 B=10 A=2, D=24 S=8
+00:47:42.084 INFO: GLES Vendor: Intel
+00:47:42.084 INFO: GLES Renderer: Intel(R) HD Graphics 530
+00:47:42.084 INFO: GLES Version: 4.6.0 - Build 31.0.101.2111
+00:47:42.752 INFO: Survivalcraft starting up at 02/26/2023 00:47:42, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=61322MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=8, RAM=34MB, 64bit=True
+00:47:42.874 INFO: Loaded settings.
+00:47:42.908 INFO: Mods manager initialize success
+00:47:42.908 INFO: Loaded 0 dlls;0 dlls not loaded
+00:47:49.819 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\VisualStudioCode\VSCodeSurvivalCraft2\GameMain\Game\ProgramGame.cs:line 166
+00:47:58.205 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:47:58.251 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:47:58.256 INFO: Saved settings

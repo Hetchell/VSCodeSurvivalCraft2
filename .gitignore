@@ -3,7 +3,7 @@
 *.pdb
 
 #All json files
-*.json
+**/.json
 
 #Survivalcraft dlls 
 Survivalcraft.dll
