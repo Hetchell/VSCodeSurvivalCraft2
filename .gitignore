@@ -2,6 +2,11 @@
 *.exe
 *.pdb
 
+#log files
+*.log
+**/.cache
+**/.editorconfig
+
 #All json files
 **/.json
 
@@ -12,11 +17,11 @@ Survivalcraft.dll
 *.xml
 
 #folders in bin/Debug/<main>
-CharacterSkins/
-FurniturePacks/
-Logs/
-Mods/
-TexturePacks/
+/CharacterSkins
+/FurniturePacks
+/Logs
+/Mods
+/TexturePacks
 Worlds/
 
 #other folders
