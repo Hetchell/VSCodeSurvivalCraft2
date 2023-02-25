@@ -1,0 +1,549 @@
+17:46:55.868 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:46:55.880 INFO: GLES Vendor: ATI Technologies Inc.
+17:46:55.880 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:46:55.880 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:46:56.052 ERROR: Unhandled exception.
+The type initializer for 'OpenTK.Audio.AudioContext' threw an exception.
+The type initializer for 'OpenTK.Audio.AudioDeviceEnumerator' threw an exception.
+Unable to load DLL 'openal32.dll' or one of its dependencies: The specified module could not be found. (0x8007007E)
+   at OpenTK.Audio.AudioContext..ctor()
+   at Engine.Audio.Mixer.Initialize()
+   at Engine.Window.InitializeAll()
+   at Engine.Window.LoadHandler(Object sender, EventArgs args)
+   at OpenTK.GameWindow.OnLoad(EventArgs e)
+   at OpenTK.GameWindow.OnLoadInternal(EventArgs e)
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at Engine.Window.Run(Int32 width, Int32 height, WindowMode windowMode, String title)
+   at Game.ProgramGame.MainMethod() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 59
+   at GameMain.Program.Main(String[] args) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Program.cs:line 11
+17:49:27.349 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:49:27.360 INFO: GLES Vendor: ATI Technologies Inc.
+17:49:27.360 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:49:27.360 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:49:27.412 ERROR: Unhandled exception.
+The type initializer for 'OpenTK.Audio.AudioContext' threw an exception.
+The type initializer for 'OpenTK.Audio.AudioDeviceEnumerator' threw an exception.
+An attempt was made to load a program with an incorrect format. (0x8007000B)
+   at OpenTK.Audio.AudioContext..ctor()
+   at Engine.Audio.Mixer.Initialize()
+   at Engine.Window.InitializeAll()
+   at Engine.Window.LoadHandler(Object sender, EventArgs args)
+   at OpenTK.GameWindow.OnLoad(EventArgs e)
+   at OpenTK.GameWindow.OnLoadInternal(EventArgs e)
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at Engine.Window.Run(Int32 width, Int32 height, WindowMode windowMode, String title)
+   at Game.ProgramGame.MainMethod() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 59
+   at GameMain.Program.Main(String[] args) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Program.cs:line 11
+17:56:54.106 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:56:54.118 INFO: GLES Vendor: ATI Technologies Inc.
+17:56:54.118 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:56:54.118 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:56:55.149 INFO: Survivalcraft starting up at 02/25/2023 17:56:54, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337418MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1555MB, 64bit=True
+17:56:55.206 ERROR: Unhandled exception.
+Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\bin\Debug\net7.0-windows\lang\zh_CN.json'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access, FileShare share)
+   at Engine.Storage.OpenFile(String path, OpenFileMode openFileMode)
+   at Game.LanguageControl.init(LanguageType languageType) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\LanguageControl.cs:line 33
+   at ModsManager.Initialize() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\ModsManager.cs:line 165
+   at Game.ContentManager.Initialize() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ContentManager.cs:line 17
+   at Game.ProgramGame.Initialize() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 125
+   at Game.ProgramGame.FrameHandler() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 97
+   at Engine.Window.RenderFrameHandler(Object sender, EventArgs args)
+   at OpenTK.GameWindow.OnRenderFrame(FrameEventArgs e)
+   at OpenTK.GameWindow.OnRenderFrameInternal(FrameEventArgs e)
+   at OpenTK.GameWindow.RaiseRenderFrame(Double elapsed, Double& timestamp)
+   at OpenTK.GameWindow.DispatchUpdateAndRenderFrame(Object sender, EventArgs e)
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at Engine.Window.Run(Int32 width, Int32 height, WindowMode windowMode, String title)
+   at Game.ProgramGame.MainMethod() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 59
+   at GameMain.Program.Main(String[] args) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Program.cs:line 11
+17:57:40.467 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:57:40.478 INFO: GLES Vendor: ATI Technologies Inc.
+17:57:40.478 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:57:40.478 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:57:40.990 INFO: Survivalcraft starting up at 02/25/2023 17:57:40, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337409MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1633MB, 64bit=True
+17:57:41.052 INFO: Mods manager initialize success
+17:57:41.052 INFO: Loaded 0 dlls;0 dlls not loaded
+17:57:41.248 INFO: Downloading MOTD
+17:57:41.284 ERROR: Value cannot be null. (Parameter 'format')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ReadOnlySpan`1 args)
+   at System.String.Format(String format, Object arg0, Object arg1)
+   at Game.MotdManager.GetMotdUrl() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 169
+   at Game.MotdManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 68
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 164
+17:57:41.319 ERROR: Child widget not present in container.
+   at Game.WidgetsList.Remove(Widget widget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WidgetsList.cs:line 105
+   at Game.ScreensManager.UpdateAnimation() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 311
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 231
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+17:57:45.045 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:57:45.059 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:57:45.077 INFO: Saved settings
+17:57:51.278 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:57:51.289 INFO: GLES Vendor: ATI Technologies Inc.
+17:57:51.289 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:57:51.289 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:57:51.775 INFO: Survivalcraft starting up at 02/25/2023 17:57:51, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337409MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1570MB, 64bit=True
+17:57:51.847 INFO: Loaded settings.
+17:57:51.863 INFO: Mods manager initialize success
+17:57:51.863 INFO: Loaded 0 dlls;0 dlls not loaded
+17:57:52.405 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+17:58:05.044 ERROR: Loading error. Reason: Database not loaded.
+17:58:13.586 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:58:13.599 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:58:13.602 INFO: Saved settings
+17:58:18.796 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:58:18.807 INFO: GLES Vendor: ATI Technologies Inc.
+17:58:18.808 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:58:18.808 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:58:19.290 INFO: Survivalcraft starting up at 02/25/2023 17:58:19, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337395MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-592MB, 64bit=True
+17:58:19.362 INFO: Loaded settings.
+17:58:19.377 INFO: Mods manager initialize success
+17:58:19.377 INFO: Loaded 0 dlls;0 dlls not loaded
+17:58:19.840 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+17:58:24.349 ERROR: Loading error. Reason: Database not loaded.
+17:58:45.410 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:58:45.422 INFO: GLES Vendor: ATI Technologies Inc.
+17:58:45.422 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:58:45.422 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:58:45.899 INFO: Survivalcraft starting up at 02/25/2023 17:58:45, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337398MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-600MB, 64bit=True
+17:58:45.971 INFO: Loaded settings.
+17:58:45.994 INFO: Mods manager initialize success
+17:58:45.994 INFO: Loaded 0 dlls;0 dlls not loaded
+17:58:46.444 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+17:58:47.723 ERROR: Loading error. Reason: Database not loaded.
+17:59:07.475 ERROR: Database not loaded.
+   at Game.DatabaseManager.get_GameDatabase() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\DatabaseManager.cs:line 25
+   at Game.WorldsManager.CreateWorld(WorldSettings worldSettings) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WorldsManager.cs:line 369
+   at Game.NewWorldScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\NewWorldScreen.cs:line 89
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+17:59:10.824 ERROR: Database not loaded.
+   at Game.DatabaseManager.get_GameDatabase() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\DatabaseManager.cs:line 25
+   at Game.WorldsManager.CreateWorld(WorldSettings worldSettings) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WorldsManager.cs:line 369
+   at Game.NewWorldScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\NewWorldScreen.cs:line 89
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+17:59:14.381 ERROR: Database not loaded.
+   at Game.DatabaseManager.get_GameDatabase() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\DatabaseManager.cs:line 25
+   at Game.WorldsManager.CreateWorld(WorldSettings worldSettings) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WorldsManager.cs:line 369
+   at Game.NewWorldScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\NewWorldScreen.cs:line 89
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+17:59:15.834 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:59:15.850 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:59:15.852 INFO: Saved settings
+17:59:32.847 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+17:59:32.859 INFO: GLES Vendor: ATI Technologies Inc.
+17:59:32.859 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+17:59:32.859 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+17:59:33.351 INFO: Survivalcraft starting up at 02/25/2023 17:59:33, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337398MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-534MB, 64bit=True
+17:59:33.421 INFO: Loaded settings.
+17:59:33.437 INFO: Mods manager initialize success
+17:59:33.437 INFO: Loaded 0 dlls;0 dlls not loaded
+17:59:33.874 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+17:59:41.941 ERROR: Loading error. Reason: Database not loaded.
+17:59:44.017 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:59:44.030 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+17:59:44.033 INFO: Saved settings
+18:00:25.283 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:00:25.293 INFO: GLES Vendor: ATI Technologies Inc.
+18:00:25.293 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:00:25.293 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:00:25.775 INFO: Survivalcraft starting up at 02/25/2023 18:00:25, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337398MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-382MB, 64bit=True
+18:00:25.848 INFO: Loaded settings.
+18:00:25.865 INFO: Mods manager initialize success
+18:00:25.865 INFO: Loaded 0 dlls;0 dlls not loaded
+18:00:26.319 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:00:43.444 ERROR: Loading error. Reason: Database not loaded.
+18:00:47.408 ERROR: Database not loaded.
+   at Game.DatabaseManager.get_GameDatabase() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\DatabaseManager.cs:line 25
+   at Game.WorldsManager.CreateWorld(WorldSettings worldSettings) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WorldsManager.cs:line 369
+   at Game.NewWorldScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\NewWorldScreen.cs:line 89
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+18:00:49.366 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:00:49.380 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:00:49.383 INFO: Saved settings
+18:02:10.509 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:02:10.520 INFO: GLES Vendor: ATI Technologies Inc.
+18:02:10.520 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:02:10.520 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:02:11.000 INFO: Survivalcraft starting up at 02/25/2023 18:02:10, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337396MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=320MB, 64bit=True
+18:02:11.073 INFO: Loaded settings.
+18:02:11.089 INFO: Mods manager initialize success
+18:02:11.089 INFO: Loaded 0 dlls;0 dlls not loaded
+18:02:11.542 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:02:33.591 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:02:33.605 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:02:33.608 INFO: Saved settings
+18:04:04.452 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:04:04.464 INFO: GLES Vendor: ATI Technologies Inc.
+18:04:04.464 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:04:04.464 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:04:04.957 INFO: Survivalcraft starting up at 02/25/2023 18:04:04, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337398MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=306MB, 64bit=True
+18:04:05.032 INFO: Loaded settings.
+18:04:05.048 INFO: Mods manager initialize success
+18:04:05.048 INFO: Loaded 0 dlls;0 dlls not loaded
+18:04:05.516 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:04:13.074 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:04:13.089 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:04:13.092 INFO: Saved settings
+18:17:17.974 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:17:17.985 INFO: GLES Vendor: ATI Technologies Inc.
+18:17:17.985 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:17:17.985 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:17:18.589 INFO: Survivalcraft starting up at 02/25/2023 18:17:18, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337394MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=257MB, 64bit=True
+18:17:18.663 INFO: Loaded settings.
+18:17:18.679 INFO: Mods manager initialize success
+18:17:18.679 INFO: Loaded 0 dlls;0 dlls not loaded
+18:17:19.151 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:17:23.197 ERROR: Loading error. Reason: Database not loaded.
+18:17:26.760 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:17:26.775 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:17:26.778 INFO: Saved settings
+18:18:11.329 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:18:11.339 INFO: GLES Vendor: ATI Technologies Inc.
+18:18:11.339 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:18:11.339 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:18:11.970 INFO: Survivalcraft starting up at 02/25/2023 18:18:11, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337395MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=355MB, 64bit=True
+18:18:12.046 INFO: Loaded settings.
+18:18:12.062 INFO: Mods manager initialize success
+18:18:12.062 INFO: Loaded 0 dlls;0 dlls not loaded
+18:18:12.518 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:18:39.178 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:18:39.194 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:18:39.197 INFO: Saved settings
+18:28:22.175 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:28:22.187 INFO: GLES Vendor: ATI Technologies Inc.
+18:28:22.187 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:28:22.187 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:28:22.796 INFO: Survivalcraft starting up at 02/25/2023 18:28:22, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337392MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=188MB, 64bit=True
+18:28:22.875 INFO: Loaded settings.
+18:28:22.896 INFO: Mods manager initialize success
+18:28:22.896 INFO: Loaded 0 dlls;0 dlls not loaded
+18:29:01.435 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:29:01.446 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:29:01.450 INFO: Saved settings
+18:29:34.527 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:29:34.538 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:29:34.538 INFO: Saved settings
+18:29:46.178 ERROR: Loading error. Reason: Could not load file or assembly 'Survivalcraft, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+18:30:00.844 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:30:00.858 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:30:00.858 INFO: Saved settings
+18:30:17.040 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:30:17.051 INFO: GLES Vendor: ATI Technologies Inc.
+18:30:17.051 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:30:17.051 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:30:17.683 INFO: Survivalcraft starting up at 02/25/2023 18:30:17, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337390MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=6MB, 64bit=True
+18:30:17.759 INFO: Loaded settings.
+18:30:17.775 INFO: Mods manager initialize success
+18:30:17.775 INFO: Loaded 0 dlls;0 dlls not loaded
+18:37:35.136 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:37:35.147 INFO: GLES Vendor: ATI Technologies Inc.
+18:37:35.147 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:37:35.148 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:37:35.777 INFO: Survivalcraft starting up at 02/25/2023 18:37:35, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=336552MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-793MB, 64bit=True
+18:37:35.858 INFO: Loaded settings.
+18:37:35.877 INFO: Mods manager initialize success
+18:37:35.877 INFO: Loaded 0 dlls;0 dlls not loaded
+18:37:42.401 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Westerbush, VisibilityRange=64, Resolution=High
+18:38:08.779 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:38:08.791 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+18:38:08.793 INFO: Saved settings
+19:56:53.923 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:56:53.936 INFO: GLES Vendor: ATI Technologies Inc.
+19:56:53.936 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:56:53.936 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+19:56:54.436 INFO: Survivalcraft starting up at 02/25/2023 19:56:54, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337430MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=56MB, 64bit=True
+19:56:54.512 INFO: Loaded settings.
+19:56:54.528 INFO: Mods manager initialize success
+19:56:54.528 INFO: Loaded 0 dlls;0 dlls not loaded
+19:57:10.311 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 111
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+19:57:13.366 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+19:57:13.379 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+19:57:13.382 INFO: Saved settings
+19:57:16.019 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+19:57:16.034 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+19:57:16.035 INFO: Saved settings
+20:00:08.628 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:00:08.639 INFO: GLES Vendor: ATI Technologies Inc.
+20:00:08.639 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:00:08.639 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:00:09.154 INFO: Survivalcraft starting up at 02/25/2023 20:00:08, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337426MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=177MB, 64bit=True
+20:00:09.228 INFO: Loaded settings.
+20:00:09.244 INFO: Mods manager initialize success
+20:00:09.244 INFO: Loaded 0 dlls;0 dlls not loaded
+20:00:12.675 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:00:12.690 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:00:12.693 INFO: Saved settings
+20:05:33.604 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:05:33.616 INFO: GLES Vendor: ATI Technologies Inc.
+20:05:33.616 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:05:33.616 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:09:58.249 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:09:58.260 INFO: GLES Vendor: ATI Technologies Inc.
+20:09:58.260 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:09:58.260 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:10:18.838 INFO: Survivalcraft starting up at 02/25/2023 20:09:58, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337434MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-806MB, 64bit=True
+20:10:18.913 INFO: Loaded settings.
+20:10:18.931 INFO: Mods manager initialize success
+20:10:18.931 INFO: Loaded 0 dlls;0 dlls not loaded
+20:10:19.013 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:10:19.024 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:10:19.027 INFO: Saved settings
+20:10:19.701 INFO: Downloading MOTD
+20:10:19.735 ERROR: Value cannot be null. (Parameter 'format')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ReadOnlySpan`1 args)
+   at System.String.Format(String format, Object arg0, Object arg1)
+   at Game.MotdManager.GetMotdUrl() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 169
+   at Game.MotdManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 68
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 164
+20:10:29.950 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:10:29.964 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:10:29.965 INFO: Saved settings
+20:10:36.040 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:10:36.062 INFO: GLES Vendor: ATI Technologies Inc.
+20:10:36.062 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:10:36.062 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:10:36.568 INFO: Survivalcraft starting up at 02/25/2023 20:10:36, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337434MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-699MB, 64bit=True
+20:10:36.644 INFO: Loaded settings.
+20:10:36.662 INFO: Mods manager initialize success
+20:10:36.662 INFO: Loaded 0 dlls;0 dlls not loaded
+20:10:39.311 INFO: Upgrading world version "1.0" to "1.4".
+20:10:39.312 INFO: Upgrading world version "1.4" to "1.5".
+20:10:39.312 INFO: Upgrading world version "1.5" to "1.6".
+20:10:39.312 INFO: Upgrading world version "1.6" to "1.7".
+20:10:39.312 INFO: Upgrading world version "1.7" to "1.8".
+20:10:39.312 INFO: Upgrading world version "1.8" to "1.9".
+20:10:39.312 INFO: Upgrading world version "1.9" to "1.10".
+20:10:39.312 INFO: Upgrading world version "1.10" to "1.11".
+20:10:39.312 INFO: Upgrading world version "1.11" to "1.12".
+20:10:39.312 INFO: Upgrading world version "1.12" to "1.13".
+20:10:39.313 INFO: Upgrading world version "1.13" to "1.14".
+20:10:39.313 INFO: Upgrading world version "1.14" to "1.15".
+20:10:39.313 INFO: Upgrading world version "1.15" to "1.16".
+20:10:39.313 INFO: Upgrading world version "1.16" to "1.17".
+20:10:39.313 INFO: Upgrading world version "1.17" to "1.18".
+20:10:39.313 INFO: Upgrading world version "1.18" to "1.19".
+20:10:39.314 INFO: Upgrading world version "1.19" to "1.20".
+20:10:39.314 INFO: Upgrading world version "1.20" to "1.21".
+20:10:39.314 INFO: Upgrading world version "1.21" to "1.22".
+20:10:39.315 INFO: Upgrading world version "1.22" to "1.23".
+20:10:39.315 INFO: Upgrading world version "1.23" to "1.24".
+20:10:39.315 INFO: Upgrading world version "1.24" to "1.25".
+20:10:39.315 INFO: Upgrading world version "1.25" to "1.26".
+20:10:39.315 INFO: Upgrading world version "1.26" to "1.27".
+20:10:39.316 INFO: Upgrading world version "1.27" to "1.28".
+20:10:39.316 INFO: Upgrading world version "1.28" to "1.29".
+20:10:39.318 INFO: Upgrading world version "1.29" to "1.30".
+20:10:39.318 INFO: Upgrading world version "1.30" to "2.0".
+20:10:39.318 INFO: Upgrading world version "2.0" to "2.1".
+20:10:39.320 INFO: Upgrading world version "2.1" to "2.2".
+20:10:40.684 INFO: Upgrading world version "1.0" to "1.4".
+20:10:40.684 INFO: Upgrading world version "1.4" to "1.5".
+20:10:40.684 INFO: Upgrading world version "1.5" to "1.6".
+20:10:40.684 INFO: Upgrading world version "1.6" to "1.7".
+20:10:40.684 INFO: Upgrading world version "1.7" to "1.8".
+20:10:40.684 INFO: Upgrading world version "1.8" to "1.9".
+20:10:40.684 INFO: Upgrading world version "1.9" to "1.10".
+20:10:40.684 INFO: Upgrading world version "1.10" to "1.11".
+20:10:40.684 INFO: Upgrading world version "1.11" to "1.12".
+20:10:40.684 INFO: Upgrading world version "1.12" to "1.13".
+20:10:40.684 INFO: Upgrading world version "1.13" to "1.14".
+20:10:40.684 INFO: Upgrading world version "1.14" to "1.15".
+20:10:40.684 INFO: Upgrading world version "1.15" to "1.16".
+20:10:40.684 INFO: Upgrading world version "1.16" to "1.17".
+20:10:40.684 INFO: Upgrading world version "1.17" to "1.18".
+20:10:40.684 INFO: Upgrading world version "1.18" to "1.19".
+20:10:40.684 INFO: Upgrading world version "1.19" to "1.20".
+20:10:40.684 INFO: Upgrading world version "1.20" to "1.21".
+20:10:40.684 INFO: Upgrading world version "1.21" to "1.22".
+20:10:40.684 INFO: Upgrading world version "1.22" to "1.23".
+20:10:40.684 INFO: Upgrading world version "1.23" to "1.24".
+20:10:40.684 INFO: Upgrading world version "1.24" to "1.25".
+20:10:40.684 INFO: Upgrading world version "1.25" to "1.26".
+20:10:40.684 INFO: Upgrading world version "1.26" to "1.27".
+20:10:40.684 INFO: Upgrading world version "1.27" to "1.28".
+20:10:40.684 INFO: Upgrading world version "1.28" to "1.29".
+20:10:40.684 INFO: Upgrading world version "1.29" to "1.30".
+20:10:40.684 INFO: Upgrading world version "1.30" to "2.0".
+20:10:40.684 INFO: Upgrading world version "2.0" to "2.1".
+20:10:40.684 INFO: Upgrading world version "2.1" to "2.2".
+20:10:40.684 INFO: Upgrading world version "1.0" to "1.4".
+20:10:40.801 INFO: Upgrading world version "1.0" to "1.4".
+20:10:40.801 INFO: Upgrading world version "1.4" to "1.5".
+20:10:40.801 INFO: Upgrading world version "1.5" to "1.6".
+20:10:40.801 INFO: Upgrading world version "1.6" to "1.7".
+20:10:40.801 INFO: Upgrading world version "1.7" to "1.8".
+20:10:40.801 INFO: Upgrading world version "1.8" to "1.9".
+20:10:40.801 INFO: Upgrading world version "1.9" to "1.10".
+20:10:40.801 INFO: Upgrading world version "1.10" to "1.11".
+20:10:40.801 INFO: Upgrading world version "1.11" to "1.12".
+20:10:40.801 INFO: Upgrading world version "1.12" to "1.13".
+20:10:40.801 INFO: Upgrading world version "1.13" to "1.14".
+20:10:40.801 INFO: Upgrading world version "1.14" to "1.15".
+20:10:40.801 INFO: Upgrading world version "1.15" to "1.16".
+20:10:40.801 INFO: Upgrading world version "1.16" to "1.17".
+20:10:40.801 INFO: Upgrading world version "1.17" to "1.18".
+20:10:40.801 INFO: Upgrading world version "1.18" to "1.19".
+20:10:40.801 INFO: Upgrading world version "1.19" to "1.20".
+20:10:40.801 INFO: Upgrading world version "1.20" to "1.21".
+20:10:40.801 INFO: Upgrading world version "1.21" to "1.22".
+20:10:40.801 INFO: Upgrading world version "1.22" to "1.23".
+20:10:40.801 INFO: Upgrading world version "1.23" to "1.24".
+20:10:40.801 INFO: Upgrading world version "1.24" to "1.25".
+20:10:40.801 INFO: Upgrading world version "1.25" to "1.26".
+20:10:40.801 INFO: Upgrading world version "1.26" to "1.27".
+20:10:40.801 INFO: Upgrading world version "1.27" to "1.28".
+20:10:40.801 INFO: Upgrading world version "1.28" to "1.29".
+20:10:40.801 INFO: Upgrading world version "1.29" to "1.30".
+20:10:40.801 INFO: Upgrading world version "1.30" to "2.0".
+20:10:40.801 INFO: Upgrading world version "2.0" to "2.1".
+20:10:40.801 INFO: Upgrading world version "2.1" to "2.2".
+20:10:49.683 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Appleview, VisibilityRange=64, Resolution=High
+20:11:00.482 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+20:11:02.510 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Appleview, VisibilityRange=64, Resolution=High
+20:11:08.015 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:11:08.029 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:11:08.031 INFO: Saved settings
+20:35:42.849 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:35:42.860 INFO: GLES Vendor: ATI Technologies Inc.
+20:35:42.860 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:35:42.860 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:35:43.380 INFO: Survivalcraft starting up at 02/25/2023 20:35:43, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337439MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-901MB, 64bit=True
+20:35:43.457 INFO: Loaded settings.
+20:35:43.478 INFO: Mods manager initialize success
+20:35:43.478 INFO: Loaded 0 dlls;0 dlls not loaded
+20:35:49.121 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Appleview, VisibilityRange=64, Resolution=High
+20:36:08.882 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:36:08.896 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:36:08.898 INFO: Saved settings
+20:37:08.068 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:37:08.091 INFO: GLES Vendor: ATI Technologies Inc.
+20:37:08.091 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:37:08.091 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:37:08.622 INFO: Survivalcraft starting up at 02/25/2023 20:37:08, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337439MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1226MB, 64bit=True
+20:37:08.696 INFO: Loaded settings.
+20:37:08.718 INFO: Mods manager initialize success
+20:37:08.718 INFO: Loaded 0 dlls;0 dlls not loaded
+20:37:09.095 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:37:09.106 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:37:09.108 INFO: Saved settings
+20:37:13.923 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Appleview, VisibilityRange=64, Resolution=High
+20:37:28.178 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:37:28.192 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:37:28.193 INFO: Saved settings
+20:37:56.009 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:37:56.020 INFO: GLES Vendor: ATI Technologies Inc.
+20:37:56.020 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:37:56.020 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:37:56.516 INFO: Survivalcraft starting up at 02/25/2023 20:37:56, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337438MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1373MB, 64bit=True
+20:37:56.593 INFO: Loaded settings.
+20:37:56.615 INFO: Mods manager initialize success
+20:37:56.615 INFO: Loaded 0 dlls;0 dlls not loaded
+20:38:02.991 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Snowsilver, VisibilityRange=64, Resolution=High
+20:39:49.144 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:39:49.155 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:39:49.156 INFO: Saved settings
+20:39:58.167 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:39:58.180 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:39:58.181 INFO: Saved settings
+20:42:24.723 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:42:24.734 INFO: GLES Vendor: ATI Technologies Inc.
+20:42:24.734 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:42:24.734 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:42:25.227 INFO: Survivalcraft starting up at 02/25/2023 20:42:25, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337448MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1046MB, 64bit=True
+20:42:25.304 INFO: Loaded settings.
+20:42:25.323 INFO: Mods manager initialize success
+20:42:25.323 INFO: Loaded 0 dlls;0 dlls not loaded
+20:42:29.362 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 111
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 166
+20:42:31.916 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Snowsilver, VisibilityRange=64, Resolution=High
+20:42:41.721 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:42:41.735 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:42:41.737 INFO: Saved settings
+20:44:32.241 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:44:32.252 INFO: GLES Vendor: ATI Technologies Inc.
+20:44:32.252 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:44:32.252 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:44:32.871 INFO: Survivalcraft starting up at 02/25/2023 20:44:32, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337448MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-931MB, 64bit=True
+20:44:32.948 INFO: Loaded settings.
+20:44:32.968 INFO: Mods manager initialize success
+20:44:32.968 INFO: Loaded 0 dlls;0 dlls not loaded
+20:47:15.932 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Coldfort, VisibilityRange=64, Resolution=High
+20:47:17.400 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:47:17.411 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:47:17.413 INFO: Saved settings
+20:47:27.166 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:47:27.182 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+20:47:27.182 INFO: Saved settings
+21:12:24.931 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+21:12:24.942 INFO: GLES Vendor: ATI Technologies Inc.
+21:12:24.942 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+21:12:24.942 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+21:12:25.455 INFO: Survivalcraft starting up at 02/25/2023 21:12:25, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=337439MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1826MB, 64bit=True
+21:12:25.536 INFO: Loaded settings.
+21:12:25.552 INFO: Mods manager initialize success
+21:12:25.552 INFO: Loaded 0 dlls;0 dlls not loaded
+21:12:31.530 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Highwyn, VisibilityRange=64, Resolution=High
+21:18:57.579 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+21:18:57.589 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+21:18:57.591 INFO: Saved settings
+21:19:05.956 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+21:19:05.970 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+21:19:05.970 INFO: Saved settings

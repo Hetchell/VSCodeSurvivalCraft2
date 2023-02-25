@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Engine" />
+    <Reference Include="EntitySystem" />
+    <Reference Include="FJ.CoreWin" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NVorbis" />
+    <Reference Include="openal32" />
+    <Reference Include="OpenTK" />
+    <Reference Include="SharpDX.D3DCompiler" />
+    <Reference Include="SharpDX.Direct3D11" />
+    <Reference Include="SharpDX" />
+    <Reference Include="SharpDX.DXGI" />
+    <Reference Include="SharpDX.XAudio2" />
+    <Reference Include="SharpDX.XInput" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+</Project>

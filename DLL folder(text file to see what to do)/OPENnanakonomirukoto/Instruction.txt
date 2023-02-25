@@ -1,0 +1,4 @@
+Get openal32.dll by removing .bhu extension. 
+
+
+If this does not work, I do not know what will. 

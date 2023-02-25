@@ -1,0 +1,179 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Survivalcraft/2.2.40": {
+        "dependencies": {
+          "Engine": "1.0.0.0",
+          "EntitySystem": "1.0.0.0",
+          "FJ.CoreWin": "0.8.0.0",
+          "NVorbis": "0.8.5.0",
+          "OpenTK": "1.1.0.0",
+          "SharpDX.D3DCompiler": "2.6.3.0",
+          "SharpDX.Direct3D11": "2.6.3.0",
+          "SharpDX": "2.6.3.0",
+          "SharpDX.DXGI": "2.6.3.0",
+          "SharpDX.XAudio2": "2.6.3.0",
+          "SharpDX.XInput": "2.6.3.0"
+        },
+        "runtime": {
+          "Survivalcraft.dll": {}
+        }
+      },
+      "Engine/1.0.0.0": {
+        "runtime": {
+          "Engine.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EntitySystem/1.0.0.0": {
+        "runtime": {
+          "EntitySystem.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "FJ.CoreWin/0.8.0.0": {
+        "runtime": {
+          "FJ.CoreWin.dll": {
+            "assemblyVersion": "0.8.0.0",
+            "fileVersion": "0.8.0.0"
+          }
+        }
+      },
+      "NVorbis/0.8.5.0": {
+        "runtime": {
+          "NVorbis.dll": {
+            "assemblyVersion": "0.8.5.0",
+            "fileVersion": "0.8.5.0"
+          }
+        }
+      },
+      "OpenTK/1.1.0.0": {
+        "runtime": {
+          "OpenTK.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.1664.6217"
+          }
+        }
+      },
+      "SharpDX.D3DCompiler/2.6.3.0": {
+        "runtime": {
+          "SharpDX.D3DCompiler.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      },
+      "SharpDX.Direct3D11/2.6.3.0": {
+        "runtime": {
+          "SharpDX.Direct3D11.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      },
+      "SharpDX/2.6.3.0": {
+        "runtime": {
+          "SharpDX.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      },
+      "SharpDX.DXGI/2.6.3.0": {
+        "runtime": {
+          "SharpDX.DXGI.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      },
+      "SharpDX.XAudio2/2.6.3.0": {
+        "runtime": {
+          "SharpDX.XAudio2.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      },
+      "SharpDX.XInput/2.6.3.0": {
+        "runtime": {
+          "SharpDX.XInput.dll": {
+            "assemblyVersion": "2.6.3.0",
+            "fileVersion": "2.6.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Survivalcraft/2.2.40": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Engine/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EntitySystem/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FJ.CoreWin/0.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NVorbis/0.8.5.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OpenTK/1.1.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.D3DCompiler/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.Direct3D11/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.DXGI/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.XAudio2/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpDX.XInput/2.6.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
