@@ -1,0 +1,23 @@
+#All executables
+*.exe
+*.pdb
+
+#All json files
+*.json
+
+#Survivalcraft dlls 
+Survivalcraft.dll
+
+#All xmls, can be done on local machine
+*.xml
+
+#folders in bin/Debug/<main>
+CharacterSkins/
+FurniturePacks/
+Logs/
+Mods/
+TexturePacks/
+
+#other folders
+obj/
+
