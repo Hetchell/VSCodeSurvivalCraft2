@@ -212,7 +212,7 @@ namespace Game
 					this.VisibilityRangeYMultiplier = MathUtils.Lerp(this.VisibilityRange / num4, this.VisibilityRange / num5, MathUtils.Pow(this.m_subsystemWeather.GlobalPrecipitationIntensity, 4f));
 					this.m_viewIsSkyVisible = true;
 				}
-				if (!this.FogEnabled)
+				if (!ModificationsHolder.fogEnable)
 				{
 					this.m_viewFogRange = new Vector2(100000f, 100000f);
 				}
@@ -829,7 +829,7 @@ namespace Game
 		public bool DrawCloudsWireframe;
 
 		// Token: 0x04000598 RID: 1432
-		public bool FogEnabled = ModificationsHolder.fogEnable;
+		//public bool FogEnabled = ModificationsHolder.fogEnable;
 
 		// Token: 0x04000599 RID: 1433
 		public int[] m_drawOrders = new int[]
