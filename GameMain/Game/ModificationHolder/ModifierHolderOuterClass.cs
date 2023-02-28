@@ -287,6 +287,7 @@ namespace ModificationHolder
                 {
                     int x = k * 4 + k0;
                     int y = l * 4 + k1;
+                    //int y = k * 4 + k0;
                     if (x / 100 != this.x_prev / 100 || y / 100 != this.y_prev / 100)
                     {
                         //Debug.WriteLine("x -> chunk coordinate shiftscale: " + x, "TerrainChunkProviderActive");
@@ -355,10 +356,10 @@ namespace ModificationHolder
                     float f1 = MathUtils.Lerp(
                         this.activeChunkProvider.TGMinTurbulence, 
                         1f, 
-                        TerrainChunkGeneratorProviderActive.Squish(
+                        Squish(
                             v, 
                             this.activeChunkProvider.TGTurbulenceZero, 
-                            1f
+                            1f //1
                             )
                         );
                     for (int m = 0; m < grid3d.SizeY; m++)
@@ -397,8 +398,9 @@ namespace ModificationHolder
                         int num9 = m * 8;
                         float num10 = this.activeChunkProvider.TGTurbulenceStrength * f1 * MathUtils.Saturate(
                             f0 - (float)num9
-                            ) * (2f * SimplexNoise.OctavedNoise(
-                                (float)x, 
+                            ) * 
+                            (2f * SimplexNoise.OctavedNoise(
+                                (float)x * 16, 
                                 (float)num9, 
                                 (float)y, 
                                 this.activeChunkProvider.TGTurbulenceFreq, 
@@ -648,7 +650,7 @@ namespace ModificationHolder
             //return MathUtils.Clamp(f, 0.0f, 1.0f);
         }
 
-        public float Squish(float v, float r, float t)
+        public static float Squish(float v, float r, float t)
         {
             float x = (v - r) / (t - r);
             if (!(x < 0f))

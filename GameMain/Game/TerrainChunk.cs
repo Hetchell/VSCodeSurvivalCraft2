@@ -75,11 +75,11 @@ namespace Game
 		{
 			//this.Cells[getIndex(x, y, z)] = value;
 			this.Cells[y + x * 256 + z * 256 * 16] = value;
-			if(y + x * 256 + z * 256 * 16 == 5200){
-				Console.WriteLine(
-					"Hakkeyoicchi!"
-				);
-			}
+			// if(y + x * 256 + z * 256 * 16 == 5200){
+			// 	Console.WriteLine(
+			// 		"Hakkeyoicchi!"
+			// 	);
+			// }
 		}
 
 		private static int getIndex(int x, int y, int z)

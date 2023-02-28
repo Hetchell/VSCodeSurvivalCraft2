@@ -4,6 +4,7 @@ using System.Linq;
 using Engine;
 using GameEntitySystem;
 using TemplatesDatabase;
+using Survivalcraft.Game.ModificationHolder;
 
 namespace Game
 {
@@ -466,7 +467,11 @@ namespace Game
 				}
 			}
 			float num5 = (float)(this.m_subsystemTerrain.Terrain.CalculateTopmostCellHeight(Terrain.ToCell(zero.X), Terrain.ToCell(zero.Y)) + 1);
-			return new Vector3(zero.X + 0.5f, num5 + 0.01f, zero.Y + 0.5f);
+			if(ModificationsHolder.allowFixedSpawn){
+				return ModificationsHolder.spawnfixed;
+			}
+			// return new Vector3(zero.X + 0.5f, num5 + 0.01f, zero.Y + 0.5f);
+			return new Vector3(0, 300, 0);
 		}
 
 		// Token: 0x0600145A RID: 5210 RVA: 0x0009D63C File Offset: 0x0009B83C
@@ -491,6 +496,9 @@ namespace Game
 						}
 					}
 				}
+			}
+			if(ModificationsHolder.allowFixedSpawn){
+				return ModificationsHolder.spawnfixed;
 			}
 			return new Vector3(zero.X + 0.5f, zero.Y + 0.01f, zero.Z + 0.5f);
 		}

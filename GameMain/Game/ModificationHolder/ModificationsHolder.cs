@@ -2,6 +2,8 @@
 using Game;
 using System.Diagnostics;
 using ModificationHolder;
+using Engine;
+using System.Threading.Tasks;
 
 namespace Survivalcraft.Game.ModificationHolder
 {
@@ -11,12 +13,17 @@ namespace Survivalcraft.Game.ModificationHolder
         public static bool allowWolfDespawn = true;
         public static bool fogEnable = false;
         public static bool allowForUnrestrictedTravel = true;
+        public static bool allowFixedSpawn = true;
+        public static int seed = 1638478217;
         public static float steppedLevelTravel = 10f;
         public static String[] animalTypes = { "Wolf", "Hyena", "Lion" };
         public static float movementLimitPlayer = 100f * 100f;
         public static float movementLimitAnimalsDerFlying = 300f;
+        public static Vector3 spawnfixed = new Vector3(0, 300, 0);
 
         private static int repeat = 0;
+        private static int repeatCom = 0;
+        private static string somestr;
 
         public static void keyboardActions(WidgetInput input)
         {
@@ -81,6 +88,17 @@ namespace Survivalcraft.Game.ModificationHolder
                    fogEnable = false;
                }
             }
+        }
+
+        public static void UpdateCommand(){
+            // Task.Run(() => {
+            //     while(true){
+            //         string input = Console.ReadLine();
+            //         if(input.Contains("Exit")){
+            //             Window.Close();
+            //         }
+            //     }
+            // });
         }
     }
 }

@@ -125,10 +125,18 @@ namespace Game
 				return UpdateOrder.Default;
 			}
 		}
+		private float TimeCum = 0.0F;
 
 		// Token: 0x06000F47 RID: 3911 RVA: 0x00073E84 File Offset: 0x00072084
 		public void Update(float dt)
 		{
+			if((this.TimeCum += dt) > 0.4 && this.TimeCum < 0.5){
+				Vector3 pos = base.ComponentBody.Position;
+				Console.WriteLine("Your position is: " + pos);
+			}
+			if(this.TimeCum > 0.6F){
+				this.TimeCum = 0.0F;
+			}
             if (!ComponentInput.noclipState)
 			{
 				Block.m_defaultCollisionBoxes = new BoundingBox[]

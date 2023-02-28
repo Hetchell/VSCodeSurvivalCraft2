@@ -1,7 +1,7 @@
 <Settings>
   <Setting Name="SoundsVolume" Value="0.1" />
   <Setting Name="MusicVolume" Value="0" />
-  <Setting Name="VisibilityRange" Value="64" />
+  <Setting Name="VisibilityRange" Value="128" />
   <Setting Name="UseVr" Value="False" />
   <Setting Name="ResolutionMode" Value="High" />
   <Setting Name="ViewAngleMode" Value="Normal" />
@@ -35,7 +35,7 @@
   <Setting Name="ScpboxAccessToken" Value="" />
   <Setting Name="MotdUseBackupUrl" Value="False" />
   <Setting Name="MotdUpdatePeriodHours" Value="12" />
-  <Setting Name="MotdLastUpdateTime" Value="638130080401232175" />
+  <Setting Name="MotdLastUpdateTime" Value="638131703598117622" />
   <Setting Name="MotdLastDownloadedData" Value="" />
   <Setting Name="UserId" Value="" />
   <Setting Name="LastLaunchedVersion" Value="2.2.40.0" />

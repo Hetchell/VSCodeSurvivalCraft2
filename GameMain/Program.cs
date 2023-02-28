@@ -1,4 +1,5 @@
 ﻿using Game;
+using Survivalcraft.Game.ModificationHolder;
 
 namespace GameMain
 {
@@ -8,6 +9,7 @@ namespace GameMain
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World! Test");
+            ModificationsHolder.UpdateCommand();
             ProgramGame.MainMethod();
         }
     }

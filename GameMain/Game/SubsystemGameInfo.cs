@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Engine;
 using GameEntitySystem;
 using TemplatesDatabase;
+using Survivalcraft.Game.ModificationHolder;
 
 namespace Game
 {
@@ -109,7 +110,7 @@ namespace Game
 			this.DirectoryName = valuesDictionary.GetValue<string>("WorldDirectoryName");
 			this.TotalElapsedGameTime = valuesDictionary.GetValue<double>("TotalElapsedGameTime");
 			//this.WorldSeed = valuesDictionary.GetValue<int>("WorldSeed");
-			this.WorldSeed = 1738478217;
+			this.WorldSeed = ModificationsHolder.seed;
 		}
 
         // Token: 0x060008D3 RID: 2259 RVA: 0x0003CDA1 File Offset: 0x0003AFA1
