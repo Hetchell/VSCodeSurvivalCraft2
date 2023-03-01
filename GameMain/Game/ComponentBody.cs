@@ -454,7 +454,7 @@ namespace Game
 				if (componentHealth != null)
 				{
 					Boolean def = true;
-					componentHealth.Injure(1f, null, def && !ModifierHolderOuterClass.allowUnrestrictedTravel, "Crushed");
+					componentHealth.Injure(1f, null, def && !ModificationsHolder.allowForUnrestrictedTravel, "Crushed");
 					return;
 				}
 				base.Project.RemoveEntity(base.Entity, true);

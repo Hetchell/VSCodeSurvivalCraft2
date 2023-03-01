@@ -40,12 +40,12 @@ namespace Survivalcraft.Game.ModificationHolder
             if (input.IsKeyDown(Key.LeftArrow))
             {
                 ComponentInput.state = true;
-                ComponentInput.step = ModifierHolderOuterClass.steppedTravel;
+                ComponentInput.step = ModificationsHolder.steppedLevelTravel;
             }
             else if (input.IsKeyDown(Key.RightArrow))
             {
                 ComponentInput.state = true;
-                ComponentInput.step = -ModifierHolderOuterClass.steppedTravel;
+                ComponentInput.step = -ModificationsHolder.steppedLevelTravel;
             }
             else
             {

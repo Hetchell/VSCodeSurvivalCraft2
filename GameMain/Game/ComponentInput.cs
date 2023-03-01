@@ -293,7 +293,7 @@ namespace Game
                 if (speed > ModificationsHolder.steppedLevelTravel)
                 {
 					//guiMessage.DisplaySmallMessage("Hello World!", Color.White, true, false);
-                    guiMessage.DisplaySmallMessage("Superspeed enabled. Currently set to " + ModifierHolderOuterClass.steppedTravel, Color.White, true, false);
+                    guiMessage.DisplaySmallMessage("Superspeed enabled. Currently set to " + ModificationsHolder.steppedLevelTravel, Color.White, true, false);
                 }
             }
 				

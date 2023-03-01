@@ -240,7 +240,7 @@ namespace Game
 				this.Injure(num4, null, false, LanguageControl.Get("ComponentHealth", "2"));
 			}
 			this.m_wasStanding = (this.m_componentCreature.ComponentBody.StandingOnValue != null || this.m_componentCreature.ComponentBody.StandingOnBody != null);
-			if ((position.Y < 0f || position.Y > 296f) && this.m_subsystemTime.PeriodicGameTimeEvent(2.0, 0.0) && !ModifierHolderOuterClass.allowUnrestrictedTravel)
+			if ((position.Y < 0f || position.Y > 296f) && this.m_subsystemTime.PeriodicGameTimeEvent(2.0, 0.0) && !ModificationsHolder.allowForUnrestrictedTravel)
 			{
 				this.Injure(0.1f, null, true, LanguageControl.Get("ComponentHealth", "3"));
 				ComponentPlayer componentPlayer = this.m_componentPlayer;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using Engine;
 using Survivalcraft.Game;
-using ModifierHolderOuterClass = ModificationHolder.ModifierHolderOuterClass;
+using ModifierHolderTerrainGen = ModificationHolder.ModifierHolderTerrainGen;
 
 namespace Game
 {
@@ -14,7 +14,7 @@ namespace Game
 
 		// Token: 0x1700036A RID: 874
 		// (get) Token: 0x0600166E RID: 5742 RVA: 0x000AD68E File Offset: 0x000AB88E
-		private ModifierHolderOuterClass modifyTerrain;
+		private ModifierHolderTerrainGen modifyTerrain;
         public int OceanLevel
 		{
 			get
@@ -75,7 +75,7 @@ namespace Game
 			this.TGWater = true;
 			this.TGExtras = true;
 			this.TGCavesAndPockets = true;
-			this.modifyTerrain = new ModifierHolderOuterClass(subsystemTerrain, this, num, random);
+			this.modifyTerrain = new ModifierHolderTerrainGen(subsystemTerrain, this, num, random);
 		}
 
 		// Token: 0x06001671 RID: 5745 RVA: 0x000ADA54 File Offset: 0x000ABC54

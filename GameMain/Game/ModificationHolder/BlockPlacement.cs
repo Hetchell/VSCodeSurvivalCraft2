@@ -1,5 +1,5 @@
-using Grid2d = ModificationHolder.ModifierHolderOuterClass.Grid2d;
-using Grid3d = ModificationHolder.ModifierHolderOuterClass.Grid3d;
+using Grid2d = ModificationHolder.ModifierHolderTerrainGen.Grid2d;
+using Grid3d = ModificationHolder.ModifierHolderTerrainGen.Grid3d;
 using Game;
 using MathUtils = Engine.MathUtils;
 
@@ -7,18 +7,18 @@ namespace ModificationHolder
 {
     class BlockPlacement
     {
-        private ModifierHolderOuterClass proto0;
+        private ModifierHolderTerrainGen proto0;
 
-        public BlockPlacement(ModifierHolderOuterClass proto0){
+        public BlockPlacement(ModifierHolderTerrainGen proto0){
             this.proto0 = proto0;
         }
 
         public void SetBlock(WorldSettings worldsettings, Grid2d[] grid2DCache, Grid3d grid3DCache, TerrainChunk chunk, params int[] par){
             double[] multipliers = new double[21];
-            multipliers[0] = 0.125D;
-            multipliers[1] = 0.125D;
-            multipliers[2] = 0.125D;
-            multipliers[3] = 0.125D;
+            multipliers[0] = 0.25D;
+            multipliers[1] = 0.25D;
+            multipliers[2] = 0.25D;
+            multipliers[3] = 0.25D;
             multipliers[4] = 0.25D;
             multipliers[5] = 0.25D;
             multipliers[6] = 0.125D;
@@ -87,7 +87,7 @@ namespace ModificationHolder
                                 float f0 = MathUtils.Lerp(100f, 0f, f);
                                 float f1 = MathUtils.Lerp(300f, 30f, f);
                                 bool Desertificationflag = (temperatureFast > 8 && humidityFast < 8 && x5 < 0.97f) || (MathUtils.Abs(x4) < 16f && x5 < 0.97f);
-                                Desertificationflag = false;
+                                //Desertificationflag = false;
                                 for (int c = 0; c < 8; c++)
                                 {
                                     byte blockID = 0;
@@ -96,6 +96,7 @@ namespace ModificationHolder
                                         if (c + k * 8 <= oceanLevel)
                                         {
                                             blockID = BlocksManager.getID(block => block is MagmaBlock);
+                                            //blockID = 18;
                                         }
                                     }
                                     else
