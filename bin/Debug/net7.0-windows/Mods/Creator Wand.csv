@@ -1,0 +1,2 @@
+Class Name;Behaviors;IsEditable;ShovelPower;QuarryPower;HackPower;DefaultMeleePower;DefaultMeleeHitProbability;DefaultProjectilePower;PlayerLevelRequired;IsAimable;IsStickable;AlignToVelocity;ProjectileSpeed;ProjectileDamping;ProjectileTipOffset
+RodBlock;ThrowableBlockBehavior;TRUE;100;100;100;1000;1;1000;10;TRUE;FALSE;TRUE;300;1;0
