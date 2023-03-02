@@ -451,3 +451,4 @@ public static class ModsManager
 		// Token: 0x040013D0 RID: 5072
 		public LanguageControl.LanguageType languageType;
 	}
+}
