@@ -219,12 +219,14 @@ namespace Game
 				{
 					bool flag = false;
 					Key value = base.Input.LastKey.Value;
-					if (value == Key.U && base.Input.IsKeyDown(Key.Control))
+					//copy paste. 
+					if (value == Key.V && base.Input.IsKeyDown(Key.Control))
 					{
 						this.EnterText(ClipboardManager.ClipboardString);
 						flag = true;
 					}
-					else if (value == Key.Tab && this.CaretPosition > 0)
+					//backspace
+					else if (value == Key.BackSpace && this.CaretPosition > 0)
 					{
 						int caretPosition = this.CaretPosition;
 						this.CaretPosition = caretPosition - 1;
@@ -235,24 +237,24 @@ namespace Game
 					{
 						switch (value)
 						{
-						case Key.F12:
+						case Key.LeftArrow:
 						{
 							int caretPosition = this.CaretPosition;
 							this.CaretPosition = caretPosition - 1;
 							flag = true;
 							break;
 						}
-						case Key.LeftArrow:
+						case Key.RightArrow:
 						{
 							int caretPosition = this.CaretPosition;
 							this.CaretPosition = caretPosition + 1;
 							flag = true;
 							break;
 						}
-						case Key.RightArrow:
 						case Key.UpArrow:
-							break;
 						case Key.DownArrow:
+							break;
+						case Key.Enter:
 						{
 							flag = true;
 							this.HasFocus = false;
@@ -263,7 +265,7 @@ namespace Game
 							}
 							break;
 						}
-						case Key.Enter:
+						case Key.Escape:
 						{
 							flag = true;
 							this.HasFocus = false;
@@ -277,18 +279,18 @@ namespace Game
 						default:
 							switch (value)
 							{
-							case Key.Insert:
+							case Key.Delete:
 								if (this.CaretPosition < this.m_text.Length)
 								{
 									this.Text = this.Text.Remove(this.CaretPosition, 1);
 									flag = true;
 								}
 								break;
-							case Key.PageDown:
+							case Key.Home:
 								this.CaretPosition = 0;
 								flag = true;
 								break;
-							case Key.Home:
+							case Key.End:
 								this.CaretPosition = this.m_text.Length;
 								flag = true;
 								break;

@@ -7,6 +7,7 @@ using Engine;
 using Engine.Serialization;
 using TemplatesDatabase;
 using XmlUtilities;
+using worldNameDef = Survivalcraft.Game.ModificationHolder.ModificationsHolder.Name;
 
 namespace Game
 {
@@ -42,7 +43,8 @@ namespace Game
 		public static void Initialize()
 		{
 			Storage.CreateDirectory(WorldsManager.WorldsDirectoryName);
-			string text = ContentManager.Get<string>("NewWorldNames");
+			//string text = ContentManager.Get<string>("NewWorldNames");
+			string text = worldNameDef.getName();
 			WorldsManager.m_newWorldNames = new ReadOnlyList<string>(text.Split(new char[]
 			{
 				'\n',
