@@ -1,0 +1,17 @@
+<mod>
+	<Parameter Name="Class" Guid="d5c76952-d156-4d4e-a250-9e88644e5e77" new-Value="Game.ComponentNewSimpleModel" Type="string" />
+	
+    <ProjectTemplate Name="Project" Guid="85023bf8-1c90-4dd1-9442-e6c13691d078">
+      <MemberSubsystemTemplate Name="CommandBlockBehavior" Guid="33333333-0001-0000-0000-000000000000" InheritanceParent="fefb9590-4972-4893-b02a-76063611b745">
+        <Parameter Name="Class" Guid="33333333-0000-0000-0000-000000000000" Value="Game.SubsystemCommandBlockBehavior" Type="string" />
+        <ParameterSet Name="Texts" Description="用于储存命令方块中的指令" Guid="bdafca01-0000-414d-854e-aaaa8a138d0e" />
+      </MemberSubsystemTemplate>
+      <MemberSubsystemTemplate Name="Logo" Guid="33333333-0002-0000-0000-000000000000" InheritanceParent="fefb9590-4972-4893-b02a-76063611b745">
+        <Parameter Name="Class" Guid="33333333-0003-0000-0000-000000000000" Value="Game.SubsystemLogo" Type="string" />
+      </MemberSubsystemTemplate>
+      <MemberSubsystemTemplate Name="DebugMode" Guid="33333333-0000-0000-0000-000000000001" InheritanceParent="fefb9590-4972-4893-b02a-76063611b745">
+          <Parameter Name="Class" Guid="33333333-0000-0000-0000-000000000002" Value="Game.SubsystemDebugMode" Type="string" />
+          <Parameter Name="FunctionValue" Guid="33333333-0000-0000-0000-000000000003" Value="1" Type="int" />
+      </MemberSubsystemTemplate>
+    </ProjectTemplate>  
+</mod>
