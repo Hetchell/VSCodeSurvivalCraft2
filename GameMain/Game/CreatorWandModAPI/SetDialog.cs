@@ -1,3 +1,5 @@
+//Code is not mine, is Suceru's https://github.com/Suceru/Survivalcraft2CreatorWandMod
+
 using Engine;
 using Game;
 using System;

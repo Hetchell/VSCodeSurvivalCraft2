@@ -1,4 +1,6 @@
-﻿using Game;
+﻿//Code is not mine, is Suceru's https://github.com/Suceru/Survivalcraft2CreatorWandMod
+
+using Game;
 using System.Collections.Generic;
 using Random = Game.Random;
 

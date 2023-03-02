@@ -1,4 +1,6 @@
-﻿using CreatorWandModAPI;
+﻿//Code is not mine, is Suceru's https://github.com/Suceru/Survivalcraft2CreatorWandMod
+
+using CreatorWandModAPI;
 using Engine;
 using Engine.Serialization;
 using Game;
