@@ -4,6 +4,7 @@ using Survivalcraft.Game.NoiseModifier;
 using Random = Game.Random;
 using Engine;
 using mod = Survivalcraft.Game.ModifierHolder; //old class
+using noiseConst = Survivalcraft.Game.ModificationHolder.ModificationsHolder.NoiseConstants;
 
 namespace ModificationHolder
 {
@@ -11,14 +12,14 @@ namespace ModificationHolder
     class ModifierHolderTerrainGen
     {
         private readonly bool useConstantp = true;
-        private readonly bool allowMethodOverride = true;
+        private readonly bool allowMethodOverride = false;
         //instances
         private readonly SubsystemTerrain terrainInput;
         public readonly WorldSettings worldSettings;
         private readonly TerrainChunkGeneratorProviderActive activeChunkProvider;
         private readonly BlockPlacement placer;
         private readonly Calculator calc;
-        private readonly float[] holder; /*contains holder constants. */
+        private readonly float[] holder; 
         private double[] r;
         private double[] ar;
         private double[] br;
@@ -58,40 +59,15 @@ namespace ModificationHolder
             this.worldSettings = activeChunkProvider.m_worldSettings;
             this.holder = new float[]
             {
-                0.04f * (float)Math.Pow(2, 0), //TGMinTurbulence0
-                0.84f * (float)Math.Pow(2, 0), //TGTurbulenceZero1
-                55f, //TGTurbulenceStrength2
-                0.03f * (float)Math.Pow(2, 0), //TGTurbulenceFreq3
-                16f, //TGTurbulenceOctaves4
-                0.5f * 1, //TGTurbulencePersistence5
-                55f, //TGDensityBias6
-                MathUtils.Clamp(2f * num, 0f, 150f), //TGShoreFluctuations7
-                MathUtils.Clamp(0.04f * num, 0.5f, 3f), //TGShoreFluctuationsScaling8
-                0.0006f * (float)Math.Pow(Math.PI, 0), //TGMountainRangeFreq9
-                0.006f *(float)Math.Pow(2, 0), //this.TGOceanSlope = 10
-                0.004f * (float)Math.Pow(2, 0), //TGOceanSlopeVariation11
-                0.01f * (float)Math.Pow(2, 0), //this.TGIslandsFrequency = 12
-                0.32f - 0.31f * 0, //this.TGHillsPercentage = 13
-                0.15f - 0.14f * 0, //this.TGMountainsPercentage = 14 --> This one, with lower value, squeeze mountain width
-                0.014f * (float)Math.Pow(2, 0), //this.TGHillsFrequency = 15
-                1f, //this.TGHillsOctaves = 16
-                0.5f, //this.TGHillsPersistence = 17
-                1f, //this.TGHeightBias = 18
-                32f, //this.TGHillsStrength = 19
-                220f, //this.TGMountainsStrength = 20
-                1f, //this.TGRiversStrength = 21
-            activeChunkProvider.OceanLevel //OceanLevel22
-        };
+                MathUtils.Clamp(2f * num, 0f, 150f) * noiseConst.constants[7], //TGShoreFluctuations7
+                MathUtils.Clamp(0.04f * num, 0.5f, 3f) * noiseConst.constants[8], //TGShoreFluctuationsScaling8
+            };
             this.rand = rand;
-            this.noiseMain = new NoiseMain(rand, (int)holder[4], useConstantp);
+            this.noiseMain = new NoiseMain(rand, (int)noiseConst.constants[4], useConstantp);
             this.noiseMin = new NoiseMain(rand, 8);
             this.noiseMax = new NoiseMain(rand, 8);
-            this.placer = new BlockPlacement(this);
+            this.placer = new BlockPlacement(this, activeChunkProvider);
             this.calc = new Calculator(activeChunkProvider, this.noiseMain, this.holder);
-        }
-
-        public float GetHldrValue(int fromback){
-            return this.holder[(this.holder.Length + fromback) % this.holder.Length];
         }
 
         public void GenerateTerrain(TerrainChunk chunkIn, bool type)
@@ -251,16 +227,16 @@ namespace ModificationHolder
                     float z0 = (float)(i + k1);
                     if (this.activeChunkProvider.m_islandSize != null)
                     {
-                       float f1 = this.activeChunkProvider.m_oceanCorner.X + holder[7] * this.noiseMain.OctavedNoise(z0, 0f, 0.005f / holder[8], 4, 1.95f, 1f, false);
-                       float f2 = this.activeChunkProvider.m_oceanCorner.Y + holder[7] * this.noiseMain.OctavedNoise(0f, x0, 0.005f / holder[8], 4, 1.95f, 1f, false);
-                       float f3 = this.activeChunkProvider.m_oceanCorner.X + holder[7] * this.noiseMain.OctavedNoise(z0 + 1000f, 0f, 0.005f / holder[8], 4, 1.95f, 1f, false) + this.activeChunkProvider.m_islandSize.Value.X;
-                       float f4 = this.activeChunkProvider.m_oceanCorner.Y + holder[7] * this.noiseMain.OctavedNoise(0f, x0 + 1000f, 0.005f / holder[8], 4, 1.95f, 1f, false) + this.activeChunkProvider.m_islandSize.Value.Y;
+                       float f1 = this.activeChunkProvider.m_oceanCorner.X + holder[0] * this.noiseMain.OctavedNoise(z0, 0f, 0.005f / holder[1], 4, 1.95f, 1f, false);
+                       float f2 = this.activeChunkProvider.m_oceanCorner.Y + holder[0] * this.noiseMain.OctavedNoise(0f, x0, 0.005f / holder[1], 4, 1.95f, 1f, false);
+                       float f3 = this.activeChunkProvider.m_oceanCorner.X + holder[0] * this.noiseMain.OctavedNoise(z0 + 1000f, 0f, 0.005f / holder[1], 4, 1.95f, 1f, false) + this.activeChunkProvider.m_islandSize.Value.X;
+                       float f4 = this.activeChunkProvider.m_oceanCorner.Y + holder[0] * this.noiseMain.OctavedNoise(0f, x0 + 1000f, 0.005f / holder[1], 4, 1.95f, 1f, false) + this.activeChunkProvider.m_islandSize.Value.Y;
                        f0 = MathUtils.Min(x0 - f1, z0 - f2, f3 - x0, f4 - z0);
                     }
                     else
                     {
-                       float f5 = this.activeChunkProvider.m_oceanCorner.X + holder[7] * this.noiseMain.OctavedNoise(z0, 0f, 0.005f / holder[8], 4, 1.95f, 1f, false);
-                       float f6 = this.activeChunkProvider.m_oceanCorner.Y + holder[7] * this.noiseMain.OctavedNoise(0f, x0, 0.005f / holder[8], 4, 1.95f, 1f, false);
+                       float f5 = this.activeChunkProvider.m_oceanCorner.X + holder[0] * this.noiseMain.OctavedNoise(z0, 0f, 0.005f / holder[1], 4, 1.95f, 1f, false);
+                       float f6 = this.activeChunkProvider.m_oceanCorner.Y + holder[0] * this.noiseMain.OctavedNoise(0f, x0, 0.005f / holder[1], 4, 1.95f, 1f, false);
                        f0 = MathUtils.Min(x0 - f5, z0 - f6);
                     }
                     f0 = allowMethodOverride ? this.calc.CalculateOceanShoreDistance(x0, z0) : f0 * 1;
@@ -268,7 +244,7 @@ namespace ModificationHolder
                     f0 = !allowMethodOverride ? this.noiseMain.OctavedNoise(
                        x0 + this.activeChunkProvider.m_mountainsOffset.X,
                        z0 + this.activeChunkProvider.m_mountainsOffset.Y,
-                       holder[9] / this.activeChunkProvider.TGBiomeScaling,
+                       noiseConst.constants[9] / this.activeChunkProvider.TGBiomeScaling,
                        3,
                        1.91f,
                        0.75f,
@@ -292,13 +268,13 @@ namespace ModificationHolder
                     int x = k * 4 + k0;
                     int y = l * 4 + k1;
                     //float num = this.activeChunkProvider.TGOceanSlope + this.activeChunkProvider.TGOceanSlopeVariation * MathUtils.PowSign(2f * SimplexNoise.OctavedNoise(x + this.activeChunkProvider.m_mountainsOffset.X, z + this.activeChunkProvider.m_mountainsOffset.Y, 0.01f, 1, 2f, 0.5f, false) - 1f, 0.5f);
-                    float f_0 = holder[10] + holder[11] * MathUtils.PowSign(2f * this.noiseMain.OctavedNoise(x + this.activeChunkProvider.m_mountainsOffset.X, y + this.activeChunkProvider.m_mountainsOffset.Y, 0.01f, 1, 2f, 0.5f, false) - 1f, 0.5f);
+                    float f_0 = noiseConst.constants[10] + noiseConst.constants[11] * MathUtils.PowSign(2f * this.noiseMain.OctavedNoise(x + this.activeChunkProvider.m_mountainsOffset.X, y + this.activeChunkProvider.m_mountainsOffset.Y, 0.01f, 1, 2f, 0.5f, false) - 1f, 0.5f);
                     //float num2 = this.CalculateOceanShoreDistance(x, z);
                     float f_1 = this.calc.CalculateOceanShoreDistance(x, y);
                     //float num3 = MathUtils.Saturate(2f - 0.05f * MathUtils.Abs(num2));
                     float f_2 = MathUtils.Saturate(2f - 0.05f * MathUtils.Abs(f_1));
                     //float num4 = MathUtils.Saturate(MathUtils.Sin(this.activeChunkProvider.TGIslandsFrequency * num2));
-                    float f_3 = MathUtils.Saturate(MathUtils.Sin(holder[12] * f_1));
+                    float f_3 = MathUtils.Saturate(MathUtils.Sin(noiseConst.constants[12] * f_1));
                     //float num5 = MathUtils.Saturate(MathUtils.Saturate((0f - num) * num2) - 0.85f * num4);
                     float f_4 = MathUtils.Saturate(MathUtils.Saturate((0f - f_0) * f_1) - 0.85f * f_3);
                     //float num6 = MathUtils.Saturate(MathUtils.Saturate(0.05f * (0f - num2 - 10f)) - num4);
@@ -310,11 +286,11 @@ namespace ModificationHolder
                     //float f2 = (1f - num3) * SimplexNoise.OctavedNoise(x, z, 0.0017f / this.activeChunkProvider.TGBiomeScaling, 2, 4f, 0.7f, false);
                     float f_8 = (1f - f_2) * this.noiseMain.OctavedNoise(x, y, 0.0017f / this.activeChunkProvider.TGBiomeScaling, 2, 4f, 0.7f, false);
                     //float num7 = (1f - num6) * (1f - num3) * TerrainChunkGeneratorProviderActive.Squish(v, 1f - this.activeChunkProvider.TGHillsPercentage, 1f - this.activeChunkProvider.TGMountainsPercentage);
-                    float f_9 = (1f - f_5) * (1f - f_2) * TerrainChunkGeneratorProviderActive.Squish(f_6, 1f - holder[13], 1f - holder[14]);
+                    float f_9 = (1f - f_5) * (1f - f_2) * TerrainChunkGeneratorProviderActive.Squish(f_6, 1f - noiseConst.constants[13], 1f - noiseConst.constants[14]);
                     //float num8 = (1f - num6) * TerrainChunkGeneratorProviderActive.Squish(v, 1f - this.activeChunkProvider.TGMountainsPercentage, 1f);
-                    float f_10 = (1f - f_5) * TerrainChunkGeneratorProviderActive.Squish(f_6, 1f - holder[14], 1f);
+                    float f_10 = (1f - f_5) * TerrainChunkGeneratorProviderActive.Squish(f_6, 1f - noiseConst.constants[14], 1f);
                     //float num9 = 1f * SimplexNoise.OctavedNoise(x, z, this.activeChunkProvider.TGHillsFrequency, this.activeChunkProvider.TGHillsOctaves, 1.93f, this.activeChunkProvider.TGHillsPersistence, false);
-                    float f_11 = 1f * this.noiseMain.OctavedNoise(x, y, holder[15], (int)holder[16], 1.93f, holder[17], false);
+                    float f_11 = 1f * this.noiseMain.OctavedNoise(x, y, noiseConst.constants[15], (int)noiseConst.constants[16], 1.93f, noiseConst.constants[17], false);
                     //float amplitudeStep = MathUtils.Lerp(0.75f * TerrainChunkGeneratorProviderActive.TGMountainsDetailPersistence, 1.33f * TerrainChunkGeneratorProviderActive.TGMountainsDetailPersistence, f);
                     float amplitudeStep = MathUtils.Lerp(0.75f * TerrainChunkGeneratorProviderActive.TGMountainsDetailPersistence, 1.33f * TerrainChunkGeneratorProviderActive.TGMountainsDetailPersistence, f_7);
                     //float num10 = 1.5f * SimplexNoise.OctavedNoise(x, z, TerrainChunkGeneratorProviderActive.TGMountainsDetailFreq, TerrainChunkGeneratorProviderActive.TGMountainsDetailOctaves, 1.98f, amplitudeStep, false) - 0.5f;
@@ -326,17 +302,17 @@ namespace ModificationHolder
                     //float num12 = MathUtils.Saturate(1.5f - num11 * MathUtils.Abs(2f * SimplexNoise.OctavedNoise(x + this.activeChunkProvider.m_riversOffset.X, z + this.activeChunkProvider.m_riversOffset.Y, 0.001f, 4, 2f, 0.5f, false) - 1f));
                     float f_15 = MathUtils.Saturate(1.5f - f_13 * MathUtils.Abs(2f * this.noiseMain.OctavedNoise(x + this.activeChunkProvider.m_riversOffset.X, y + this.activeChunkProvider.m_riversOffset.Y, 0.001f, 4, 2f, 0.5f, false) - 1f));
                     //float num13 = -50f * num5 + this.activeChunkProvider.TGHeightBias;
-                    float f_16 = -50f * f_4 + holder[18];
+                    float f_16 = -50f * f_4 + noiseConst.constants[18];
                     //float num14 = MathUtils.Lerp(0f, 8f, f);
                     float f_17 = MathUtils.Lerp(0f, 8f, f_7);
                     //float num15 = MathUtils.Lerp(0f, -6f, f2);
                     float f_18 = MathUtils.Lerp(0f, -6f, f_8);
                     //float num16 = this.activeChunkProvider.TGHillsStrength * num7 * num9;
-                    float f_19 = holder[19] * f_9 * f_11;
+                    float f_19 = noiseConst.constants[19] * f_9 * f_11;
                     //float num17 = this.activeChunkProvider.TGMountainsStrength * num8 * num10;
-                    float f_20 = holder[20] * f_10 * f_12;
+                    float f_20 = noiseConst.constants[20] * f_10 * f_12;
                     //float f3 = this.activeChunkProvider.TGRiversStrength * num12;
-                    float f_21 = holder[21] * f_15;
+                    float f_21 = noiseConst.constants[21] * f_15;
                     //float num18 = num13 + num14 + num15 + num17 + num16;
                     float f_22 = f_16 + f_17 + f_18 + f_20 + f_19;
                     //float num19 = MathUtils.Min(MathUtils.Lerp(num18, x2, f3), num18);
@@ -345,7 +321,7 @@ namespace ModificationHolder
                     float f0 = allowMethodOverride ? this.calc.CalculateHeight(x, y) : MathUtils.Clamp(64f + f_23, 10f, 251f);
                     //num7 = this.activeChunkProvider.CalculateHeight(x, y);
                     v = this.calc.CalculateMountainRangeFactor((float)x, (float)y);
-                    float f1 = MathUtils.Lerp(holder[0], 1f, Squish(v, holder[1], 1f));
+                    float f1 = MathUtils.Lerp(noiseConst.constants[0], 1f, Squish(v, noiseConst.constants[1], 1f));
                     for (int m = 0; m < grid3d.SizeY; m++)
                     {
                         double d0 = this.ar[I] / 512.0D;
@@ -361,23 +337,23 @@ namespace ModificationHolder
                             d3 = d2 > 1.0D ? d1 : d0 + (d1 - d0) * d2;
                         }
                         int num9 = m * 8;
-                        float num10 = this.holder[2] * f1 * MathUtils.Saturate(
+                        float num10 = noiseConst.constants[2] * f1 * MathUtils.Saturate(
                             f0 - (float)num9
                             ) * 
                             (2f * this.noiseMain.OctavedNoise(
                                 (float)x, 
                                 (float)num9, 
                                 (float)y, 
-                                this.holder[3], 
-                                (int)this.holder[4], 
+                                noiseConst.constants[3], 
+                                (int)noiseConst.constants[4], 
                                 4f, 
-                                this.holder[5]
+                                noiseConst.constants[5]
                                 ) - 1f
                                 );
                         float num11 = (float)(num9 + num10 + 0 * d3)
                             ;
                         float num12 = f0 - num11 + 18 * 0;
-                        num12 += MathUtils.Max(4f * (this.holder[6] - (float)num9), 0f);
+                        num12 += MathUtils.Max(4f * (noiseConst.constants[6] - (float)num9), 0f);
                         //Console.WriteLine("Value of num12 is " + num12);
                         grid3d.Set(k, m , l, num12);
                     }

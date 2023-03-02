@@ -8,9 +8,11 @@ namespace ModificationHolder
     class BlockPlacement
     {
         private ModifierHolderTerrainGen proto0;
+        private TerrainChunkGeneratorProviderActive activeChunkProvider;
 
-        public BlockPlacement(ModifierHolderTerrainGen proto0){
+        public BlockPlacement(ModifierHolderTerrainGen proto0, TerrainChunkGeneratorProviderActive activeChunkProvider){
             this.proto0 = proto0;
+            this.activeChunkProvider = activeChunkProvider;
         }
 
         public void SetBlock(WorldSettings worldsettings, Grid2d[] grid2DCache, Grid3d grid3DCache, TerrainChunk chunk, params int[] par){
@@ -41,7 +43,7 @@ namespace ModificationHolder
         private void SetBlock(WorldSettings worldsettings, Grid2d[] grid2DCache, Grid3d grid3DCache, TerrainChunk chunk, double[] q, params int[] par)
         {
             //Sequence is safe below. 
-            int u = (int)this.proto0.GetHldrValue(-1) * 1 + worldsettings.SeaLevelOffset * 0;
+            int u = this.activeChunkProvider.OceanLevel * 1 + worldsettings.SeaLevelOffset * 0;
             //u = 15;
             int oceanLevel = u;
             int[] p = new int[6];

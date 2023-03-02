@@ -100,5 +100,94 @@ namespace Survivalcraft.Game.ModificationHolder
             //     }
             // });
         }
+
+        public static class NoiseConstants
+        {
+            struct Turbulence{
+            /* insert description */
+            public static float MinTurbulence = 0.04f;
+            /* insert description */
+            public static float TurbulenceZero = 0.84f;
+            /* insert description */
+            public static float TurbulenceStrgth = 55f;
+            /* insert description */
+            public static float TurbulenceFreq = 0.03f;
+            /* insert description */
+            public static float TurbulenceOctaves = 16f;
+            /* insert description */
+            public static float TurbulencePersistence = 0.5f;
+            }
+            
+            struct Bias{
+                /* insert description */
+                public static float DensityBias = 55f;
+                 /* insert description */
+                public static float HeightBias = 1f;
+            }
+            
+            /* insert description */
+            public static float ShoreFluctuationMul = 1.0f;
+            /* insert description */
+            public static float ShoreFluctuationScMul = 1.0f;
+
+            struct Mountain{
+                /* insert description */
+                public static float MountainRangeFreq = 0.0006f;
+                /* insert description */
+                public static float MountainPct = 0.15f;
+                /* insert description */
+                public static float MountainsStrgth = 220f;
+            }
+
+            struct Hill{
+                /* insert description */
+                public static float HillPct = 0.32f;
+            
+                /* insert description */
+                public static float HillFreq = 0.014f;
+                /* insert description */
+                public static float HillOct = 1f;
+                /* insert description */
+                public static float HillPersistence = 0.5f;
+                /* insert description */
+                public static float HillsStrgth = 32f;
+            
+            }
+            
+            /* insert description */
+            public static float OceanSlope = 0.006f;
+            /* insert description */
+            public static float SlopeVar = 0.004f;
+            /* insert description */
+            public static float IslandFreq = 0.01f;
+            /* insert description */
+            public static float RiversStrgth = 1f;
+            public static float[] constants = new float[]
+            {
+                Turbulence.MinTurbulence, //TGMinTurbulence0
+                Turbulence.TurbulenceZero, //TGTurbulenceZero1
+                Turbulence.TurbulenceStrgth, //TGTurbulenceStrength2
+                Turbulence.TurbulenceFreq, //TGTurbulenceFreq3
+                Turbulence.TurbulenceOctaves, //TGTurbulenceOctaves4
+                Turbulence.TurbulencePersistence, //TGTurbulencePersistence5
+                Bias.DensityBias, //TGDensityBias6
+                ShoreFluctuationMul, //TGShoreFluctuationsMultiplier7
+                ShoreFluctuationScMul, //TGShoreFluctuationsScalingMultiplier8
+                Mountain.MountainRangeFreq, //TGMountainRangeFreq9
+                OceanSlope, //this.TGOceanSlope = 10
+                SlopeVar, //TGOceanSlopeVariation11
+                IslandFreq, //this.TGIslandsFrequency = 12
+                Hill.HillPct, //this.TGHillsPercentage = 13
+                Mountain.MountainPct, //this.TGMountainsPercentage = 14 --> This one, with lower value, squeeze mountain width
+                Hill.HillFreq, //this.TGHillsFrequency = 15
+                Hill.HillOct, //this.TGHillsOctaves = 16
+                Hill.HillPersistence, //this.TGHillsPersistence = 17
+                Bias.HeightBias, //this.TGHeightBias = 18
+                Hill.HillsStrgth, //this.TGHillsStrength = 19
+                Mountain.MountainsStrgth, //this.TGMountainsStrength = 20
+                RiversStrgth, //this.TGRiversStrength = 21
+                1f //OceanLevelMultiplier22
+            };
+        }
     }
 }
