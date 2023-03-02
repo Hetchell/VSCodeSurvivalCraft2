@@ -189,5 +189,14 @@ namespace Survivalcraft.Game.ModificationHolder
                 1f //OceanLevelMultiplier22
             };
         }
+
+        public static class Name
+        {
+            private static string defname = "Hello World";
+
+            public static string getName(){
+                return defname;
+            }
+        }
     }
 }
