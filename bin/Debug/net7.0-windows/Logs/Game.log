@@ -2483,3 +2483,15 @@ Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\
 12:07:24.229 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 12:07:24.244 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 12:07:24.245 INFO: Saved settings
+14:17:47.928 INFO: OpenGL framebuffer created, R=10 G=10 B=10 A=2, D=24 S=8
+14:17:47.945 INFO: GLES Vendor: Intel
+14:17:47.945 INFO: GLES Renderer: Intel(R) HD Graphics 530
+14:17:47.945 INFO: GLES Version: 4.6.0 - Build 31.0.101.2111
+14:17:48.761 INFO: Survivalcraft starting up at 03/03/2023 14:17:48, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=53060MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=8, RAM=-692MB, 64bit=True
+14:17:48.898 INFO: Loaded settings.
+14:17:49.143 INFO: Mods manager initialize success
+14:17:49.143 INFO: Loaded 0 dlls;0 dlls not loaded
+14:17:58.114 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Newfort, VisibilityRange=128, Resolution=High
+14:19:36.425 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+14:19:36.460 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+14:19:36.463 INFO: Saved settings

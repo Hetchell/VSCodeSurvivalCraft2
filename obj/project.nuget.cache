@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ClJw92ascOfmDtY5P+l5z3G0HSVsR4bUeiEXThyrQrxEzA7tDmqq2buz3DpPBT5yYEBEu7XyNd9GbcbF8ADnUQ==",
+  "dgSpecHash": "3EJnl/DxEn0QXE2Xpa9xblS1tBzjEd2HmYkSe4R9O81hMyUoTsMjI+Y5vLmNvW+3/S3ayMlbQHXFQ8txAbYypA==",
   "success": true,
-  "projectFilePath": "D:\\C projects\\VSCodeCsharpProj\\Survivalcraft\\Survivalcraft.csproj",
+  "projectFilePath": "D:\\VisualStudioCode\\VSCodeSurvivalCraft2\\Survivalcraft.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
