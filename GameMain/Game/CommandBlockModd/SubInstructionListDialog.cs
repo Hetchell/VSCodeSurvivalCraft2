@@ -67,7 +67,7 @@ namespace Game
         ClipboardManager.ClipboardString = instruction.Name;
         this.m_componentMiner.ComponentPlayer.ComponentGui.DisplaySmallMessage("已复制指令：" + instruction.Name, Color.Yellow, false, false);
       });
-      foreach (object obj in Datahandle.GetSubInstructionlist(this.instructionName))
+      foreach (object obj in Datahandle.InstructionHandler.GetSubInstructionlist(this.instructionName))
         this.m_instructionlistWidget.AddItem(obj);
     }
 

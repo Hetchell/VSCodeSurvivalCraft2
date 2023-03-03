@@ -204,106 +204,113 @@ namespace Game
       return informationtopics;
     }
 
-    public static List<Instruction> GetSearchInstructionlist(string keystr)
-    {
-      string lower1 = keystr.ToLower();
-      List<Instruction> searchInstructionlist = new List<Instruction>();
-      string str1 = ContentManager.Get<string>("InstructionList");
-      ContentManager.Dispose("InstructionList");
-      string str2 = str1.Replace("\n", "#");
-      char[] chArray1 = new char[1]{ '#' };
-      foreach (string str3 in str2.Split(chArray1))
-      {
-        char[] chArray2 = new char[1]{ '=' };
-        string[] strArray = str3.Split(chArray2);
-        if (strArray.Length == 2)
+    public struct InstructionHandler{
+        public static List<Instruction> GetSearchInstructionlist(string keystr)
         {
-          string lower2 = strArray[0].ToLower();
-          if (lower2.Contains(lower1) && !lower2.Contains("value") && !lower2.Contains("keyword"))
-            searchInstructionlist.Add(new Instruction()
+            string lower1 = keystr.ToLower();
+            List<Instruction> searchInstructionlist = new List<Instruction>();
+            string str1 = ContentManager.Get<string>("InstructionList");
+            ContentManager.Dispose("InstructionList");
+            string str2 = str1.Replace("\n", "#");
+            char[] chArray1 = new char[1]{ '#' };
+            foreach (string str3 in str2.Split(chArray1))
             {
-              Name = strArray[0],
-              Details = strArray[1],
-              ExistSub = false
-            });
-        }
-      }
-      string str4 = ContentManager.Get<string>("SubInstructionList");
-      ContentManager.Dispose("SubInstructionList");
-      string str5 = str4.Replace("\n", "#");
-      char[] chArray3 = new char[1]{ '#' };
-      foreach (string str6 in str5.Split(chArray3))
-      {
-        char[] chArray4 = new char[1]{ '=' };
-        string[] strArray = str6.Split(chArray4);
-        if (strArray.Length == 2)
-        {
-          string lower3 = strArray[0].ToLower();
-          if (lower3.Contains(lower1) && !lower3.Contains("value") && !lower3.Contains("keyword"))
-            searchInstructionlist.Add(new Instruction()
+                char[] chArray2 = new char[1]{ '=' };
+                string[] strArray = str3.Split(chArray2);
+                if (strArray.Length == 2)
+                {
+                    string lower2 = strArray[0].ToLower();
+                    if (lower2.Contains(lower1) && !lower2.Contains("value") && !lower2.Contains("keyword")){
+                        searchInstructionlist.Add(new Instruction()
+                        {
+                        Name = strArray[0],
+                        Details = strArray[1],
+                        ExistSub = false
+                        });
+                    }
+                   
+                }
+            }
+            string str4 = ContentManager.Get<string>("SubInstructionList");
+            ContentManager.Dispose("SubInstructionList");
+            string str5 = str4.Replace("\n", "#");
+            char[] chArray3 = new char[1]{ '#' };
+            foreach (string str6 in str5.Split(chArray3))
             {
-              Name = strArray[0],
-              Details = strArray[1],
-              ExistSub = false
-            });
+                char[] chArray4 = new char[1]{ '=' };
+                string[] strArray = str6.Split(chArray4);
+                if (strArray.Length == 2)
+                {
+                    string lower3 = strArray[0].ToLower();
+                    if (lower3.Contains(lower1) && !lower3.Contains("value") && !lower3.Contains("keyword")){
+                        searchInstructionlist.Add(new Instruction()
+                        {
+                            Name = strArray[0],
+                            Details = strArray[1],
+                            ExistSub = false
+                        });
+                    }
+            
+                }
+            }
+            return searchInstructionlist;
         }
-      }
-      return searchInstructionlist;
-    }
 
-    public static List<Instruction> GetInstructionlist(bool conditionSwitch)
-    {
-      List<Instruction> instructionList1 = new List<Instruction>();
-      List<Instruction> instructionList2 = new List<Instruction>();
-      string str1 = ContentManager.Get<string>("InstructionList");
-      ContentManager.Dispose("InstructionList");
-      string str2 = str1.Replace("\n", "#");
-      char[] chArray1 = new char[1]{ '#' };
-      foreach (string str3 in str2.Split(chArray1))
-      {
-        char[] chArray2 = new char[1]{ '=' };
-        string[] strArray = str3.Split(chArray2);
-        if (strArray.Length == 2)
+        public static List<Instruction> GetInstructionlist(bool conditionSwitch)
         {
-          string str4 = strArray[0].Split(' ')[0];
-          Instruction instruction = new Instruction()
-          {
-            Name = strArray[0],
-            Details = strArray[1]
-          };
-          instruction.ExistSub = instruction.Name.Contains("value") || instruction.Name.Contains("keyword");
-          if (!str4.Contains("?"))
-            instructionList1.Add(instruction);
-          else
-            instructionList2.Add(instruction);
-        }
-      }
-      return !conditionSwitch ? instructionList1 : instructionList2;
-    }
-
-    public static List<Instruction> GetSubInstructionlist(string keyname)
-    {
-      List<Instruction> subInstructionlist = new List<Instruction>();
-      string str1 = ContentManager.Get<string>("SubInstructionList");
-      ContentManager.Dispose("SubInstructionList");
-      string str2 = str1.Replace("\n", "#");
-      char[] chArray1 = new char[1]{ '#' };
-      foreach (string str3 in str2.Split(chArray1))
-      {
-        char[] chArray2 = new char[1]{ '=' };
-        string[] strArray = str3.Split(chArray2);
-        if (strArray.Length == 2)
-        {
-          if (strArray[0].Split(' ')[0] == keyname)
-            subInstructionlist.Add(new Instruction()
+            List<Instruction> instructionList1 = new List<Instruction>();
+            List<Instruction> instructionList2 = new List<Instruction>();
+            string str1 = ContentManager.Get<String>("InstructionList");
+            ContentManager.Dispose("InstructionList"); //bookmark: instruction list when G is pressed for commandrod. Hijack and introduce my own. Format given in Notes. 
+            string str2 = str1.Replace("\n", "#");
+            char[] chArray1 = new char[1]{ '#' };
+            foreach (string str3 in str2.Split(chArray1))
             {
-              Name = strArray[0],
-              Details = strArray[1],
-              ExistSub = false
-            });
+                char[] chArray2 = new char[1]{ '=' };
+                string[] strArray = str3.Split(chArray2);
+                if (strArray.Length == 2)
+                {
+                    string str4 = strArray[0].Split(' ')[0];
+                    Instruction instruction = new Instruction()
+                    {
+                      Name = strArray[0],
+                      Details = strArray[1]
+                    };
+                    instruction.ExistSub = instruction.Name.Contains("value") || instruction.Name.Contains("keyword");
+                    if (!str4.Contains("?"))
+                      instructionList1.Add(instruction);
+                    else
+                      instructionList2.Add(instruction);
+                }
+            }
+            return !conditionSwitch ? instructionList1 : instructionList2;
         }
-      }
-      return subInstructionlist;
+
+        public static List<Instruction> GetSubInstructionlist(string keyname)
+        {
+            List<Instruction> subInstructionlist = new List<Instruction>();
+            string str1 = ContentManager.Get<string>("SubInstructionList"); //bookmark: Subintructionlist when clicked into instruction for command. Format in notes. keyword based. 
+            ContentManager.Dispose("SubInstructionList");
+            string str2 = str1.Replace("\n", "#");
+            char[] chArray1 = new char[1]{ '#' };
+            foreach (string str3 in str2.Split(chArray1))
+            {
+                char[] chArray2 = new char[1]{ '=' };
+                string[] strArray = str3.Split(chArray2);
+                if (strArray.Length == 2)
+                {
+                    if (strArray[0].Split(' ')[0] == keyname){
+                        subInstructionlist.Add(new Instruction()
+                        {
+                            Name = strArray[0],
+                            Details = strArray[1],
+                            ExistSub = false
+                        });
+                    }
+                }
+            }
+            return subInstructionlist;
+        }
     }
 
     public static Point3 Coordbodyhandle(Vector3 vector3)

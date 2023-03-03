@@ -2364,3 +2364,122 @@ Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\
 23:25:21.928 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 23:25:21.942 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 23:25:21.943 INFO: Saved settings
+00:24:26.314 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+00:24:26.325 INFO: GLES Vendor: ATI Technologies Inc.
+00:24:26.325 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+00:24:26.325 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+00:24:26.825 INFO: Survivalcraft starting up at 03/03/2023 00:24:26, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=357909MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=677MB, 64bit=True
+00:24:26.896 INFO: Loaded settings.
+00:24:26.915 INFO: Mods manager initialize success
+00:24:26.915 INFO: Loaded 0 dlls;0 dlls not loaded
+00:24:29.490 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:24:29.501 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:24:29.503 INFO: Saved settings
+00:25:23.545 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Bysnow, VisibilityRange=128, Resolution=High
+00:25:32.260 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Marblerose, VisibilityRange=128, Resolution=High
+00:26:32.174 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:26:32.184 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:26:32.184 INFO: Saved settings
+00:26:51.628 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:26:51.641 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:26:51.642 INFO: Saved settings
+00:33:01.689 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+00:33:01.699 INFO: GLES Vendor: ATI Technologies Inc.
+00:33:01.699 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+00:33:01.699 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+00:33:02.183 INFO: Survivalcraft starting up at 03/03/2023 00:33:02, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=357909MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=567MB, 64bit=True
+00:33:02.254 INFO: Loaded settings.
+00:33:02.283 INFO: Mods manager initialize success
+00:33:02.284 INFO: Loaded 0 dlls;0 dlls not loaded
+00:33:09.291 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Falconshore, VisibilityRange=128, Resolution=High
+00:40:39.551 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:40:39.561 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:40:39.563 INFO: Saved settings
+00:40:58.885 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:40:58.901 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+00:40:58.902 INFO: Saved settings
+09:11:28.280 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:11:28.319 INFO: GLES Vendor: ATI Technologies Inc.
+09:11:28.319 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:11:28.319 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+09:11:30.201 INFO: Survivalcraft starting up at 03/03/2023 09:11:29, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=356853MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-209MB, 64bit=True
+09:11:30.456 INFO: Loaded settings.
+09:11:30.635 INFO: Mods manager initialize success
+09:11:30.635 INFO: Loaded 0 dlls;0 dlls not loaded
+09:11:30.866 INFO: Downloading MOTD
+09:11:30.955 ERROR: Value cannot be null. (Parameter 'format')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ReadOnlySpan`1 args)
+   at System.String.Format(String format, Object arg0, Object arg1)
+   at Game.MotdManager.GetMotdUrl() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 169
+   at Game.MotdManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\MotdManager.cs:line 68
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 165
+09:11:31.039 ERROR: Child widget not present in container.
+   at Game.WidgetsList.Remove(Widget widget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\WidgetsList.cs:line 105
+   at Game.ScreensManager.UpdateAnimation() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 311
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 231
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+09:12:20.622 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:12:20.666 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:12:20.675 INFO: Saved settings
+09:13:58.575 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:13:58.610 INFO: GLES Vendor: ATI Technologies Inc.
+09:13:58.610 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:13:58.610 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+09:14:00.031 INFO: Survivalcraft starting up at 03/03/2023 09:13:59, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=356851MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=161MB, 64bit=True
+09:14:00.210 INFO: Loaded settings.
+09:14:00.252 INFO: Mods manager initialize success
+09:14:00.252 INFO: Loaded 0 dlls;0 dlls not loaded
+09:14:08.855 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Roseland, VisibilityRange=128, Resolution=High
+09:25:48.781 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:25:48.810 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:25:48.813 INFO: Saved settings
+09:26:01.101 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:26:01.133 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:26:01.134 INFO: Saved settings
+09:27:03.705 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:27:03.751 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:27:03.752 INFO: Saved settings
+09:28:18.180 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:28:18.212 INFO: GLES Vendor: ATI Technologies Inc.
+09:28:18.212 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:28:18.213 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+09:28:19.742 INFO: Survivalcraft starting up at 03/03/2023 09:28:19, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=356834MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-807MB, 64bit=True
+09:28:19.984 INFO: Loaded settings.
+09:28:20.039 INFO: Mods manager initialize success
+09:28:20.039 INFO: Loaded 0 dlls;0 dlls not loaded
+09:29:34.070 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Falland, VisibilityRange=128, Resolution=High
+09:32:08.344 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:08.377 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:08.381 INFO: Saved settings
+09:32:23.912 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:23.957 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:23.959 INFO: Saved settings
+09:32:55.922 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:55.953 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:32:55.954 INFO: Saved settings
+09:55:29.609 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:55:29.647 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:55:29.649 INFO: Saved settings
+09:55:36.995 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:55:37.037 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+09:55:37.038 INFO: Saved settings
+11:42:13.293 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+11:42:13.313 INFO: GLES Vendor: ATI Technologies Inc.
+11:42:13.314 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+11:42:13.314 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+11:42:14.050 INFO: Survivalcraft starting up at 03/03/2023 11:42:13, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=356278MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=581MB, 64bit=True
+11:42:14.165 INFO: Loaded settings.
+11:42:14.198 INFO: Mods manager initialize success
+11:42:14.198 INFO: Loaded 0 dlls;0 dlls not loaded
+11:42:22.615 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+11:42:22.643 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+11:42:22.652 INFO: Saved settings
+11:43:00.981 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Clearbarrow, VisibilityRange=128, Resolution=High
+12:01:05.238 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+12:01:05.252 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+12:01:05.253 INFO: Saved settings
+12:04:05.264 INFO: PerformanceManager Measurement: frames=25912, avgFrameTime=5ms, avgFrameCpuTime=0ms
+12:07:24.229 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+12:07:24.244 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
+12:07:24.245 INFO: Saved settings

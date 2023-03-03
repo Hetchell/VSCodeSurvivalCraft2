@@ -35,7 +35,7 @@
   <Setting Name="ScpboxAccessToken" Value="" />
   <Setting Name="MotdUseBackupUrl" Value="False" />
   <Setting Name="MotdUpdatePeriodHours" Value="12" />
-  <Setting Name="MotdLastUpdateTime" Value="638133764701008894" />
+  <Setting Name="MotdLastUpdateTime" Value="638134314908661192" />
   <Setting Name="MotdLastDownloadedData" Value="" />
   <Setting Name="UserId" Value="" />
   <Setting Name="LastLaunchedVersion" Value="2.2.40.0" />

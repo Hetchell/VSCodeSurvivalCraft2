@@ -4022,7 +4022,7 @@ label_9:
         this.m_lastMessageTime = new double?(this.SubsystemElectricity.SubsystemTime.GameTime);
       }
       Point3 point3 = new Point3(this.CellFaces[0].Point.X, this.CellFaces[0].Point.Y, this.CellFaces[0].Point.Z);
-      string str1 = string.Format(";\n发生错误的命令方块位置:({0},{1},{2})", (object) point3.X, (object) point3.Y, (object) point3.Z);
+      string str1 = string.Format(";\nCommandError At:({0},{1},{2})", (object) point3.X, (object) point3.Y, (object) point3.Z);
       if (!(type == "warn"))
       {
         if (!(type == "empty"))

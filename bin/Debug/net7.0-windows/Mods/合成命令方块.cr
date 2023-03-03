@@ -1,6 +1,6 @@
 <mod>
   <Recipes>
-   <Recipe Result="CommandBlock" ResultCount="1" RequiredHeatLevel="0" a="memorybank" b="counter" c="semiconductorblock" d="ironblock" e="diamondblock" Description="合成命令方块。注意:非创造模式只能使用帮助和传送功能">
+   <Recipe Result="CommandBlock" ResultCount="1" RequiredHeatLevel="0" a="memorybank" b="counter" c="semiconductorblock" d="ironblock" e="diamondblock" Description="Make command block. Note: Non-creative mode can only use 'help' and 'send' command.">
       "cdc"
       "bab"
       "cec"

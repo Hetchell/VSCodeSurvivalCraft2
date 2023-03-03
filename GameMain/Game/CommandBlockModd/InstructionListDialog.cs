@@ -76,7 +76,7 @@ namespace Game
           this.m_componentMiner.ComponentPlayer.ComponentGui.DisplaySmallMessage("已复制指令：" + instruction.Name, Color.Yellow, false, false);
         }
       });
-      foreach (object obj in Datahandle.GetInstructionlist(this.IsCondition))
+      foreach (object obj in Datahandle.InstructionHandler.GetInstructionlist(this.IsCondition))
         this.m_instructionlistWidget.AddItem(obj);
     }
 

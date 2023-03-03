@@ -83,7 +83,7 @@ namespace Game
           return;
         }
         this.m_instructionlistWidget.ClearItems();
-        foreach (object obj in Datahandle.GetSearchInstructionlist(this.m_textBox.Text))
+        foreach (object obj in Datahandle.InstructionHandler.GetSearchInstructionlist(this.m_textBox.Text))
           this.m_instructionlistWidget.AddItem(obj);
         this.m_componentMiner.ComponentPlayer.ComponentGui.DisplaySmallMessage("查找完成", Color.Yellow, false, false);
       }
