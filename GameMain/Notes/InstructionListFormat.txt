@@ -1,3 +1,4 @@
+<InstructionList>
 "debugmode b=Activate debugmode，b is true or false.
 message m=Put a message on screen.
 largemessage m m=Put a large message. First m will be large, the second m is small.
@@ -7,12 +8,12 @@ replace x1 y1 z1 to x2 y2 z2 i1 i2=Replace the blockID i1 to i2 within (x1, y1, 
 dig x y z=Dig a hole (x, y, z) in size.
 digs x1 y1 z1 to x2 y2 z2 i=Within (x, y, z) dig up blockID i. 
 addentity x y z n=Add an entity，n is the entityID.
-removenpc value=Kick player. Click for more information.
+removenpc value=Kick player with value. Click for more information.
 kill n=Kill entity，n is entityID.
-heal n v=heal entity, n is entityID.
-injure n v=hurt (n is entityID)
-catchfire value v=set block on fire. Click for more information.
-shapeshifter b=turn to Wolfman，b is true or false.
+heal n v=Heal entity, n is entityID.
+injure n v=Hurt (n is entityID)
+catchfire value v=Set block at value on fire. Click for more information.
+shapeshifter b=Turn to Wolfman，b is true or false.
 invulnerable b=Godmode enable. 
 adddrops x y z i c=Add drops of blockID i at (x, y, z)，c is amount.
 removedrops value=Kill all drops. Click for more information. 
@@ -38,57 +39,58 @@ lightning x y z=Summon lightning to (x, y, z).
 rain b=Enable rain or snow，b is true or false.
 temperature x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at temperature v. 
 humidity x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at humidity v
-copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 value=copy one region to another.
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 value=让选中区域的方块运动，向量(v1,v2,v3)控制方向与路程
-moveset keyword n value=运动方块设计玩法
-hammer x y z value=一键敲家具，t为敲击面，取1至4整数
-unhammer x y z s=以(x,y,z)为生成起始点还原家具大模型，s为家具序号
-replacedesign x1 y1 z1 to x2 y2 z2 i1 i2=替换区域内的家具搭建方块
-linkdesign value=将多个家具拼合为多态家具
-write m=将内容写入Survivalcraft2.2/Command目录的command.txt文件
-writeappend m=以文本追加的形式将内容写在command.txt文件后面
-read c=读取command.txt文件的第c行并显示在屏幕
-copefile f=将Command目录中指定的文件复制到存档目录
-getcell x1 y1 z1 to x2 y2 z2=获取一个区域的方块信息并写入Command目录下的cell.txt文件
-getid v=由方块完整值v获取id与特殊值
-getterrain x y z=获取地形相关信息并显示在屏幕
-getplayerstats=获取玩家当前属性的数据
-world f=切换世界，f为世界名
-worldtexture f=更换世界材质，f为存档或Command目录中的材质名
-audio f v=f为存档或Command目录下的音频文件名，v为音量，取0至15
-image x y z f value=在起始点(x,y,z)生成像素图，f为上述目录中的图片名
-pattern x y z f t v=在点(x,y,z)生成贴图，f同上为图片名，t取1到6整数，v为图片大小
-removepattern x1 y1 z1 to x2 y2 z2=移除区域内的光点贴图
-build x y z f=读取上述目录中名为f的方块文件，在起始点(x,y,z)生成建筑
-model n f=更换动物模型，n为实体名，f为上述目录pak文件中模型的路径名
-modeltexture n f=更换指定动物的材质，n为动物实体名，f为上述目录中的材质名
-modelsize n v=更改模型大小，v取10为原比例大小
-gamemode t=切换游戏模式，t取0到4整数
-changetime t=切换时间，t为1到4整数
-capturephoto=一键截图
-web w=打开网站，w为网址
-settings keyword value=更改游戏设置
-blockdata keyword i value=方块属性动态修改，i为方块id
-clothesdata keyword s value=衣物属性动态修改，s为衣物序号
-creaturedata keyword n value=生物属性动态修改，n为动物名
-exit=退出游戏
+copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 value=Copy one region to another.
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 value=Move the region with velocity(v1,v2,v3) towards. 
+moveset keyword n value=Move set. Click for more information. 
+hammer x y z value=Hammer a surface, t is the side，t = [1, 4]. Click for more information. 
+unhammer x y z s=Modify furniture at (x, y, z)，s is furniture ID
+replacedesign x1 y1 z1 to x2 y2 z2 i1 i2=Replace design from i1 to i2. 
+linkdesign value=External design link. Click for more information.
+write m=Rewrite m to Survivalcraft2.2/Command directory's command.txt 
+writeappend m=Append m to command.txt 
+read c=Read cth line of command.txt
+copefile f=Copy file contents from file f. 
+getcell x1 y1 z1 to x2 y2 z2=Get a region's block contents and write to a cell.txt file. 
+getid v=Get the full information of block ID v. 
+getterrain x y z=Get terrain statistics. 
+getplayerstats=Get playerstats. 
+world f=Switch to another world，f is the world name. 
+worldtexture f=Change world texture pack，f using Command folder texture pack name. 
+audio f v=f is audio file name in Command folder，v is volume = [0, 15].
+image x y z f value=At (x, y, z) put the image，f is the image name. Click for more information. 
+pattern x y z f t v=At (x, y, z) put the image，f is image name，t = [1, 6] control image orientation，v is image size.
+removepattern x1 y1 z1 to x2 y2 z2=Get rid of image. 
+build x y z f=Read the block file in Command folder，build from (x, y, z). 
+model n f=Modelswap for the entity，n is the entityID，f is the .pak file pathname. 
+modeltexture n f=ModelTextureswap for the entity，n is entityID，f is the pathname for texture file.
+modelsize n v=Adjust model n size，v = [0, 10].
+gamemode t=Change gamemode, t = [0, 4].
+changetime t=Change time, t = [1, 4].
+capturephoto=ScreenCapture.
+web w=Open webpage, w is webpage.
+settings keyword value=Settings. Click for more information. 
+blockdata keyword i value=Change blockdata. i is blockID. Click for more information.
+clothesdata keyword s value=Change clothesdata. s is clothingID. Click for more information.
+creaturedata keyword n value=Change creaturedata. n is entityID. Click for more information.
+exit=Exit the game.
 
-place? x y z i=方块存在判定
-places? x1 y1 z1 to x2 y2 z2 i=区域内方块存在判定
-dig? i=挖掘方块判定
-blockchange? x y z=方块变化判定
-dropsexist? x1 y1 z1 to x2 y2 z2 i=区域内掉落物存在判定
-entityexist? x1 y1 z1 to x2 y2 z2 n=区域内生物实体存在判定
-itemsexist? value=主角背包物品存在判定
-chestitemsexist? x y z value=箱子物品存在判定
-handitemsexist? i value=手持方块判定
-playerstats? keyword v1 to v2=玩家属性判定
-playeraction? keyword=玩家动作判定
-playerinput? keyword=玩家输入判定
-playerheight? y1 to y2=玩家位置高度判定
-eyesangle? x1 to y1 and x2 to y2=玩家视角判定
-widget? keyword=界面判定
-gamemode? t=游戏模式判定，t取0至4整数"
+place? x y z i=Check if block placed in (x, y, z) is i. Return boolean result. 
+places? x1 y1 z1 to x2 y2 z2 i=Check if block(s) placed in region is i. Return boolean result. 
+dig? i=Check if block i is dug by player. Return boolean result. 
+blockchange? x y z=Check if block changed at (x, y , z). Return boolean result. 
+dropsexist? x1 y1 z1 to x2 y2 z2 i=Check if block drop i exists within a region. Return boolean result. 
+entityexist? x1 y1 z1 to x2 y2 z2 n=Check if entity n exists within a region. Return boolean result. 
+itemsexist? value=Check if item = value. Return boolean result. Click for more information. 
+chestitemsexist? x y z value=Check if chest at (x, y, z) contains value. Return boolean result. Click for more information. 
+handitemsexist? i value=Check if handitem[i] = value. Return boolean result. Click for more information. 
+playerstats? keyword v1 to v2=Check player statistics. Return boolean result. Click for more information. 
+playeraction? keyword=Check player action. Return boolean result. Click for more information. 
+playerinput? keyword=Check playerinput now. Return boolean result. Click for more information. 
+playerheight? y1 to y2=Check player height level now, x : y1 <= x <= y2. Return boolean result.
+eyesangle? x1 to y1 and x2 to y2=Check eye angle range (hori, vert) of player. Return boolean result. 
+widget? keyword=Check if widget = keyword, return boolean result. Click for more information. 
+gamemode? t=Check if gamemode = t, return boolean result. t = [1, 4]. 
+<Sep/>
 <SubinstructionList: When you click on some instructions> 
 places cube x1 y1 z1 to x2 y2 z2 i=两点确定区域，生成长方体
 places line x1 y1 z1 to x2 y2 z2 i=两点连线

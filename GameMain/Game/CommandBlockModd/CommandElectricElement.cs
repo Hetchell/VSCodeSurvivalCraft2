@@ -2625,9 +2625,9 @@ namespace Game
             return this.ErrorTips(componentPlayer, condition, words[0], "limit");
           string lower1 = words[1].ToLower();
           string word = words[2];
-          string str3 = (string) null;
-          string name = (string) null;
-          Model model = (Model) null;
+          string str3 = "";
+          string name = "";
+          Model model = new Model();
           bool flag12 = true;
           if (word.Contains("/"))
           {
