@@ -1,0 +1,132 @@
+﻿<Setting Name=
+"MotdLastDownloadedData" 
+Value=
+"
+<!--MessageOfTheDayNaaa--> 
+<Motd UpdatePeriodHours="12"> 
+<Line Time="10">
+<StackPanelWidget 
+xmlns="runtime-namespace:Game" 
+HorizontalAlignment="Center" 
+Direction="Vertical" 
+VerticalAlignment="Center"> 
+<StackPanelWidget 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center">  
+<LabelWidget 
+Text="<Message 0, 0> " 
+Color="255, 192, 64" 
+VerticalAlignment="Center" /> 
+</StackPanelWidget> 
+<LabelWidget 
+Text="<Message 0, 1> " 
+Color="44, 0, 255" 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center" /> 
+<StackPanelWidget 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center"> 
+<LabelWidget 
+Text="<Message 0, 2> " 
+Color="0, 255, 0" 
+VerticalAlignment="Center" /> 
+</StackPanelWidget> 
+</StackPanelWidget> 
+</Line> 
+<Line 
+Time="8"> 
+<StackPanelWidget 
+xmlns="runtime-namespace:Game" 
+Direction="Vertical" 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center"> 
+<LabelWidget 
+Text="<Message 1, 0> " 
+Color="64, 181, 200" 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center" /> 
+<LabelWidget 
+Text="<Message 1, 1> "  
+Color="204, 45, 108" 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center" /> 
+<LabelWidget 
+Text="<Message 1, 2> " 
+Color="34, 34, 200" 
+HorizontalAlignment="Center" 
+VerticalAlignment="Center" /> 
+</StackPanelWidget> 
+</Line> 
+<Line 
+Time="1"> 
+<CanvasWidget 
+xmlns="runtime-namespace:Game" /> 
+</Line> 
+</Motd> 
+<!--弹窗公告--> 
+<Motd2> 
+<!--如何更新一则面向中国玩家的公告： 
+Title写小标题，
+EnTitle填null，
+在Content里写公告内容，
+最后改发布时间Time，
+时间可以自定。--> 
+<Bulletin 
+Title="社区账号封禁问题" 
+EnTitle="null" 
+Time="2023/2/26-11:45:00"> 
+<Content> 对于后台有违规记录的用户，一般情况都不解封，请各位珍惜自己的社区账号。 多看公告，多看通知，别到时说没人提醒你。我们很忙，不可能一个个去私聊，更不可能花费大量个人时间陪你东拉西扯。 违规行为包括但不限于以下这些： 
+1.在社区倒垃圾，投毒，捣乱。（你要是分不清什么是垃圾，也不用在这了） 
+2.在公开服务器开挂影响他人体验游戏。（开挂也正常，但是你不能影响他人游玩，因为目前没有较好的分辨方式，所以开挂一律当违规） 解封途径： 前面提到，一般不解封。但是如果你是被误封的，请带上证据，并向社区管理详细解释。但是呢，有时各说一词，真假难辨，这时我们是不处理的，请规范自己的行为，不要给别人举报的机会。 如果是真有违规，那就别来烦社区管理了，我们没时间陪你东拉西扯。网络世界这么大，你大可到其他社区干自己想做的事，那样我们管不到你，也没权管你。如果你硬是要捣乱，我们也不介意把你的光荣事迹挂出来，让大伙看看，让大伙帮你评评理。 当然，我们也不是走程序的机器人，带上你的诚意，特殊情况特殊处理。 
+</Content> 
+<!--以下可以不用管了，改上面的就行--> 
+<EnContent> 
+</EnContent> 
+<!-- 说明： 
+此文本用的xml语言，不要在文本里面使用尖括号，斜杠也不要乱用。如果怕出错，可以先把此文本复制备份。 EnTitle是英文标题，EnContent是英文内容，当游戏语言切换为英文时会调用EnTitle与EnContent。 弹框公告浏览80%的内容才会出现关闭按钮，关闭以后不会再弹出。 直到更改这里的发布时间Time，游戏会再次弹出公告。也就是说公告是否弹出取决于发布时间是否发生改变。 当切换语言后再次打开游戏，会重新弹出公告。 如果把标题Title或EnTitle改为null值，则不管发布时间有没有变化，有没有切换语言，都不会弹出公告。 比如Title不为null，EnTitle为null，游戏语言为中文时会弹出公告，为英文则不会弹出公告。 不懂可以改改试试，试后记得恢复原状。 --> 
+</Bulletin> 
+</Motd2> 
+<!--过滤模组--> 
+<Motd3> 
+<FilterMod 
+Name="RYSH 有点真实の生存" 
+PackageName="rysh" 
+Version="6.2b;6.2a;6.2;6.1b;6.1a;6.1" 
+FilterAPIVersion="1.44" > 不太兼容当前API版本，游玩过程可能出现问题:玩家无法下蹲等。 解决方案：可到社区下载适配2.3的新版RYSHmod。 
+</FilterMod> 
+<FilterMod 
+Name="RYSH 有点真实の生存" 
+PackageName="rysh" 
+Version="6.2b;6.2a;6.2;6.1b;6.1a;6.1" 
+FilterAPIVersion="1.43" > 不太兼容当前API版本，游玩过程可能出现问题:玩家无法下蹲等。 解决方案：可到社区更新插件版API1.44，并下载适配2.3的新版RYSHmod。 
+</FilterMod> 
+<FilterMod 
+Name="跳放方块" 
+PackageName="bee.JumpToPlace" 
+Version="1.0" 
+FilterAPIVersion="1.43" > 不兼容当前API版本，游玩过程可能出现无法放置方块的问题。 解决方案：到社区更新插件版API1.44，并下载跳放方块mod新版本1.1。 
+</FilterMod> 
+<FilterMod 
+Name="跳放方块" 
+PackageName="bee.JumpToPlace" 
+Version="1.0" 
+FilterAPIVersion="1.44" > 不兼容当前API版本，游玩过程可能出现无法放置方块的问题。 解决方案：到社区下载跳放方块mod新版本1.1。 
+</FilterMod> 
+<FilterMod 
+Name="扩展" 
+PackageName="SCPlus" 
+Version="3~5" 
+FilterAPIVersion="1.43" > 不太兼容当前API版本，无法使用扩展物品-地图，如若游玩请慎用该物品。 解决方案：可到社区更新插件版API1.44。 
+</FilterMod> 
+<FilterMod 
+Name="SF光影" 
+PackageName="sc.shader.sf" 
+Version="1.0~1.8" 
+FilterAPIVersion="1.43" > 不兼容当前API版本，可能发生闪退或白屏。 解决方案：可到社区更新插件版API1.44。 
+</FilterMod> 
+</Motd3> 
+<Motd4> 
+<Guns> 
+</Guns> 
+</Motd4> 
+"/>

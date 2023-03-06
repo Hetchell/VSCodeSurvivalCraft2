@@ -2495,3 +2495,100 @@ Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\
 14:19:36.425 WARNING: Setting "MotdUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 14:19:36.460 WARNING: Setting "MotdBackupUpdateUrl" could not be saved. Reason: Object reference not set to an instance of an object.
 14:19:36.463 INFO: Saved settings
+20:15:34.820 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:15:34.832 INFO: GLES Vendor: ATI Technologies Inc.
+20:15:34.832 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:15:34.833 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:15:35.983 INFO: Survivalcraft starting up at 03/05/2023 20:15:35, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=351889MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=31MB, 64bit=True
+20:15:36.072 INFO: Loaded settings.
+20:15:36.150 INFO: Mods manager initialize success
+20:15:36.150 INFO: Loaded 0 dlls;0 dlls not loaded
+20:15:44.294 INFO: Saved settings
+20:26:15.653 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:26:15.664 INFO: GLES Vendor: ATI Technologies Inc.
+20:26:15.664 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:26:15.664 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:26:16.698 INFO: Survivalcraft starting up at 03/05/2023 20:26:16, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=351897MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=673MB, 64bit=True
+20:26:16.777 ERROR: Loading settings failed.
+'<', hexadecimal value 0x3C, is an invalid attribute character. Line 41, position 49.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ParseAttributeValueSlow(Int32 curPos, Char quoteChar, NodeData attr)
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.Load(XmlReader reader, LoadOptions options)
+   at XmlUtilities.XmlUtils.LoadXmlFromTextReader(TextReader textReader, Boolean throwOnError)
+   at XmlUtilities.XmlUtils.LoadXmlFromStream(Stream stream, Encoding encoding, Boolean throwOnError)
+   at Game.SettingsManager.LoadSettings() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\SettingsManager.cs:line 505
+20:26:16.799 INFO: Mods manager initialize success
+20:26:16.799 INFO: Loaded 0 dlls;0 dlls not loaded
+20:26:42.202 INFO: Saved settings
+16:03:06.585 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+16:03:06.597 INFO: GLES Vendor: ATI Technologies Inc.
+16:03:06.597 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+16:03:06.597 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+16:03:07.120 INFO: Survivalcraft starting up at 03/06/2023 16:03:06, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350185MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=372MB, 64bit=True
+16:03:07.212 INFO: Loaded settings.
+16:03:07.232 INFO: Mods manager initialize success
+16:03:07.232 INFO: Loaded 0 dlls;0 dlls not loaded
+16:03:13.134 INFO: Saved settings
+16:16:20.925 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+16:16:20.945 INFO: GLES Vendor: ATI Technologies Inc.
+16:16:20.945 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+16:16:20.945 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+16:16:21.792 INFO: Survivalcraft starting up at 03/06/2023 16:16:21, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350205MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1453MB, 64bit=True
+16:16:21.951 INFO: Loaded settings.
+16:16:21.981 INFO: Mods manager initialize success
+16:16:21.981 INFO: Loaded 0 dlls;0 dlls not loaded
+16:16:25.046 INFO: Saved settings
+16:16:37.156 INFO: Saved settings
+16:18:15.642 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+16:18:15.657 INFO: GLES Vendor: ATI Technologies Inc.
+16:18:15.657 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+16:18:15.657 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+16:18:16.650 INFO: Survivalcraft starting up at 03/06/2023 16:18:16, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350206MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1920MB, 64bit=True
+16:18:16.777 INFO: Loaded settings.
+16:18:16.810 INFO: Mods manager initialize success
+16:18:16.810 INFO: Loaded 0 dlls;0 dlls not loaded
+16:18:16.905 INFO: Downloading MOTD
+16:18:18.316 INFO: Downloaded MOTD
+16:18:19.984 INFO: Saved settings
+16:44:56.935 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+16:44:56.952 INFO: GLES Vendor: ATI Technologies Inc.
+16:44:56.953 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+16:44:56.953 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+16:44:58.588 INFO: Survivalcraft starting up at 03/06/2023 16:44:58, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350197MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=960MB, 64bit=True
+16:44:58.717 INFO: Loaded settings.
+16:44:58.745 INFO: Mods manager initialize success
+16:44:58.745 INFO: Loaded 0 dlls;0 dlls not loaded
+16:45:11.802 INFO: Saved settings
+18:14:10.060 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:14:10.078 INFO: GLES Vendor: ATI Technologies Inc.
+18:14:10.078 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:14:10.078 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+18:14:11.583 INFO: Survivalcraft starting up at 03/06/2023 18:14:11, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350043MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=720MB, 64bit=True
+18:14:11.674 INFO: Loaded settings.
+18:14:11.695 INFO: Mods manager initialize success
+18:14:11.695 INFO: Loaded 0 dlls;0 dlls not loaded
+18:14:27.378 INFO: Saved settings
+23:26:28.357 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+23:26:28.373 INFO: GLES Vendor: ATI Technologies Inc.
+23:26:28.374 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+23:26:28.374 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+23:26:30.228 INFO: Survivalcraft starting up at 03/06/2023 23:26:29, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=331224MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1033MB, 64bit=True
+23:26:30.350 INFO: Loaded settings.
+23:26:30.456 INFO: Mods manager initialize success
+23:26:30.456 INFO: Loaded 0 dlls;0 dlls not loaded
+23:26:46.871 INFO: Saved settings
+23:45:31.131 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+23:45:31.146 INFO: GLES Vendor: ATI Technologies Inc.
+23:45:31.146 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+23:45:31.146 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+23:45:32.877 INFO: Survivalcraft starting up at 03/06/2023 23:45:32, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=331222MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-785MB, 64bit=True
+23:45:33.034 INFO: Loaded settings.
+23:45:33.060 INFO: Mods manager initialize success
+23:45:33.060 INFO: Loaded 0 dlls;0 dlls not loaded
+23:45:59.123 INFO: Saved settings

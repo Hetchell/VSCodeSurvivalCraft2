@@ -4,6 +4,8 @@ using System.Diagnostics;
 using ModificationHolder;
 using Engine;
 using System.Threading.Tasks;
+using System.IO;
+using Clr = Engine.Color;
 
 namespace Survivalcraft.Game.ModificationHolder
 {
@@ -24,6 +26,14 @@ namespace Survivalcraft.Game.ModificationHolder
         private static int repeat = 0;
         private static int repeatCom = 0;
         private static string somestr;
+        private static (Clr, string)[] coloredsentences = new (Clr, string)[]{
+            (Clr.Red, "This is SurvivalCraftII-Decompiled"),
+			(Clr.White, "Decompile with Dotpeek and Dynspy"),
+			(Clr.Green, "Painstaking torture and refit."),
+			(Clr.DarkYellow, "This is called MessageOfTheDay."),
+			(Clr.Pink, "Ask developer why they name it this way."),
+            (Clr.Cyan, "Finally I can make my own splash screen. ")
+        };
 
         public static void keyboardActions(WidgetInput input)
         {
@@ -99,6 +109,24 @@ namespace Survivalcraft.Game.ModificationHolder
             //         }
             //     }
             // });
+        }
+
+        public static string getMessageOfTheDayXMLString(string path, string stashpath){
+            string[] contents = File.ReadAllLines(path);
+            //string[] stashed = File.ReadAllLines(stashpath);
+            //Update(stashed, contents);
+            int[] Lines = new int[] { 17, 22, 30, 44, 49, 54 };
+            for(int i = 0; i < coloredsentences.Length; i++){
+                var container = coloredsentences[i];
+                contents[Lines[i] - 1] = string.Concat("Text=", "\"", container.Item2, "\"", " ");
+                string colour = container.Item1.R + "," + container.Item1.G + "," + container.Item1.G;
+			    contents[Lines[i]] = string.Concat("Color=", "\"", colour, "\"", " ");
+            }
+			return string.Concat(contents);
+        }
+
+        public static void Update(string[] filecontents, string[] message){
+            ;
         }
 
         public static class NoiseConstants

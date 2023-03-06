@@ -1,4 +1,4 @@
-<InstructionList>
+<InstructionList></Subject to changes!^_^>
 "debugmode b=Activate debugmode，b is true or false.
 message m=Put a message on screen.
 largemessage m m=Put a large message. First m will be large, the second m is small.
@@ -8,7 +8,7 @@ replace x1 y1 z1 to x2 y2 z2 i1 i2=Replace the blockID i1 to i2 within (x1, y1, 
 dig x y z=Dig a hole (x, y, z) in size.
 digs x1 y1 z1 to x2 y2 z2 i=Within (x, y, z) dig up blockID i. 
 addentity x y z n=Add an entity，n is the entityID.
-removenpc value=Kick player with value. Click for more information.
+removenpc value=Get rid of non-alive entity with value. Click for more information.
 kill n=Kill entity，n is entityID.
 heal n v=Heal entity, n is entityID.
 injure n v=Hurt (n is entityID)
@@ -40,7 +40,7 @@ rain b=Enable rain or snow，b is true or false.
 temperature x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at temperature v. 
 humidity x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at humidity v
 copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 value=Copy one region to another.
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 value=Move the region with velocity(v1,v2,v3) towards. 
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 value=Move the region with vector(v1,v2,v3) towards. 
 moveset keyword n value=Move set. Click for more information. 
 hammer x y z value=Hammer a surface, t is the side，t = [1, 4]. Click for more information. 
 unhammer x y z s=Modify furniture at (x, y, z)，s is furniture ID
@@ -92,64 +92,64 @@ widget? keyword=Check if widget = keyword, return boolean result. Click for more
 gamemode? t=Check if gamemode = t, return boolean result. t = [1, 4]. 
 <Sep/>
 <SubinstructionList: When you click on some instructions> 
-places cube x1 y1 z1 to x2 y2 z2 i=两点确定区域，生成长方体
-places line x1 y1 z1 to x2 y2 z2 i=两点连线
-places sphere x y z r i=生成球，r为半径
-places column x y z h r t i=生成圆柱，t表示坐标方向，取1至3整数
-places cone x y z h r t i=生成圆锥，h为高，取负值反向生成
-copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4=选择两个长宽高相等的长方体区域并进行复制粘贴
-copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 /airapply=带空气方块复制粘贴
-copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 /shear=剪切复制，将区域1移动到区域2
-removenpc=移除视距内所有非玩家生物
-removenpc Boat=移除实体船
-removenpc n=移除指定的生物，n为动物名
-removedrops=移除所有掉落物
-removedrops i=移除指定的掉落物
-removeitems=移除玩家背包的所有物品
-removeitems s=移除玩家背包中指定格的物品
-removeitems s c=移除玩家背包中指定数量的物品，c为数量
-removechestitems x y z=移除箱子中的所有物品
-removechestitems x y z s=移除箱子中指定格的物品
-removechestitems x y z s c=移除箱子中指定数量的物品，c为数量
-catchfire n v=使实体着火，v为着火的持续时间
-catchfire x y z v=使方块着火，v为着火的扩散强度
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3=以默认方式让方块运动
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r=以穿透方式让方块运动，r为速率
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r /limit=运动方块碰到其他方块时会停止
-moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r /dig=运动方块碰到其他方块时会撞掉
-moveset add n x1 y1 z1 to x2 y2 z2=添加标签名为n的运动方块设计，两点选中的区域为设计主体
-moveset move n v1,v2,v3 r=让标签名为n的运动方块设计移动
-moveset stop n=让标签名为n的运动方块设计停下
-moveset remove n=移除标签名为n的运动方块设计
-hammer x y z=以默认方式一键敲家具
-hammer x y z t=选择不同方向敲家具，t为敲击面，取1至4整数
-hammer x y z t /edit=以打开设计界面的方式敲家具
-linkdesign s1,s2,s3...=将多个家具拼合为普通多态家具
-linkdesign s1,s2,s3... /wire=将多个家具拼合为联动多态家具
-image x y z f=在XOY平面生成像素图，默认方式
-image x y z f /tile=在XOZ平面生成像素图，平铺方式
-image x y z f /rotate=在YOZ平面生成像素图，侧转方式
-widget clothing=打开玩家衣服界面
-widget stats=打开玩家数据界面
-widget inventory=打开玩家背包界面
-widget none=关闭所有界面
-settings visibility v=设置视距大小
-settings brightness v=设置黑暗区域亮度
-settings skyrendering t=切换天空渲染模式，t取1至3整数
-settings soundvolume v=设置游戏音量
-settings musicvolume v=设置背景音乐音量
-settings movesensitivity v=设置移动灵敏度
-settings looksensitivity v=设置观看灵敏度
-playerstats level v=设置玩家等级
-playerstats health v=设置玩家生命值
-playerstats hunger v=设置玩家饥饿度
-playerstats endurance v=设置玩家耐力值
-playerstats fatigue v=设置玩家疲劳度
-playerstats attack v=设置玩家攻击力
-playerstats defense v=设置玩家防御值
-playerstats speed v=设置玩家速度
-playerstats temperature v=设置玩家体温
-playerstats wetness v=设置玩家体湿
+places cube x1 y1 z1 to x2 y2 z2 i=Place a cube down in region made with blockID i. 
+places line x1 y1 z1 to x2 y2 z2 i=Place a line of blockID i between points. 
+places sphere x y z r i=Put a sphere of blockID i. r is radius. 
+places column x y z h r t i=Put a cylinder of height h and radius r，t is direction(x, y or z)=[1, 3]. 
+places cone x y z h r t i=Put a cone，h is height，t is direction(x, y, z)=[1, 3]. 
+copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4=Copy from one region to another.
+copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 /airapply=Copy content from one region to another and convert to air.
+copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 /shear=Shear content from one region to another.
+removenpc=Get rid of non-alive entity.
+removenpc Boat=Get rid of all boats. 
+removenpc n=Get rid of all animals with name n. 
+removedrops=Get rid of all drops. 
+removedrops i=Get rid of all drops of ID i. 
+removeitems=Get rid of all inventory items. Clear inventory. 
+removeitems s=Get rid of inventory items is s. 
+removeitems s c=Get rid of inventory items is s, amount is c. 
+removechestitems x y z=Get rid of everything in the chest at (x, y, z).
+removechestitems x y z s=Get rid of item s in the chest at (x, y, z).
+removechestitems x y z s c=Get rid of item s in the chest at (x, y, z), c is the amount. 
+catchfire n v=Catch fire to a entity of ID n，v is how long the effect lasts. 
+catchfire x y z v=Catch fire to location (x, y, z) for periodako of v. 
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3=Move blocks in region with vector components V(v1, v2, v3). 
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r=Move blocks in region with vector，r is rate of movement.
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r /limit=Move blocks in region with vector, r is rate of movement. Stop upon collision with block. 
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 r /dig=Move blocks in region with vector, r is rate of movement. Dig through collision with block.
+moveset add n x1 y1 z1 to x2 y2 z2=Choose a region, and add it to routine as movingset label n. 
+moveset move n v1,v2,v3 r=Move the labelled moveset n with vector v and speed r. 
+moveset stop n=Stop labelled moveset n from moving. 
+moveset remove n=Delete moveset n from memory. 
+hammer x y z=Default hammer direction to furniture at (x, y, z). 
+hammer x y z t=Hammer furniture at (x, y, z) with direction t = [1, 4]. 
+hammer x y z t /edit=Hammer furniture at (x, y, z) with direction t = [1, 4], open edit menu. 
+linkdesign s1,s2,s3...=Combine different furnitures s...n. 
+linkdesign s1,s2,s3... /wire=将多个家具拼合为联动多态家具 [Not implemented]. 
+image x y z f=At XOY plane put the image. f is image file path. 
+image x y z f /tile=At XOZ plane put the image，in tile form. f is image file path. 
+image x y z f /rotate=At YOZ plane put the image，turned sideways. 
+widget clothing=Open player clothing menu. 
+widget stats=Open player statistics screen. 
+widget inventory=Open player inventory. 
+widget none=Close all widgets and windows. 
+settings visibility v=Set how far player can see, v is visible range. Init v is 128. 
+settings brightness v=Set brightness level. v = [0, 10] eff. 
+settings skyrendering t=Set sky render mode, t = [1, 3]. 
+settings soundvolume v=Set sound effect volume, v = [0, 10] eff.
+settings musicvolume v=Set music volume, v = [0, 10] eff.  
+settings movesensitivity v=Set move sensitivity, v = [0, 10] eff. 
+settings looksensitivity v=Set look sensitivity, v = [0, 10] eff.
+playerstats level v=Set player level v. 
+playerstats health v=Set player health level v. 
+playerstats hunger v=Set player hunger level v. 
+playerstats endurance v=Set player endurance level v. 
+playerstats fatigue v=Set player fatigue level v. 
+playerstats attack v=Set player attack strength v. 
+playerstats defense v=Set player defense level v. 
+playerstats speed v=Set player speed v. 
+playerstats temperature v=Set player body temperature v. 
+playerstats wetness v=Set player wetness v. 
 playeraction jump v=玩家跳跃控制
 playeraction fly b=创造模式控制玩家飞行状态，b取true或false
 playeraction dig b=创造模式设置玩家是否可挖掘方块，b取true或false

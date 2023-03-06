@@ -1,1 +1,2 @@
-﻿Notes regarding ModifierHolderOuterClass, in particular to TerrainGenerator provider. 
+﻿Notes regarding ModifierHolderTerrainGen, in particular to TerrainGenerator provider. 
+1. Open-order functions work properly now. 
