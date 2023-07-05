@@ -62,6 +62,8 @@ namespace Game
 				{
 					projectile.ToRemove = true;
 					this.ExplodeFireworks(projectile.Position, data);
+					this.m_subsystemExplosions.AddExplosion((int)projectile.Position.X, (int)projectile.Position.Y, (int)projectile.Position.Z,
+					300, true, true);
 				}
 			});
 		}
@@ -84,6 +86,7 @@ namespace Game
 			this.m_subsystemTime = base.Project.FindSubsystem<SubsystemTime>(true);
 			this.m_subsystemSky = base.Project.FindSubsystem<SubsystemSky>(true);
 			this.m_subsystemPlayers = base.Project.FindSubsystem<SubsystemPlayers>(true);
+			this.m_subsystemExplosions = base.Project.FindSubsystem<SubsystemExplosions>(true);
 		}
 
 		// Token: 0x0600087E RID: 2174 RVA: 0x00039E0C File Offset: 0x0003800C
@@ -157,9 +160,10 @@ namespace Game
 
 		// Token: 0x04000485 RID: 1157
 		public SubsystemPlayers m_subsystemPlayers;
+        private SubsystemExplosions m_subsystemExplosions;
 
-		// Token: 0x04000486 RID: 1158
-		public Game.Random m_random = new Game.Random();
+        // Token: 0x04000486 RID: 1158
+        public Game.Random m_random = new Game.Random();
 
 		// Token: 0x04000487 RID: 1159
 		public float m_newYearCelebrationTimeRemaining;

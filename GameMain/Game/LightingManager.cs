@@ -1,5 +1,6 @@
 ﻿using System;
 using Engine;
+using Survivalcraft.Game.ModificationHolder;
 
 namespace Game
 {
@@ -18,6 +19,8 @@ namespace Game
 			};
 			LightingManager.CalculateLightingTables();
 		}
+
+		//public static bool night_vision = false;
 
 		// Token: 0x0600138B RID: 5003 RVA: 0x00097ACB File Offset: 0x00095CCB
 		public static float CalculateLighting(Vector3 normal)
@@ -77,14 +80,19 @@ namespace Game
 			float x = MathUtils.Lerp(0f, 0.1f, SettingsManager.Brightness);
 			for (int i = 0; i < 16; i++)
 			{
-				LightingManager.LightIntensityByLightValue[i] = MathUtils.Saturate(MathUtils.Lerp(x, 1f, MathUtils.Pow((float)i / 15f, 1.25f)));
+				float f = MathUtils.Saturate(MathUtils.Lerp(x, 1f, MathUtils.Pow((float)i / 15f, 1.25f)));
+				if(ModificationsHolder.night_vision) f = 1.0f;
+				LightingManager.LightIntensityByLightValue[i] = f;
+				
 			}
 			for (int j = 0; j < 6; j++)
 			{
 				float num = LightingManager.CalculateLighting(CellFace.FaceToVector3(j));
 				for (int k = 0; k < 16; k++)
 				{
-					LightingManager.LightIntensityByLightValueAndFace[k + j * 16] = LightingManager.LightIntensityByLightValue[k] * num;
+					float f = LightingManager.LightIntensityByLightValue[k];
+					if(ModificationsHolder.night_vision) f = 1.0f;
+					LightingManager.LightIntensityByLightValueAndFace[k + j * 16] = f * num;
 				}
 			}
 		}

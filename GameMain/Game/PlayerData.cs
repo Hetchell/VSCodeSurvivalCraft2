@@ -467,7 +467,7 @@ namespace Game
 				}
 			}
 			float num5 = (float)(this.m_subsystemTerrain.Terrain.CalculateTopmostCellHeight(Terrain.ToCell(zero.X), Terrain.ToCell(zero.Y)) + 1);
-			if(ModificationsHolder.allowFixedSpawn){
+			if(ModificationsHolder.allowFixedSpawnPoint){
 				return ModificationsHolder.spawnfixed;
 			}
 			// return new Vector3(zero.X + 0.5f, num5 + 0.01f, zero.Y + 0.5f);
@@ -497,7 +497,7 @@ namespace Game
 					}
 				}
 			}
-			if(ModificationsHolder.allowFixedSpawn){
+			if(ModificationsHolder.allowFixedSpawnPoint){
 				return ModificationsHolder.spawnfixed;
 			}
 			return new Vector3(zero.X + 0.5f, zero.Y + 0.01f, zero.Z + 0.5f);

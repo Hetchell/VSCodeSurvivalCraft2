@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Engine;
 using GameEntitySystem;
+using Survivalcraft.Game.ModificationHolder;
 using TemplatesDatabase;
 using Color = Engine.Color;
 using Rectangle = Engine.Rectangle;
@@ -20,9 +22,10 @@ namespace Game
 			}
 		}
 
+		public static int blockReplacementID = Terrain.MakeBlockValue(BlocksManager.getID(ModificationsHolder.explosionRep));
+
 		// Token: 0x0600083F RID: 2111 RVA: 0x0003667C File Offset: 0x0003487C
-		public bool TryExplodeBlock(int x, int y, int z, int value)
-		{
+		public bool TryExplodeBlock(int x, int y, int z, int value) {
 			int num = Terrain.ExtractContents(value);
 			Block block = BlocksManager.Blocks[num];
 			float explosionPressure = block.GetExplosionPressure(value);
@@ -190,7 +193,7 @@ namespace Game
 			}
 			int cellValue = this.m_subsystemTerrain.Terrain.GetCellValue(x, y, z);
 			int num = Terrain.ExtractContents(cellValue);
-			if (num != 0)
+			if (num != 0 || ModificationsHolder.ableExplodeAir)
 			{
 				int num2 = (int)(MathUtils.Hash((uint)(x + 913 * y + 217546 * z)) % 100U);
 				float num3 = MathUtils.Lerp(1f, 2f, (float)num2 / 100f);
@@ -204,7 +207,7 @@ namespace Game
 				float num6 = num4 / num5;
 				if (num6 > 1f)
 				{
-					int newValue = Terrain.MakeBlockValue(0);
+					int newValue = blockReplacementID;
 					this.m_subsystemTerrain.DestroyCell(0, x, y, z, newValue, true, true);
 					bool flag = false;
 					float probability = (num6 > 5f) ? 0.95f : 0.75f;
@@ -249,21 +252,23 @@ namespace Game
 										vector *= this.m_random.Float(0.5f, 1f);
 										vector += this.m_random.Vector3(0.2f * vector.Length());
 									}
-									float num10 = flag2 ? 0f : MathUtils.Lerp(1f, 0f, (float)this.m_projectilesCount / 20f);
-									Projectile projectile = this.m_subsystemProjectiles.AddProjectile(blockDropValue.Value, new Vector3((float)x + 0.5f, (float)y + 0.5f, (float)z + 0.5f), vector, this.m_random.Vector3(0f, 20f), null);
-									projectile.ProjectileStoppedAction = ((this.m_random.Float(0f, 1f) >= num10) ? ProjectileStoppedAction.Disappear : ProjectileStoppedAction.TurnIntoPickable);
-									if (this.m_random.Float(0f, 1f) < 0.5f && this.m_projectilesCount < 35)
-									{
-										float num11 = (num4 > 60f) ? this.m_random.Float(3f, 7f) : this.m_random.Float(1f, 3f);
-										if (isIncendiary)
+									if(ModificationsHolder.ableExplosionTileDropping) {
+										float num10 = flag2 ? 0f : MathUtils.Lerp(1f, 0f, (float)this.m_projectilesCount / 20f);
+										Projectile projectile = this.m_subsystemProjectiles.AddProjectile(blockDropValue.Value, new Vector3((float)x + 0.5f, (float)y + 0.5f, (float)z + 0.5f), vector, this.m_random.Vector3(0f, 20f), null);
+										projectile.ProjectileStoppedAction = ((this.m_random.Float(0f, 1f) >= num10) ? ProjectileStoppedAction.Disappear : ProjectileStoppedAction.TurnIntoPickable);
+										if (this.m_random.Float(0f, 1f) < 0.5f && this.m_projectilesCount < 35)
 										{
+											float num11 = (num4 > 60f) ? this.m_random.Float(3f, 7f) : this.m_random.Float(1f, 3f);
+											if (isIncendiary)
+											{
 											num11 += 10f;
+											}
+											this.m_subsystemProjectiles.AddTrail(projectile, Vector3.Zero, new SmokeTrailParticleSystem(15, this.m_random.Float(0.75f, 1.5f), num11, isIncendiary ? new Color(255, 140, 192) : Color.White));
+											projectile.IsIncendiary = isIncendiary;
 										}
-										this.m_subsystemProjectiles.AddTrail(projectile, Vector3.Zero, new SmokeTrailParticleSystem(15, this.m_random.Float(0.75f, 1.5f), num11, isIncendiary ? new Color(255, 140, 192) : Color.White));
-										projectile.IsIncendiary = isIncendiary;
+										this.m_generatedProjectiles.Add(projectile, true);//true
+										this.m_projectilesCount++;
 									}
-									this.m_generatedProjectiles.Add(projectile, true);
-									this.m_projectilesCount++;
 								}
 							}
 						}
@@ -340,9 +345,14 @@ namespace Game
 				vector *= this.m_random.Float(0.5f, 1.5f);
 				num7 *= this.m_random.Float(0.5f, 1.5f);
 				componentBody.ApplyImpulse(vector);
+				ModificationsHolder.displayImpulse(vector, componentBody);
 				ComponentHealth componentHealth = componentBody.Entity.FindComponent<ComponentHealth>();
+				unsafe {
+			    	ModificationsHolder.getDamage(componentBody, this.m_random, &num7);
+				}
 				if (componentHealth != null)
 				{
+
 					componentHealth.Injure(num7, null, false, "Blasted by explosion");
 				}
 				ComponentDamage componentDamage = componentBody.Entity.FindComponent<ComponentDamage>();
@@ -353,7 +363,9 @@ namespace Game
 				ComponentOnFire componentOnFire = componentBody.Entity.FindComponent<ComponentOnFire>();
 				if (componentOnFire != null && this.m_random.Float(0f, 1f) < MathUtils.Min(num7 - 0.1f, 0.5f))
 				{
-					componentOnFire.SetOnFire(null, this.m_random.Float(6f, 8f));
+					if(!componentBody.getCreature().DisplayName.Contains("Player")) {
+						componentOnFire.SetOnFire(null, this.m_random.Float(6f, 8f));
+					}
 				}
 			}
 			foreach (Pickable pickable in this.m_subsystemPickables.Pickables)

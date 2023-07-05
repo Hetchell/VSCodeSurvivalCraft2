@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Engine;
 using GameEntitySystem;
+using Survivalcraft.Game.ModificationHolder;
 using TemplatesDatabase;
 
 namespace Game
@@ -40,7 +42,7 @@ namespace Game
 					this.m_newSpawnChunks.RandomShuffle((int max) => this.m_random.Int(0, max - 1));
 					foreach (SpawnChunk chunk in this.m_newSpawnChunks)
 					{
-						this.SpawnChunkCreatures(chunk, 10, false);
+						this.SpawnChunkCreatures(chunk, ModificationsHolder.attempts[0], false);//10
 					}
 					this.m_newSpawnChunks.Clear();
 				}
@@ -49,14 +51,18 @@ namespace Game
 					this.m_spawnChunks.RandomShuffle((int max) => this.m_random.Int(0, max - 1));
 					foreach (SpawnChunk chunk2 in this.m_spawnChunks)
 					{
-						this.SpawnChunkCreatures(chunk2, 2, true);
+						this.SpawnChunkCreatures(chunk2, ModificationsHolder.attempts[1], true);//2
 					}
 					this.m_spawnChunks.Clear();
 				}
-				if (this.m_subsystemTime.PeriodicGameTimeEvent(60.0, 2.0))
+				bool j = this.m_subsystemTime.PeriodicGameTimeEvent(60.0, 2.0);
+				//j = true;
+				if (j)
 				{
+					Debug.WriteLine("Spaen!");
 					this.SpawnRandomCreature();
 				}
+				ModificationsHolder.changeTarget(this.m_subsystemTime, this.m_random);
 			}
 		}
 
@@ -239,7 +245,9 @@ namespace Game
 					}
 					return 0.075f;
 				},
-				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Wolf_Gray", point, this.m_random.Int(1, 3)).Count)
+				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Wolf_Gray", point, 
+				this.m_random.Int(ModificationsHolder.SpawnListEntryNumbers.wolf_bottom,
+				ModificationsHolder.SpawnListEntryNumbers.wolf_top)).Count)
 			});
 			this.m_creatureTypes.Add(new SubsystemCreatureSpawn.CreatureType("Coyotes", SpawnLocationType.Surface, false, false)
 			{
@@ -605,7 +613,9 @@ namespace Game
 					}
 					return 0.05f;
 				},
-				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Hyena", point, this.m_random.Int(1, 2)).Count)
+				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Hyena", point, this.m_random.Int(
+					ModificationsHolder.SpawnListEntryNumbers.hyena_bottom, 
+					ModificationsHolder.SpawnListEntryNumbers.hyena_top)).Count)
 			});
 			this.m_creatureTypes.Add(new SubsystemCreatureSpawn.CreatureType("Cave Bears", SpawnLocationType.Cave, false, false)
 			{
@@ -910,7 +920,9 @@ namespace Game
 					}
 					return 0f;
 				},
-				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Wolf_Gray", point, this.m_random.Int(1, 3)).Count)
+				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Wolf_Gray", point, 
+				this.m_random.Int(ModificationsHolder.SpawnListEntryNumbers.wolf_bottom, 
+				ModificationsHolder.SpawnListEntryNumbers.wolf_top)).Count)
 			});
 			this.m_creatureTypes.Add(new SubsystemCreatureSpawn.CreatureType("Constant Coyotes", SpawnLocationType.Surface, false, true)
 			{
@@ -1085,7 +1097,9 @@ namespace Game
 					}
 					return 0f;
 				},
-				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Hyena", point, this.m_random.Int(1, 2)).Count)
+				SpawnFunction = ((SubsystemCreatureSpawn.CreatureType creatureType, Point3 point) => this.SpawnCreatures(creatureType, "Hyena", point, 
+				this.m_random.Int(ModificationsHolder.SpawnListEntryNumbers.hyena_bottom,
+				ModificationsHolder.SpawnListEntryNumbers.hyena_top)).Count)
 			});
 		}
 
@@ -1131,8 +1145,8 @@ namespace Game
 		// Token: 0x06000759 RID: 1881 RVA: 0x0002FBC0 File Offset: 0x0002DDC0
 		public void SpawnChunkCreatures(SpawnChunk chunk, int maxAttempts, bool constantSpawn)
 		{
-			int num = constantSpawn ? 18 : 24;
-			int num2 = constantSpawn ? 4 : 3;
+			int num = ModificationsHolder.spawnEntryModificationFunction(constantSpawn)[0];
+			int num2 = ModificationsHolder.spawnEntryModificationFunction(constantSpawn)[1];
 			float v = (float)(constantSpawn ? 42 : 16);
 			int num3 = this.CountCreatures(constantSpawn);
 			Vector2 c3 = new Vector2((float)(chunk.Point.X * 16), (float)(chunk.Point.Y * 16)) - new Vector2(v);
@@ -1158,6 +1172,9 @@ namespace Game
 					{
 						SubsystemCreatureSpawn.CreatureType creatureType = source.ElementAt(randomWeightedItem);
 						int num5 = creatureType.SpawnFunction(creatureType, spawnPoint.Value);
+						if (creatureType.Name.Contains("Raven") || creatureType.Name.Contains("Duck")) {
+							num5 = 0;
+						}
 						num3 += num5;
 						num4 += num5;
 					}
@@ -1205,7 +1222,9 @@ namespace Game
 				entity.FindComponent<ComponentBody>(true).Position = position;
 				entity.FindComponent<ComponentBody>(true).Rotation = Quaternion.CreateFromAxisAngle(Vector3.UnitY, this.m_random.Float(0f, 6.2831855f));
 				entity.FindComponent<ComponentCreature>(true).ConstantSpawn = constantSpawn;
-				base.Project.AddEntity(entity);
+				if(!templateName.Contains("Raven") && !templateName.Contains("Duck") && !templateName.Contains("Seagull")) {
+					base.Project.AddEntity(entity);
+				}
 				result = entity;
 			}
 			catch (Exception ex)

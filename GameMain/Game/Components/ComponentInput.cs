@@ -273,7 +273,7 @@ namespace Game
 
 		private void UpdateStatesOnKeyboardAction(WidgetInput input)
 		{
-			ModificationsHolder.keyboardActions(input);
+			ModificationsHolder.keyboardActions(input, this.m_componentPlayer);
         }
 
 		private void UpdateDebug(bool noclipPreviousState, int speedPreviously)

@@ -41,6 +41,11 @@ namespace Game
 			this.Seed(Game.Random.m_counter++);
 		}
 
+		public void skip(int skips) {
+			this.m_s0 = this.m_s0 << skips;
+			this.m_s1 += (uint)skips;
+		}
+
 		public int UniformInt(int min, int max) => (int)((long)min + (long)this.Int() * (long)(max - min + 1) / 2147483648L);
 
         // Token: 0x060014B9 RID: 5305 RVA: 0x000A0F30 File Offset: 0x0009F130

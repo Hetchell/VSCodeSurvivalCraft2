@@ -24,13 +24,13 @@ namespace ModificationHolder
             multipliers[4] = 0.25D;
             multipliers[5] = 0.25D;
             multipliers[6] = 0.125D;
-            multipliers[7] = 0.01D;
+            multipliers[7] = 0.01D;//0.1
             multipliers[8] = 1.0D;
             multipliers[9] = 1.0D;
             multipliers[10] = 1.0D;
             multipliers[11] = 1.0D;
-            multipliers[12] = 1.0D;
-            multipliers[13] = 1.0D;
+            multipliers[12] = 1.0D;//1
+            multipliers[13] = 1.0D;//1
             multipliers[14] = 1.0D;
             multipliers[15] = 1.0D;
             multipliers[16] = 1.0D;

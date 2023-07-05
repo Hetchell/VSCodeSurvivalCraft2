@@ -4,6 +4,8 @@ using System.Diagnostics;
 using ModificationHolder;
 using Engine;
 using System.Threading.Tasks;
+using Color = Engine.Color;
+using Random = Game.Random;
 
 namespace Survivalcraft.Game.ModificationHolder
 {
@@ -11,28 +13,131 @@ namespace Survivalcraft.Game.ModificationHolder
     {
         public static bool allowFlyingAnimal = false;
         public static bool allowWolfDespawn = true;
+
+        public static bool disableDrops = true;
         public static bool fogEnable = false;
+
+        public static bool night_vision = true;
         public static bool allowForUnrestrictedTravel = true;
-        public static bool allowFixedSpawn = true;
+        public static bool allowFixedSpawnPoint = true;
+
+        public static bool constantSeed = false;
         public static int seed = 1638478217;
         public static float steppedLevelTravel = 10f;
         public static String[] animalTypes = { "Wolf", "Hyena", "Lion" };
+
+        public static String[] mayNotDieFromExplosion = {"Wolf", "Hyena"};
         public static float movementLimitPlayer = 100f * 100f;
         public static float movementLimitAnimalsDerFlying = 300f;
         public static Vector3 spawnfixed = new Vector3(0, 300, 0);
 
+        public static Func<Block, bool> explosionRep = block => block is AirBlock;
+
+        public static bool ableExplosionTileDropping = false;
+        public static bool ableExplodeAir = false;
+
         private static int repeat = 0;
         private static int repeatCom = 0;
-        private static string somestr;
 
-        public static void keyboardActions(WidgetInput input)
+        private static int repeatLight;
+        private static string somestr;
+        private ComponentPlayer componentPlayer;
+
+        private static ComponentGui gui_handler;
+        public static Func<Block, bool> explosivesPredicate = block => (block is SnowballBlock) || (block is FireworksBlock);
+
+        public static int score = 0;
+
+        public static Func<Block, int, int> powerPredicate = (block, power) => {
+            if(block is SnowballBlock) {
+                return power;
+            }
+            if(block is FireworksBlock) {
+                return 2100;
+            }
+            return (int)Math.Floor(power * 0.5D);
+        };
+
+        public static Func<bool, List<int>> spawnEntryModificationFunction = constantSpawn => {
+            int num = constantSpawn ? 18 : 24;
+			int num2 = constantSpawn ? 4 : 3;
+			num = num2 = 300;
+            return new List<int>(new int[]{num, num2});
+        };
+
+        public static int[] attempts = new int[] {
+            10, //10
+            2   //2
+        };
+
+        private static List<String> predatorAndHostiles = make(new List<String>(), lst => {
+            //lst.Add("Brown Cattle");
+            lst.Add("Brown Bull");
+            lst.Add("Black Bull");
+            //lst.Add("Black Cattle");
+            lst.Add("White Bull");
+            lst.Add("Gray Wolf");
+            lst.Add("Coyote");
+            lst.Add("Brown Bear");
+            lst.Add("Black Bear");
+            lst.Add("Polar Bear");
+            lst.Add("Rhino");
+            lst.Add("Tiger");
+            lst.Add("White Tiger");
+            lst.Add("Lion");
+            lst.Add("Jaguar");
+            lst.Add("Leopard");
+            lst.Add("Hyena");
+            lst.Add("Cave Bear");
+            lst.Add("Cave Tiger");
+            lst.Add("Cave Lion");
+            lst.Add("Cave Jaguar");
+            lst.Add("Cave Leopard");
+            lst.Add("Cave Hyena");
+            lst.Add("Bull Shark");
+            lst.Add("Tiger Shark");
+            lst.Add("Great White Shark");
+            lst.Add("Piranha");
+            lst.Add("Orca");
+            lst.Add("Wildboar");
+        });
+
+        private static Dictionary<String, int> scoreMapping = make(new Dictionary<string, int>(), u => {
+            int[] sc = new int[]{
+                -5, -5, -100, 
+                10, 10, 20, 20, 50, 5, 15, 31, 20, 20, 20, 16, 40, 77, 50, 80, 63, 51, 33, 100, 180, 22, 205,
+                3
+            };
+            int i = 0;
+            foreach(String name in predatorAndHostiles) {
+                u.Add(name, sc[i]);
+                u.Add("Constant " + name, sc[i] + 1);
+                i++;
+            }
+        });
+
+
+        public struct SpawnListEntryNumbers {
+            public static int wolf_top = 3;
+            public static int wolf_bottom = 1;
+            public static int hyena_top = 2;
+            public static int hyena_bottom = 1;
+
+            public static int MAXIMUM_COUNT = 300;
+        }
+
+        private static String target;
+
+        public static void keyboardActions(WidgetInput input, ComponentPlayer componentPlayer)
         {
-            if (input.IsKeyDownOnce(Key.UpArrow))
+            ComponentGui gui_throwback = componentPlayer.ComponentGui;
+            gui_handler = gui_throwback;
+            if (input.IsKeyDownOnce(Key.UpArrow) && !input.IsKeyDown(Key.B))
             {
                 ComponentInput.speed++;
                 Debug.WriteLine("Speed is increased");
             }
-            if (input.IsKeyDownOnce(Key.DownArrow))
+            if (input.IsKeyDownOnce(Key.DownArrow) && !input.IsKeyDown(Key.B))
             {
                 ComponentInput.speed--;
                 Debug.WriteLine("Speed is decreased");
@@ -88,6 +193,44 @@ namespace Survivalcraft.Game.ModificationHolder
                    fogEnable = false;
                }
             }
+            //up or down explosive power
+            int exppow = SubsystemProjectiles.explosionPower;
+            if(input.IsKeyDown(Key.B)) {
+                if (input.IsKeyDown(Key.UpArrow))
+                {
+                    int upstep = 100;
+                    if(exppow >= 20000) {
+                        upstep = 0;
+                        defaultThrowBack("Maximum explosive power of 20000 reached!", gui_throwback);
+                        SubsystemProjectiles.explosionPower = Math.Min(exppow, 20000);
+                    }
+                    SubsystemProjectiles.explosionPower += upstep;
+                    Debug.WriteLine("Explosion power increased to: " + SubsystemProjectiles.explosionPower);
+                }
+                if (input.IsKeyDown(Key.DownArrow))
+                {
+                    int downstep = 100;
+                    if(exppow <= 50) {
+                        downstep = 0;
+                        defaultThrowBack("Minimum explosive power of 50 reached!", gui_throwback);
+                    }
+                    SubsystemProjectiles.explosionPower -= downstep;
+                    Debug.WriteLine("Explosion power is decreased to: " + SubsystemProjectiles.explosionPower);
+                }
+            }
+            // if(input.IsKeyDownOnce(Key.L) && input.IsKeyDown(Key.Shift)) {
+            //     if (repeatLight == 0)
+            //    {
+            //        night_vision = true;
+            //        repeatLight++;
+            //    }
+            //    else
+            //    {
+            //        --repeatLight;
+            //        night_vision = false;
+            //    }
+            //    LightingManager.Initialize();
+            // }
         }
 
         public static void UpdateCommand(){
@@ -99,6 +242,86 @@ namespace Survivalcraft.Game.ModificationHolder
             //         }
             //     }
             // });
+        }
+
+        public static void defaultThrowBack(String msg, ComponentGui instance) {
+            instance.DisplaySmallMessage(msg, Color.LightGreen, true, false);
+        }
+
+        public static void displayImpulse(Vector3 impulse, ComponentBody componentBody) {
+            float x = impulse.X;
+            float y = impulse.Y;
+            float z = impulse.Z;
+            float t = impulse.LengthSquared();
+            string sign_j = y < 0 ? " - " : " + ";
+            string sign_k = z < 0 ? " - " : " + ";
+            if(t > 0.001) {
+                Debug.WriteLine("Type of [" + componentBody.getCreature().DisplayName.ToLower() + "] given impulse of " + x + "î" + sign_j + Math.Abs(y) + "ĵ" + sign_k + Math.Abs(z) + "k̂ Ns.");
+            }
+        }
+
+        public static unsafe void getDamage(ComponentBody body, Random random, float* damage) {
+            bool result = false;
+            for (int i = 0; i < mayNotDieFromExplosion.Length; i++)
+            {
+                result = result || body.getCreature() != null ? body.getCreature().DisplayName.Contains(mayNotDieFromExplosion[i]) : true;
+            }
+            if(result) {
+                float r = random.NormalFloat(0.48f, 1.97f);
+                r = Math.Abs(r);
+                if(r < 0.5f) {
+                    *damage += 0.2f;
+                } else if (r < 1.0f) {
+                    *damage /= 5.0f;
+                } else {
+                    *damage = 0.0f;
+                }
+                random.skip((int)*damage);
+            }
+        }
+
+        public static Action<Vector3, IInventory> processDeath(ComponentCreature creature, ComponentHealth health) {
+            String cause = health.CauseOfDeath;
+            if(cause == "Blasted by explosion") {
+                scoreKeeper(creature, cause);
+                defaultThrowBack(creature.DisplayName + " has exploded!", gui_handler);
+            }
+            if (disableDrops) {
+                return (pos, inv) => {};
+            } else {
+                return (pos, inv) => inv.DropAllItems(pos);
+            }
+        }
+
+        public static void scoreKeeper(ComponentCreature creature, String CauseOfDeath) {
+            String name = creature.DisplayName;
+            int i;
+            if (name == target) {
+                    i = 310 + get(target);
+            } else {
+                    i = get(name);
+            }
+            score += i;
+        }
+
+        public static int get(String key) {
+            return scoreMapping.GetValueOrDefault<String, int>(key, -200);
+        }
+
+        public static void changeTarget(SubsystemTime time, Random rand) {
+            int time_delay = rand.Int(30, 90);
+            int list_length = predatorAndHostiles.Count - 1;
+            int idx = rand.Int(0, list_length);
+            String name = predatorAndHostiles[idx];
+            if (time.PeriodicGameTimeEvent(time_delay, 2)) {
+                target = name;
+                gui_handler.DisplayLargeMessage("Target: " + target, "Worth: " + (int)(get(target) + 310), time_delay, 0f);
+            }
+        }
+
+        public static T make<T>(T t, Action<T> item) {
+            item(t);
+            return t;
         }
 
         public static class NoiseConstants

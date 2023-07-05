@@ -8,7 +8,7 @@
   <Setting Name="SkyRenderingMode" Value="Full" />
   <Setting Name="TerrainMipmapsEnabled" Value="True" />
   <Setting Name="ObjectsShadowsEnabled" Value="True" />
-  <Setting Name="Brightness" Value="0.5" />
+  <Setting Name="Brightness" Value="1" />
   <Setting Name="PresentationInterval" Value="1" />
   <Setting Name="ShowGuiInScreenshots" Value="False" />
   <Setting Name="ShowLogoInScreenshots" Value="True" />
@@ -35,7 +35,7 @@
   <Setting Name="ScpboxAccessToken" Value="" />
   <Setting Name="MotdUseBackupUrl" Value="False" />
   <Setting Name="MotdUpdatePeriodHours" Value="12" />
-  <Setting Name="MotdLastUpdateTime" Value="638134314908661192" />
+  <Setting Name="MotdLastUpdateTime" Value="638241901303575955" />
   <Setting Name="MotdLastDownloadedData" Value="" />
   <Setting Name="UserId" Value="" />
   <Setting Name="LastLaunchedVersion" Value="2.2.40.0" />

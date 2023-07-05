@@ -20,6 +20,10 @@ namespace Game
 
 		private ComponentCreature creatureIn;
 
+		public ComponentCreature getCreature() {
+			return this.creatureIn;
+		}
+
 		// Token: 0x170000F1 RID: 241
 		// (get) Token: 0x06000B77 RID: 2935 RVA: 0x000563B8 File Offset: 0x000545B8
 		// (set) Token: 0x06000B78 RID: 2936 RVA: 0x000563C0 File Offset: 0x000545C0
@@ -423,7 +427,8 @@ namespace Game
 		public void Update(float dt)
 		{
 			this.CollisionVelocityChange = Vector3.Zero;
-			this.setVectorSpeed(this.getVectorSpeed() + this.m_totalImpulse, "ControlRunnable");
+			String y = this.creatureIn is ComponentPlayer ? "ControlRunnable" : "Null!";
+			this.setVectorSpeed(this.getVectorSpeed() + this.m_totalImpulse, y);
 			this.m_totalImpulse = Vector3.Zero;
 			if (this.m_parentBody != null || this.m_velocity.LengthSquared() > 9.9999994E-11f || this.m_directMove != Vector3.Zero)
 			{

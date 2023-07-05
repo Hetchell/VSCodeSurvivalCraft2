@@ -6,7 +6,7 @@ namespace GameMain
 {
     class Program
     {   
-        private static bool state = false;
+        private static bool state = true;
         [STAThread]
         static void Main(string[] args)
         {
@@ -25,7 +25,7 @@ namespace GameMain
             string path = string.Concat(currDir, "\\", txtfile);
             Console.WriteLine(string.Format("Your current file location is at {0}", path));
             string[] contains = File.ReadAllLines(path);
-            Console.WriteLine(contains[98]);
+            Console.WriteLine(contains[80]);
         }
     }
 }

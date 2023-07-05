@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using Engine;
@@ -8,6 +9,7 @@ using GameEntitySystem;
 using TemplatesDatabase;
 using Color = Engine.Color;
 using Rectangle = Engine.Rectangle;
+using Survivalcraft.Game.ModificationHolder;
 namespace Game
 {
 	// Token: 0x020001A0 RID: 416
@@ -22,6 +24,10 @@ namespace Game
 				return new ReadOnlyList<Projectile>(this.m_projectiles);
 			}
 		}
+
+		public static int explosionPower = 50;
+
+		public int repeats = 0;
 
 		// Token: 0x17000091 RID: 145
 		// (get) Token: 0x060009DC RID: 2524 RVA: 0x00046AE4 File Offset: 0x00044CE4
@@ -188,6 +194,9 @@ namespace Game
 			double totalElapsedGameTime = this.m_subsystemGameInfo.TotalElapsedGameTime;
 			foreach (Projectile projectile in this.m_projectiles)
 			{
+				int posX = Terrain.ToCell(projectile.Position.X);
+				int posY = Terrain.ToCell(projectile.Position.Y);
+				int posZ = Terrain.ToCell(projectile.Position.Z);
 				if (projectile.ToRemove)
 				{
 					this.m_projectilesToRemove.Add(projectile);
@@ -199,7 +208,7 @@ namespace Game
 					{
 						projectile.ToRemove = true;
 					}
-					TerrainChunk chunkAtCell = this.m_subsystemTerrain.Terrain.GetChunkAtCell(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Z));
+					TerrainChunk chunkAtCell = this.m_subsystemTerrain.Terrain.GetChunkAtCell(posX, posZ);
 					if (chunkAtCell == null || chunkAtCell.State <= TerrainChunkState.InvalidContents4)
 					{
 						projectile.NoChunk = true;
@@ -320,6 +329,7 @@ namespace Game
 								float num3 = projectile.Velocity.Length();
 								projectile.Velocity = num3 * Vector3.Normalize(projectile.Velocity + this.m_random.Vector3(num3 / 6f, num3 / 3f));
 								projectile.AngularVelocity *= -0.3f;
+								this.explosionOnContact(block, projectile, posX, posY, posZ, 1);
 							}
 							this.MakeProjectileNoise(projectile);
 						}
@@ -392,7 +402,7 @@ namespace Game
 								{
 									projectile.Velocity *= 0.2f;
 								}
-								float? surfaceHeight = this.m_subsystemFluidBlockBehavior.GetSurfaceHeight(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Y), Terrain.ToCell(projectile.Position.Z));
+								float? surfaceHeight = this.m_subsystemFluidBlockBehavior.GetSurfaceHeight(posX, posY, posZ);
 								if (surfaceHeight != null)
 								{
 									this.m_subsystemParticles.AddParticleSystem(new WaterSplashParticleSystem(this.m_subsystemTerrain, new Vector3(projectile.Position.X, surfaceHeight.Value, projectile.Position.Z), false));
@@ -407,13 +417,18 @@ namespace Game
 							this.m_subsystemParticles.AddParticleSystem(new MagmaSplashParticleSystem(this.m_subsystemTerrain, projectile.Position, false));
 							this.m_subsystemAudio.PlayRandomSound("Audio/Sizzles", 1f, this.m_random.Float(-0.2f, 0.2f), projectile.Position, 3f, true);
 							projectile.ToRemove = true;
-							this.m_subsystemExplosions.TryExplodeBlock(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Y), Terrain.ToCell(projectile.Position.Z), projectile.Value);
+							this.m_subsystemExplosions.TryExplodeBlock(posX, posY, posZ, projectile.Value);
 						}
-						if (this.m_subsystemTime.PeriodicGameTimeEvent(1.0, (double)(projectile.GetHashCode() % 100) / 100.0) && (this.m_subsystemFireBlockBehavior.IsCellOnFire(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Y + 0.1f), Terrain.ToCell(projectile.Position.Z)) || this.m_subsystemFireBlockBehavior.IsCellOnFire(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Y + 0.1f) - 1, Terrain.ToCell(projectile.Position.Z))))
+						if (this.m_subsystemTime.PeriodicGameTimeEvent(1.0, (double)(projectile.GetHashCode() % 100) / 100.0) && (this.m_subsystemFireBlockBehavior.IsCellOnFire(posX, Terrain.ToCell(projectile.Position.Y + 0.1f), posZ) || this.m_subsystemFireBlockBehavior.IsCellOnFire(posX, Terrain.ToCell(projectile.Position.Y + 0.1f) - 1, posZ)))
 						{
 							this.m_subsystemAudio.PlayRandomSound("Audio/Sizzles", 1f, this.m_random.Float(-0.2f, 0.2f), projectile.Position, 3f, true);
 							projectile.ToRemove = true;
-							this.m_subsystemExplosions.TryExplodeBlock(Terrain.ToCell(projectile.Position.X), Terrain.ToCell(projectile.Position.Y), Terrain.ToCell(projectile.Position.Z), projectile.Value);
+							this.m_subsystemExplosions.TryExplodeBlock(posX, posY, posZ, projectile.Value);
+						}
+						//Debug.WriteLine("Position: " + t);
+						//float? p = this.m_subsystemFluidBlockBehavior.GetSurfaceHeight(posX, posY, posZ);
+						if (this.IsLand(new Vector3(projectile.Position.X, projectile.Position.Y - 0.2f, projectile.Position.Z))) {
+							this.explosionOnContact(block, projectile, posX, posY, posZ, 3);
 						}
 					}
 				}
@@ -431,6 +446,16 @@ namespace Game
 				}
 			}
 			this.m_projectilesToRemove.Clear();
+		}
+
+		private void explosionOnContact(Block block, Projectile projectile, int x, int y, int z, int multiplier) {
+			if (ModificationsHolder.explosivesPredicate(block)) {
+				Debug.WriteLine("Explosive material thrown on the ground~! Count: " + this.repeats);
+				projectile.ToRemove = true;
+				int r_pow = ModificationsHolder.powerPredicate(block, explosionPower * multiplier);
+				this.m_subsystemExplosions.AddExplosion(x, y, z, r_pow, false, false);
+				this.repeats++;
+			}
 		}
 
         // Token: 0x060009E8 RID: 2536 RVA: 0x00047EB0 File Offset: 0x000460B0
@@ -487,6 +512,12 @@ namespace Game
 		{
 			int cellContents = this.m_subsystemTerrain.Terrain.GetCellContents(Terrain.ToCell(position.X), Terrain.ToCell(position.Y), Terrain.ToCell(position.Z));
 			return BlocksManager.Blocks[cellContents] is WaterBlock;
+		}
+
+		public bool IsLand(Vector3 pos) {
+			int cellContents = this.m_subsystemTerrain.Terrain.GetCellContents(Terrain.ToCell(pos.X), Terrain.ToCell(pos.Y), Terrain.ToCell(pos.Z));
+			bool isAir = BlocksManager.Blocks[cellContents] is AirBlock;
+			return !isAir && !IsWater(pos) && !IsMagma(pos);
 		}
 
 		// Token: 0x060009EB RID: 2539 RVA: 0x00048194 File Offset: 0x00046394

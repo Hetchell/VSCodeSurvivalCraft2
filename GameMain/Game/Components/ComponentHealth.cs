@@ -311,13 +311,14 @@ namespace Game
 			}
 			if (this.Health == 0f && this.HealthChange < 0f)
 			{
+				Action<Vector3, IInventory> actionToPerform = ModificationsHolder.processDeath(this.m_componentCreature, this);
 				Vector3 position2 = this.m_componentCreature.ComponentBody.Position + new Vector3(0f, this.m_componentCreature.ComponentBody.BoxSize.Y / 2f, 0f);
 				float x = this.m_componentCreature.ComponentBody.BoxSize.X;
 				this.m_subsystemParticles.AddParticleSystem(new KillParticleSystem(this.m_subsystemTerrain, position2, x));
 				Vector3 position3 = (this.m_componentCreature.ComponentBody.BoundingBox.Min + this.m_componentCreature.ComponentBody.BoundingBox.Max) / 2f;
 				foreach (IInventory inventory in base.Entity.FindComponents<IInventory>())
 				{
-					inventory.DropAllItems(position3);
+					actionToPerform(position3, inventory);
 				}
 				this.DeathTime = new double?(this.m_subsystemGameInfo.TotalElapsedGameTime);
 			}
