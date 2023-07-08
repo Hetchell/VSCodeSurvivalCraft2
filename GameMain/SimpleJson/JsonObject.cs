@@ -21,7 +21,7 @@ namespace SimpleJson
 		}
 
 		// Token: 0x17000003 RID: 3
-		// (get) Token: 0x06000028 RID: 40 RVA: 0x00003767 File Offset: 0x00001967
+		// (GetPoint) Token: 0x06000028 RID: 40 RVA: 0x00003767 File Offset: 0x00001967
 		public ICollection<string> Keys
 		{
 			get
@@ -31,7 +31,7 @@ namespace SimpleJson
 		}
 
 		// Token: 0x17000004 RID: 4
-		// (get) Token: 0x06000029 RID: 41 RVA: 0x00003774 File Offset: 0x00001974
+		// (GetPoint) Token: 0x06000029 RID: 41 RVA: 0x00003774 File Offset: 0x00001974
 		public ICollection<object> Values
 		{
 			get
@@ -54,7 +54,7 @@ namespace SimpleJson
 		}
 
 		// Token: 0x17000006 RID: 6
-		// (get) Token: 0x0600002C RID: 44 RVA: 0x0000379E File Offset: 0x0000199E
+		// (GetPoint) Token: 0x0600002C RID: 44 RVA: 0x0000379E File Offset: 0x0000199E
 		public int Count
 		{
 			get
@@ -64,7 +64,7 @@ namespace SimpleJson
 		}
 
 		// Token: 0x17000007 RID: 7
-		// (get) Token: 0x0600002D RID: 45 RVA: 0x000037AB File Offset: 0x000019AB
+		// (GetPoint) Token: 0x0600002D RID: 45 RVA: 0x000037AB File Offset: 0x000019AB
 		public bool IsReadOnly
 		{
 			get

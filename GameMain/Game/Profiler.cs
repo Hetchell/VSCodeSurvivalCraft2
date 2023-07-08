@@ -10,7 +10,7 @@ namespace Game
 	public struct Profiler : IDisposable
 	{
 		// Token: 0x17000312 RID: 786
-		// (get) Token: 0x06001483 RID: 5251 RVA: 0x0009F9CE File Offset: 0x0009DBCE
+		// (GetPoint) Token: 0x06001483 RID: 5251 RVA: 0x0009F9CE File Offset: 0x0009DBCE
 		public static int MaxNameLength
 		{
 			get
@@ -20,7 +20,7 @@ namespace Game
 		}
 
 		// Token: 0x17000313 RID: 787
-		// (get) Token: 0x06001484 RID: 5252 RVA: 0x0009F9D8 File Offset: 0x0009DBD8
+		// (GetPoint) Token: 0x06001484 RID: 5252 RVA: 0x0009F9D8 File Offset: 0x0009DBD8
 		public static ReadOnlyList<Profiler.Metric> Metrics
 		{
 			get

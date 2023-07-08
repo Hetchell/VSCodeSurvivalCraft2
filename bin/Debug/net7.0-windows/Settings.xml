@@ -32,11 +32,13 @@
   <Setting Name="AutoJump" Value="True" />
   <Setting Name="HorizontalCreativeFlight" Value="True" />
   <Setting Name="DropboxAccessToken" Value="" />
+  <Setting Name="MotdUpdateUrl" Value="https://m.schub.top/com/motd?v={0}&amp;l={1}" />
+  <Setting Name="MotdBackupUpdateUrl" Value="https://m.schub.top/com/motd?v={0}&amp;l={1}" />
   <Setting Name="ScpboxAccessToken" Value="" />
   <Setting Name="MotdUseBackupUrl" Value="False" />
   <Setting Name="MotdUpdatePeriodHours" Value="12" />
-  <Setting Name="MotdLastUpdateTime" Value="638241901303575955" />
-  <Setting Name="MotdLastDownloadedData" Value="" />
+  <Setting Name="MotdLastUpdateTime" Value="638244124651095050" />
+  <Setting Name="MotdLastDownloadedData" Value="Hello World" />
   <Setting Name="UserId" Value="" />
   <Setting Name="LastLaunchedVersion" Value="2.2.40.0" />
   <Setting Name="CommunityContentMode" Value="Normal" />
@@ -44,7 +46,7 @@
   <Setting Name="EnableAndroidAudioTrackCaching" Value="True" />
   <Setting Name="UseReducedZRange" Value="False" />
   <Setting Name="IsolatedStorageMigrationCounter" Value="3" />
-  <Setting Name="DisplayFpsCounter" Value="False" />
+  <Setting Name="DisplayFpsCounter" Value="True" />
   <Setting Name="DisplayFpsRibbon" Value="False" />
   <Setting Name="NewYearCelebrationLastYear" Value="2015" />
   <Setting Name="ScreenLayout1" Value="Single" />

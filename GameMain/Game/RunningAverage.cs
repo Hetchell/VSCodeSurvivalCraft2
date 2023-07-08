@@ -7,7 +7,7 @@ namespace Game
 	public class RunningAverage
 	{
 		// Token: 0x1700031F RID: 799
-		// (get) Token: 0x060014E3 RID: 5347 RVA: 0x000A1EFE File Offset: 0x000A00FE
+		// (GetPoint) Token: 0x060014E3 RID: 5347 RVA: 0x000A1EFE File Offset: 0x000A00FE
 		public float Value
 		{
 			get

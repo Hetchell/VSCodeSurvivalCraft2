@@ -7,27 +7,27 @@ namespace Game
 	public class AStar<T>
 	{
 		// Token: 0x1700025A RID: 602
-		// (get) Token: 0x06001085 RID: 4229 RVA: 0x0007E0BC File Offset: 0x0007C2BC
+		// (GetPoint) Token: 0x06001085 RID: 4229 RVA: 0x0007E0BC File Offset: 0x0007C2BC
 		// (set) Token: 0x06001086 RID: 4230 RVA: 0x0007E0C4 File Offset: 0x0007C2C4
 		public float PathCost { get; set; }
 
 		// Token: 0x1700025B RID: 603
-		// (get) Token: 0x06001087 RID: 4231 RVA: 0x0007E0CD File Offset: 0x0007C2CD
+		// (GetPoint) Token: 0x06001087 RID: 4231 RVA: 0x0007E0CD File Offset: 0x0007C2CD
 		// (set) Token: 0x06001088 RID: 4232 RVA: 0x0007E0D5 File Offset: 0x0007C2D5
 		public DynamicArray<T> Path { get; set; }
 
 		// Token: 0x1700025C RID: 604
-		// (get) Token: 0x06001089 RID: 4233 RVA: 0x0007E0DE File Offset: 0x0007C2DE
+		// (GetPoint) Token: 0x06001089 RID: 4233 RVA: 0x0007E0DE File Offset: 0x0007C2DE
 		// (set) Token: 0x0600108A RID: 4234 RVA: 0x0007E0E6 File Offset: 0x0007C2E6
 		public IAStarWorld<T> World { get; set; }
 
 		// Token: 0x1700025D RID: 605
-		// (get) Token: 0x0600108B RID: 4235 RVA: 0x0007E0EF File Offset: 0x0007C2EF
+		// (GetPoint) Token: 0x0600108B RID: 4235 RVA: 0x0007E0EF File Offset: 0x0007C2EF
 		// (set) Token: 0x0600108C RID: 4236 RVA: 0x0007E0F7 File Offset: 0x0007C2F7
 		public IAStarStorage<T> OpenStorage { get; set; }
 
 		// Token: 0x1700025E RID: 606
-		// (get) Token: 0x0600108D RID: 4237 RVA: 0x0007E100 File Offset: 0x0007C300
+		// (GetPoint) Token: 0x0600108D RID: 4237 RVA: 0x0007E100 File Offset: 0x0007C300
 		// (set) Token: 0x0600108E RID: 4238 RVA: 0x0007E108 File Offset: 0x0007C308
 		public IAStarStorage<T> ClosedStorage { get; set; }
 

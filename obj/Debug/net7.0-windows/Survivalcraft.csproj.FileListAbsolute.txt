@@ -52,3 +52,30 @@ D:\VisualStudioCode\VSCodeSurvivalCraft2\obj\Debug\net7.0-windows\refint\Surviva
 D:\VisualStudioCode\VSCodeSurvivalCraft2\obj\Debug\net7.0-windows\Survivalcraft.pdb
 D:\VisualStudioCode\VSCodeSurvivalCraft2\obj\Debug\net7.0-windows\Survivalcraft.genruntimeconfig.cache
 D:\VisualStudioCode\VSCodeSurvivalCraft2\obj\Debug\net7.0-windows\ref\Survivalcraft.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Survivalcraft.exe
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Survivalcraft.deps.json
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Survivalcraft.runtimeconfig.json
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Survivalcraft.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Survivalcraft.pdb
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\Engine.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\EntitySystem.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\FJ.CoreWin.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\NVorbis.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\OpenTK.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.D3DCompiler.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.Direct3D11.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.DXGI.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.XAudio2.dll
+D:\C projects\SurvivalCraftMiniGame\bin\Debug\net7.0-windows\SharpDX.XInput.dll
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.csproj.AssemblyReference.cache
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.GeneratedMSBuildEditorConfig.editorconfig
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.AssemblyInfoInputs.cache
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.AssemblyInfo.cs
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.csproj.CoreCompileInputs.cache
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.csproj.CopyComplete
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.dll
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\refint\Survivalcraft.dll
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.pdb
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\Survivalcraft.genruntimeconfig.cache
+D:\C projects\SurvivalCraftMiniGame\obj\Debug\net7.0-windows\ref\Survivalcraft.dll

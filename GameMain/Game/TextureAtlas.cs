@@ -11,7 +11,7 @@ namespace Game
 	public class TextureAtlas
 	{
 		// Token: 0x1700036F RID: 879
-		// (get) Token: 0x060016FE RID: 5886 RVA: 0x000B7F48 File Offset: 0x000B6148
+		// (GetPoint) Token: 0x060016FE RID: 5886 RVA: 0x000B7F48 File Offset: 0x000B6148
 		public Texture2D Texture
 		{
 			get

@@ -15,7 +15,7 @@ namespace SimpleJson
 	internal static class SimpleJson
 	{
 		// Token: 0x17000008 RID: 8
-		// (get) Token: 0x06000048 RID: 72 RVA: 0x000043FF File Offset: 0x000025FF
+		// (GetPoint) Token: 0x06000048 RID: 72 RVA: 0x000043FF File Offset: 0x000025FF
 		// (set) Token: 0x06000049 RID: 73 RVA: 0x00004415 File Offset: 0x00002615
 		public static IJsonSerializerStrategy CurrentJsonSerializerStrategy
 		{
@@ -35,7 +35,7 @@ namespace SimpleJson
 		}
 
 		// Token: 0x17000009 RID: 9
-		// (get) Token: 0x0600004A RID: 74 RVA: 0x0000441D File Offset: 0x0000261D
+		// (GetPoint) Token: 0x0600004A RID: 74 RVA: 0x0000441D File Offset: 0x0000261D
 		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		public static PocoJsonSerializerStrategy PocoJsonSerializerStrategy
 		{

@@ -20,7 +20,7 @@ namespace Game.Properties
 		}
 
 		// Token: 0x17000500 RID: 1280
-		// (get) Token: 0x06001C45 RID: 7237 RVA: 0x000D9D51 File Offset: 0x000D7F51
+		// (GetPoint) Token: 0x06001C45 RID: 7237 RVA: 0x000D9D51 File Offset: 0x000D7F51
 		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		internal static ResourceManager ResourceManager
 		{
@@ -35,7 +35,7 @@ namespace Game.Properties
 		}
 
 		// Token: 0x17000501 RID: 1281
-		// (get) Token: 0x06001C46 RID: 7238 RVA: 0x000D9D7D File Offset: 0x000D7F7D
+		// (GetPoint) Token: 0x06001C46 RID: 7238 RVA: 0x000D9D7D File Offset: 0x000D7F7D
 		// (set) Token: 0x06001C47 RID: 7239 RVA: 0x000D9D84 File Offset: 0x000D7F84
 		[EditorBrowsable(EditorBrowsableState.Advanced)]
 		internal static CultureInfo Culture

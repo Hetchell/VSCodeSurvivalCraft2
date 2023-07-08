@@ -7,7 +7,7 @@ namespace Game
 	public class StateMachine
 	{
 		// Token: 0x17000363 RID: 867
-		// (get) Token: 0x060015AE RID: 5550 RVA: 0x000A5728 File Offset: 0x000A3928
+		// (GetPoint) Token: 0x060015AE RID: 5550 RVA: 0x000A5728 File Offset: 0x000A3928
 		public string PreviousState
 		{
 			get
@@ -21,7 +21,7 @@ namespace Game
 		}
 
 		// Token: 0x17000364 RID: 868
-		// (get) Token: 0x060015AF RID: 5551 RVA: 0x000A573F File Offset: 0x000A393F
+		// (GetPoint) Token: 0x060015AF RID: 5551 RVA: 0x000A573F File Offset: 0x000A393F
 		public string CurrentState
 		{
 			get
