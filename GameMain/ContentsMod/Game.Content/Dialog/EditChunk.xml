@@ -1,0 +1,24 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 15">
+      
+	  <LabelWidget Name="EditingChunk" Text="Editing Chunk" HorizontalAlignment="Center" Color="127,255,127"/>
+	  <LabelWidget Name="Slider Data" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0"/>
+	  <SliderWidget Name="Slider 1"  Size="500, 50" Value="0" Granularity="1" MinValue="0" MaxValue="15" HorizontalAlignment="Center" Margin="30, 0" />
+	  <SliderWidget Name="Slider 2"  Size="500, 50" Value="0" Granularity="1" MinValue="0" MaxValue="15" HorizontalAlignment="Center" Margin="30, 0" />
+	 <!-- <SliderWidget Name="滑条3" Size="500, 50" Value="64" Granularity="1" MinValue="0" MaxValue="127" HorizontalAlignment="Center" Margin="30, 0" />-->
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="确定" Size="120, 50"  Name="OK"/>
+	    <BevelledButtonWidget Text="取消" Size="120, 50"  Name="Cancel"/>
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

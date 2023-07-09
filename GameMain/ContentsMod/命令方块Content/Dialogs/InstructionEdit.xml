@@ -1,0 +1,44 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <CanvasWidget Size="600, 365" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+  
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" Margin="10, 0" IsVisible="true">
+
+      <StackPanelWidget Name="EditCommandDialog.LinesPage" Direction="Vertical">
+
+        <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+          <LabelWidget Text="命令方块" HorizontalAlignment="Center" Margin="0, 15" />
+          <LabelWidget Text="输入help查看指令，输入book查看手册" Font="{Fonts/Pericles}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+          <LabelWidget Text="指令后加上“@C”则以当前命令方块为坐标参考系" Font="{Fonts/Pericles}" Color="128, 128, 128" HorizontalAlignment="Center" Margin="0, 0" />
+        </StackPanelWidget>
+
+        <CanvasWidget Size="Infinity, Infinity">
+          <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanelWidget Margin="0, 2">
+              <CanvasWidget Size="100, 25" VerticalAlignment="Center">
+                <LabelWidget Text="输入指令" Font="{Fonts/Pericles}" VerticalAlignment="Center" Color="128, 128, 128" />
+              </CanvasWidget>
+              <CanvasWidget Size="450, 50" VerticalAlignment="Center" >
+                <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+                <TextBoxWidget Name="EditCommandDialog.TextBox" Title="请在下方输入指令" Size="450, 50" Description="请以空格作为分隔符号，所有符号使用英文字符" Font="{Fonts/Pericles}" VerticalAlignment="Center" MaximumLength="128" Margin="10, 0"/>
+              </CanvasWidget>
+            </StackPanelWidget>
+
+          </StackPanelWidget>
+        </CanvasWidget>
+
+      </StackPanelWidget>
+      
+      <UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 15">
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditCommandDialog.OkButton" Text="确定" />
+        <BevelledButtonWidget Style="{Styles/ButtonStyle_160x60}" HorizontalAlignment="Center" Name="EditCommandDialog.CancelButton" Text="取消" />
+      </UniformSpacingPanelWidget>
+
+    </StackPanelWidget>
+
+  </CanvasWidget>
+  
+</CanvasWidget>

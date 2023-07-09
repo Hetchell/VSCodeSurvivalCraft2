@@ -1,0 +1,37 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 360" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+
+      <LabelWidget Name="Level1" Text="Level" HorizontalAlignment="Center" Color="127,255,127" />
+
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <BevelledButtonWidget Name="Sub button" Style="{Styles/ButtonStyle_Minus}" VerticalAlignment="Center" />
+        <CanvasWidget Size="240, 50" VerticalAlignment="Center">
+          <LabelWidget Name="Slider" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </CanvasWidget>
+        <BevelledButtonWidget Name="Add button" Style="{Styles/ButtonStyle_Plus}" VerticalAlignment="Center" />
+      </StackPanelWidget>
+
+      <CanvasWidget Size="0, Infinity" />
+
+      <SliderWidget Name="Level" IsLabelVisible="false" Granularity="1" MinValue="0" MaxValue="10000" HorizontalAlignment="Center" Margin="30, 0" />
+
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <BevelledButtonWidget Text="确定" Size="160, 50" Name="OK" Margin="20, 0" />
+        <BevelledButtonWidget Text="取消" Size="160, 50" Name="Cancel" Margin="20, 0" />
+      </StackPanelWidget>
+
+
+    </StackPanelWidget>
+
+  </CanvasWidget>
+
+</CanvasWidget>

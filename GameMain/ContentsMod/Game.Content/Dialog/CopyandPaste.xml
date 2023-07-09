@@ -1,0 +1,35 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="680, 480" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3, 3">
+      <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 25">
+
+        <LabelWidget Name="Copy and Paste" Text="Copy and Paste" HorizontalAlignment="Center" Color="127,255,127" Margin="5, 5" />
+
+        <CanvasWidget Size="600, 220" HorizontalAlignment="Center">
+          <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="128, 128, 128, 128" />
+          <ListPanelWidget Name="ListView" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" ItemSize="40" SelectionColor="10, 70, 0, 90" />
+        </CanvasWidget>
+
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 5">
+          <BevelledButtonWidget Text="Copy" Size="135, 55" Name="Copy" />
+          <BevelledButtonWidget Text="Export" Size="135, 55" Name="Export" />
+          <BevelledButtonWidget Text="Import" Size="135, 55" Name="Import" />
+          <BevelledButtonWidget Text="Delete" Size="135, 55" Name="Delete" />
+        </StackPanelWidget>
+
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+          <BevelledButtonWidget Text="Paste" Size="105, 55" Name="Paste" />
+          <BevelledButtonWidget Text="Mirror" Size="105, 55" Name="Mirror" />
+          <BevelledButtonWidget Text="Cancel" Size="105, 55" Name="Cancel" />
+        </StackPanelWidget>
+
+
+      </StackPanelWidget>
+    </ScrollPanelWidget>
+  </CanvasWidget>
+
+</CanvasWidget>

@@ -98,7 +98,7 @@ namespace Game
 			}
 			if (MotdManager.MessageOfTheDay == null && !string.IsNullOrEmpty(SettingsManager.MotdLastDownloadedData))
 			{
-				MotdManager.MessageOfTheDay = MotdManager.ParseMotd(SettingsManager.MotdLastDownloadedData);
+				//MotdManager.MessageOfTheDay = MotdManager.ParseMotd(SettingsManager.MotdLastDownloadedData);
 				if (MotdManager.MessageOfTheDay == null)
 				{
 					SettingsManager.MotdLastDownloadedData = string.Empty;

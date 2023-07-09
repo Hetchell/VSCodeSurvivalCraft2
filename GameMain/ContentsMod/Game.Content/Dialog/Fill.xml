@@ -1,0 +1,28 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="700, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 25">
+      
+	  <LabelWidget Name="Fill" Text="Fill" HorizontalAlignment="Center" Color="127,255,127" Margin="0, 10"/>
+	  
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BlockIconWidget Name="Block" Size="50, 50" VerticalAlignment="Center" HorizontalAlignment="Center" Contents="1" />
+        <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		  <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+          <TextBoxWidget Name="BlockID" Title="方块ID" Text="2" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+        </CanvasWidget>
+		<BevelledButtonWidget Name="SelectBlock" Size="60, 50" Text="..." VerticalAlignment="Center"/>
+      </StackPanelWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="Fill" Size="240, 50" Name="Fill1"/>
+	    <BevelledButtonWidget Text="Cancel" Size="240, 50" Name="Cancel"/>
+      </StackPanelWidget>
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Text;
 using Engine;
 using Engine.Content;
+using GameMain;
 using OpenTK;
 
 namespace Game
@@ -103,15 +104,9 @@ namespace Game
 				p = MathUtils.Abs(p);
 				text += text2[p].ToString();
 			}
-			//This is the key to decode .pak. 
-			text = "tiTrKAXRpwuRhNI3gTkxIun6AyLxSZaIgEjVkyFWhD6w0QgwmN5YwykY2I" +
-				"79OHIolI1r4ewZ2uEfStqC7GRDM8CRTNQTdg91pkOk" +
-				"bnIPAiEp2EqkZWYPgPv6CNZpB3E1OuuBmR3ZzYEv8UMj" +
-				"QxjyXZy1CEOD8guk3uiiPvyFaf5pS" + //"QxjyXZy1CEOD8guk3uiiPvyFaf5pS"
-                "znSNWXbnhmAzTbi1TEGCyhxejMTB2" + //"znSNWXbnhmAzTbi1TEGCyhxejMTB2"
-                "3KUgqNiskGlrHaIVNz83DXVGkvm";
+			//This is the key to decode .pak
 			//text = "Something nyaa";
-            return text;
+            return Program.m_contentpak_key;
 		}
 	}
 }

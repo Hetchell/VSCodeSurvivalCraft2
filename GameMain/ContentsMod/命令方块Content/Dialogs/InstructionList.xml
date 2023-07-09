@@ -1,0 +1,38 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <CanvasWidget Size="720, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+  
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+		
+		<StackPanelWidget HorizontalAlignment="Center">
+			<LabelWidget Font="{Fonts/Pericles}" Text=" " HorizontalAlignment="Center"/>
+			<CanvasWidget Size="260, 0" />
+			<LabelWidget Name="Title" Font="{Fonts/Pericles}" Text="" HorizontalAlignment="Center"/>
+			<CanvasWidget Size="175, 0" />
+			<BitmapButtonWidget Name="SearchButton" Text="" Size="30, 30" NormalSubtexture="{Textures/Search}" ClickedSubtexture="{Textures/Search}" Margin="0, 3" />
+			<CanvasWidget Size="30, 0" />
+			<BitmapButtonWidget Name="ChangeButton" Text="" Size="30, 30" NormalSubtexture="{Textures/Change}" ClickedSubtexture="{Textures/Change}" Margin="0, 3" />
+		</StackPanelWidget>
+      
+      <CanvasWidget Margin="20, 15">
+        <RectangleWidget FillColor="0, 0, 0, 0" OutlineColor="128, 128, 128, 128" OutlineThickness="1" />
+        <StackPanelWidget Direction="Vertical">
+           <ListPanelWidget Name="Instruction.List" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" SelectionColor="10, 70, 0, 90"/>
+        </StackPanelWidget>
+      </CanvasWidget>
+
+      <StackPanelWidget HorizontalAlignment="Center">
+        <BevelledButtonWidget Name="OkButton" Text="关闭" Style="{Styles/ButtonStyle_160x60}"  />
+        <CanvasWidget Size="30, 0" />
+        <BevelledButtonWidget Name="FuntionButton" Text="指令功能" Style="{Styles/ButtonStyle_160x60}"  />
+        <CanvasWidget Size="30, 0" />
+        <BevelledButtonWidget Name="InformationButton" Text="手册" Style="{Styles/ButtonStyle_160x60}" />
+      </StackPanelWidget>
+
+    </StackPanelWidget>
+    
+  </CanvasWidget>
+  
+</CanvasWidget>

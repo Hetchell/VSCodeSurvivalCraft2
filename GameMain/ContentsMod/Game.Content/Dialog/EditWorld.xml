@@ -1,0 +1,158 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+  <!--0, 0, 0, 192-->
+  <RectangleWidget FillColor="0, 110, 70, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="670, 410" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+	
+	    <ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3, 3">
+          <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <!--New world only panel-->
+            <StackPanelWidget Name="NewWorldOnlyPanel" Direction="Vertical" HorizontalAlignment="Center">
+
+              <!--Terrain generation-->
+              <StackPanelWidget Name="TerrainGenerationPanel" Direction="Vertical" >
+
+                <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                  <LabelWidget Text="Terrain type:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                  <StackPanelWidget Direction="Horizontal" VerticalAlignment="Center" Margin="20, 0">
+                    <LabelWidget Name="TerrainGenerationLabel" VerticalAlignment="Center" />
+                    <CanvasWidget Size="Infinity, 0"/>
+                    <BevelledButtonWidget Name="TerrainGeneration" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+                  </StackPanelWidget>
+                </UniformSpacingPanelWidget>
+
+                <StackPanelWidget Name="ContinentTerrainPanel" Direction="Vertical"/>
+
+                <StackPanelWidget Name="IslandTerrainPanel" Direction="Vertical">
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="Island size East/West:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="IslandSizeEW" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
+                  </UniformSpacingPanelWidget>
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="Island size South/North:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="IslandSizeNS" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" />
+                  </UniformSpacingPanelWidget>
+                </StackPanelWidget>
+
+                <StackPanelWidget Name="FlatTerrainPanel" Direction="Vertical" >
+
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="Flat terrain height:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <SliderWidget Name="FlatTerrainLevel" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="8" MinValue="1" MaxValue="127" />
+                  </UniformSpacingPanelWidget>
+
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="Flat terrain materials:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <StackPanelWidget Direction="Horizontal" Margin="20, 0">
+                      <BlockIconWidget Name="FlatTerrainBlock" Size="64, 64" VerticalAlignment="Center" HorizontalAlignment="Center" Contents="1" />
+                      <CanvasWidget Size="10, 0" />
+                      <LabelWidget Name="FlatTerrainBlockLabel" VerticalAlignment="Center" />
+                      <CanvasWidget Size="20, 0" />
+                      <BevelledButtonWidget Name="FlatTerrainBlockButton" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+                    </StackPanelWidget>
+                  </UniformSpacingPanelWidget>
+
+                  <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                    <LabelWidget Text="Lava Ocean:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                    <CheckboxWidget Name="MagmaOcean" VerticalAlignment="Center" IsAutoCheckingEnabled="false" Margin="20, 14" />
+                  </UniformSpacingPanelWidget>
+
+                </StackPanelWidget>
+
+              </StackPanelWidget>
+
+              <!-- Terrain options -->
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="Sea level:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="SeaLevelOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="1" MinValue="-64" MaxValue="64" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="Temperature:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="TemperatureOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="Humidity:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="HumidityOffset" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="BiomeSize:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <SliderWidget Name="BiomeSize" Size="Infinity, 60" VerticalAlignment="Center" Margin="20, 0" Granularity="2" MinValue="-16" MaxValue="16" />
+              </UniformSpacingPanelWidget>
+
+            </StackPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="BlockTexture:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <StackPanelWidget Direction="Horizontal" Margin="20, 0">
+                <CanvasWidget Size="6, 0" />
+                <RectangleWidget Name="BlocksTextureIcon" Size="56, 56" FillColor="255, 255, 255" OutlineColor="0, 0, 0, 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <CanvasWidget Size="10, 0" />
+                <CanvasWidget Size="Infinity, 64">
+                  <StackPanelWidget Direction="Vertical" VerticalAlignment="Center">
+                    <LabelWidget Name="BlocksTextureLabel" />
+                    <LabelWidget Name="BlocksTextureDetails" Color="128, 128, 128"/>
+                  </StackPanelWidget>
+                </CanvasWidget>
+                <BevelledButtonWidget Name="BlocksTextureButton" Style="{Styles/ButtonStyle_70x60}" Text="..." VerticalAlignment="Center" />
+              </StackPanelWidget>
+            </UniformSpacingPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="CustomizePaintColours:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="Palette" Text="..." Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            </UniformSpacingPanelWidget>
+
+            <!--Creative mode panel-->
+            <StackPanelWidget Name="CreativeModePanel" Direction="Vertical" HorizontalAlignment="Center">
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="EnvironmentBehavior:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="EnvironmentBehavior" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="TimeOfDay:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="TimeOfDay" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="WeatherEffects:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="WeatherEffects" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="AdventureRespawn:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="AdventureRespawn" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+              <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+                <LabelWidget Text="AdventureSurvivalMechanics:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+                <BevelledButtonWidget Name="AdventureSurvivalMechanics" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+              </UniformSpacingPanelWidget>
+
+            </StackPanelWidget>
+
+            <UniformSpacingPanelWidget Direction="Horizontal" Margin="0, 3">
+              <LabelWidget Text="SupernaturalCreatures:" Color="128, 128, 128" HorizontalAlignment="Far" VerticalAlignment="Center" Margin="20, 0" />
+              <BevelledButtonWidget Name="SupernaturalCreatures" Style="{Styles/ButtonStyle_310x60}" VerticalAlignment="Center" Margin="20, 0" />
+            </UniformSpacingPanelWidget>
+			
+			<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+			  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+				<BevelledButtonWidget Text="确定" Style="{Styles/ButtonStyle_160x60}" Name="OK" Margin="10, 0" />
+				<BevelledButtonWidget Text="重载" Style="{Styles/ButtonStyle_160x60}" Name="Reload" Margin="5, 0" />
+				<BevelledButtonWidget Text="刷新" Style="{Styles/ButtonStyle_160x60}" Name="Refresh" Margin="5, 0" />
+			  </StackPanelWidget>
+			</UniformSpacingPanelWidget>
+
+          </StackPanelWidget>
+        </ScrollPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

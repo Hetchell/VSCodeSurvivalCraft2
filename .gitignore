@@ -14,7 +14,7 @@
 *Survivalcraft.dll
 
 #All xmls, can be done on local machine
-*.xml
+#*.xml
 
 #folders in bin/Debug/<main>
 **/CharacterSkins
