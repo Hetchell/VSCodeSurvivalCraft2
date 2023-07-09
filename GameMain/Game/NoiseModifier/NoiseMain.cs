@@ -2,6 +2,7 @@
 using Game;
 using OpenTK;
 using Random = Game.Random;
+using Calculator = ModificationHolder.Calculator;
 
 namespace Survivalcraft.Game.NoiseModifier
 {
@@ -919,7 +920,7 @@ namespace Survivalcraft.Game.NoiseModifier
 
         public double[] UseImprovedNoiseGenerateNoiseOctaves(double[] noiseArray, int xOffset, int yOffset, int zOffset, int xSize, int ySize, int zSize, double xScale, double yScale, double zScale)
         {
-            if (noiseArray == null)
+            if (Calculator.SumArray(noiseArray) == 0)
             {
                 noiseArray = new double[xSize * ySize * zSize];
             }

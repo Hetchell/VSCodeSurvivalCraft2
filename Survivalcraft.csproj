@@ -25,7 +25,6 @@
     <Reference Include="SharpDX.XInput" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="System" />
-    <Reference Include="System.Drawing" />
+    <Reference Include="System, Version=4.0.0.0" />
   </ItemGroup>
 </Project>

@@ -5,7 +5,7 @@ using noiseConst = Survivalcraft.Game.ModificationHolder.ModificationsHolder.Noi
 
 namespace ModificationHolder
 {
-    class Calculator
+    public class Calculator
     {
         private readonly TerrainChunkGeneratorProviderActive activeChunkProvider;
         private readonly NoiseMain noiseMain;
@@ -158,6 +158,14 @@ namespace ModificationHolder
             float f_23 = MathUtils.Min(MathUtils.Lerp(f_22, f_14, f_21), f_22);
             return MathUtils.Clamp(64f + f_23, 10f, 251f);
 
+        }
+
+        public static double SumArray(double[] array) {
+            double d0 = 0.0D;
+            for(int i = 0; i < array.Length; i++) {
+                d0 += array[i];
+            }
+            return d0;
         }
 
     }

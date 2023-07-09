@@ -4,6 +4,7 @@ using System.Diagnostics;
 using Engine;
 using Survivalcraft.Game;
 using ModifierHolderTerrainGen = ModificationHolder.ModifierHolderTerrainGen;
+using ModificationsHolder = Survivalcraft.Game.ModificationHolder.ModificationsHolder;
 
 namespace Game
 {
@@ -139,12 +140,9 @@ namespace Game
 			this.GenerateCaves(chunk);
 			this.GeneratePockets(chunk);
 			this.GenerateMinerals(chunk);
-			Action<TerrainChunk> generateMinerals = TerrainChunkGeneratorProviderActive.GenerateMinerals2;
-			if (generateMinerals != null)
-			{
-				generateMinerals(chunk);
+			if(ModificationsHolder.WorldProperties.populateBiome) {
+				this.GenerateSurface(chunk);
 			}
-			this.GenerateSurface(chunk);
 			this.PropagateFluidsDownwards(chunk);
 		}
 
@@ -152,16 +150,20 @@ namespace Game
 		public void GenerateChunkContentsPass4(TerrainChunk chunk)
 		{
 			this.GenerateGrassAndPlants(chunk);
-			this.GenerateTreesAndLogs(chunk);
+			if(ModificationsHolder.WorldProperties.populateTrees) {
+				this.GenerateTreesAndLogs(chunk);
+			}
 			this.GenerateCacti(chunk);
 			this.GeneratePumpkins(chunk);
 			this.GenerateKelp(chunk);
 			this.GenerateSeagrass(chunk);
 			this.GenerateBottomSuckers(chunk);
-			this.GenerateTraps(chunk); //possible crash causing method. 
+			//this.GenerateTraps(chunk); //possible crash causing method. 
 			//this.GenerateIvy(chunk);
 			this.GenerateGraves(chunk);
-			this.GenerateSnowAndIce(chunk);
+			if(ModificationsHolder.WorldProperties.temperatureEffects) {
+				this.GenerateSnowAndIce(chunk);
+			}
 			this.GenerateBedrockAndAir(chunk);
 			this.UpdateFluidIsTop(chunk);
 		}
@@ -216,7 +218,8 @@ namespace Game
 			float f3 = this.TGRiversStrength * num12;
 			float num18 = num13 + num14 + num15 + num17 + num16;
 			float num19 = MathUtils.Min(MathUtils.Lerp(num18, x2, f3), num18);
-			return MathUtils.Clamp(64f + num19, 10f, 251f);//64, 10, 251
+			float k = MathUtils.Clamp(64f + num19, 10f, 251f);//64, 10, 251
+			return this.modifyTerrain.getCalculator().CalculateHeight(k, z);//(x, z)
 		}
 
 		// Token: 0x06001679 RID: 5753 RVA: 0x000AE00C File Offset: 0x000AC20C
@@ -387,6 +390,8 @@ namespace Game
 					int num2 = j + chunk.Origin.Y;
 					int temperature = this.CalculateTemperature((float)num, (float)num2);
 					int humidity = this.CalculateHumidity((float)num, (float)num2);
+					temperature = 0;
+					humidity = 50;
 					chunk.SetTemperatureFast(i, j, temperature);
 					chunk.SetHumidityFast(i, j, humidity);
 				}
@@ -579,11 +584,6 @@ namespace Game
 		{
 			if (!this.TGCavesAndPockets)
 			{
-				return;
-			}
-			if (TerrainChunkGeneratorProviderActive.GenerateMinerals1 != null)
-			{
-				TerrainChunkGeneratorProviderActive.GenerateMinerals1(chunk);
 				return;
 			}
 			int x = chunk.Coords.X;

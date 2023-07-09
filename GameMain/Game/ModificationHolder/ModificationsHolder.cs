@@ -15,13 +15,12 @@ namespace Survivalcraft.Game.ModificationHolder
         public static bool allowWolfDespawn = true;
         public static bool fogEnable = false;
         public static bool allowForUnrestrictedTravel = true;
-        public static bool allowFixedSpawn = true;
-        public static int seed = 1638478217;
+        
         public static float steppedLevelTravel = 10f;
         public static String[] animalTypes = { "Wolf", "Hyena", "Lion" };
         public static float movementLimitPlayer = 100f * 100f;
         public static float movementLimitAnimalsDerFlying = 300f;
-        public static Vector3 spawnfixed = new Vector3(0, 300, 0);
+        public static bool enableHitSound = true;
 
         private static int repeat = 0;
         private static int repeatCom = 0;
@@ -217,5 +216,31 @@ namespace Survivalcraft.Game.ModificationHolder
                 1f //OceanLevelMultiplier22
             };
         }
+
+        public static class WorldProperties {
+
+            public static bool allowFixedSpawn = true;
+            public static int seed = 1638478217;
+            public static Vector3 spawnfixed = new Vector3(0, 300, 0);
+            public static bool populateBiome = true;
+            public static bool populateTrees = true;
+            public static bool temperatureEffects = true;
+
+        }
     }
+}
+
+namespace TerrainGenerator {
+
+    public class TerrainProperties {
+
+        public readonly static bool allowConstantPermutationArray = true;
+        public struct MethodControl {
+
+            public readonly static bool overrideOceanShoreDistance = false;
+            public readonly static bool overrideMountainRangeFactor = false;
+            public readonly static bool overrideCalculateHeight = false;
+        }
+    }
+
 }

@@ -8,6 +8,7 @@ using GameEntitySystem;
 using TemplatesDatabase;
 using Color = Engine.Color;
 using Rectangle = Engine.Rectangle;
+using Survivalcraft.Game.ModificationHolder;
 namespace Game
 {
 	// Token: 0x020001F3 RID: 499
@@ -563,6 +564,7 @@ namespace Game
 		// Token: 0x06000E94 RID: 3732 RVA: 0x00070AB0 File Offset: 0x0006ECB0
 		public static void AttackBody(ComponentBody target, ComponentCreature attacker, Vector3 hitPoint, Vector3 hitDirection, float attackPower, bool isMeleeAttack)
 		{
+			float healthloss = attackPower;
 			if (attacker != null && attacker is ComponentPlayer && target.Entity.FindComponent<ComponentPlayer>() != null && !target.Project.FindSubsystem<SubsystemGameInfo>(true).WorldSettings.IsFriendlyFireEnabled)
 			{
 				attacker.Entity.FindComponent<ComponentGui>(true).DisplaySmallMessage(LanguageControl.Get(ComponentMiner.fName, 3), Color.White, true, true);
@@ -617,7 +619,8 @@ namespace Game
 					}
 					float health = componentHealth.Health;
 					componentHealth.Injure(num, attacker, false, cause);
-					if (num > 0f)
+					bool bypassallowed = componentLevel.ResilienceFactor > 1000000 && healthloss > 0 && ModificationsHolder.enableHitSound;
+					if (num > 0f || bypassallowed)
 					{
 						target.Project.FindSubsystem<SubsystemAudio>(true).PlayRandomSound("Audio/Impacts/Body", 1f, ComponentMiner.s_random.Float(-0.3f, 0.3f), target.Position, 4f, false);
 						float num2 = (health - componentHealth.Health) * componentHealth.AttackResilience;

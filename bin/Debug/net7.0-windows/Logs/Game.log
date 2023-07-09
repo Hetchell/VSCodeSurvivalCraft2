@@ -2592,3 +2592,482 @@ Could not find a part of the path 'D:\C projects\VSCodeCsharpProj\Survivalcraft\
 23:45:33.060 INFO: Mods manager initialize success
 23:45:33.060 INFO: Loaded 0 dlls;0 dlls not loaded
 23:45:59.123 INFO: Saved settings
+08:06:43.148 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+08:06:43.160 INFO: GLES Vendor: ATI Technologies Inc.
+08:06:43.160 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+08:06:43.160 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+08:06:44.275 INFO: Survivalcraft starting up at 03/07/2023 08:06:44, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=350546MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-714MB, 64bit=True
+08:06:44.357 INFO: Loaded settings.
+08:06:44.422 INFO: Mods manager initialize success
+08:06:44.422 INFO: Loaded 0 dlls;0 dlls not loaded
+08:06:44.546 INFO: Downloading MOTD
+08:06:45.624 INFO: Downloaded MOTD
+08:07:10.694 INFO: Saved settings
+08:07:55.283 INFO: Saved settings
+08:08:27.427 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Coracre, VisibilityRange=112, Resolution=High
+20:44:02.835 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:44:02.848 INFO: GLES Vendor: ATI Technologies Inc.
+20:44:02.848 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:44:02.848 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+20:44:03.916 INFO: Survivalcraft starting up at 03/07/2023 20:44:03, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=346827MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1021MB, 64bit=True
+20:44:03.992 INFO: Loaded settings.
+20:44:04.010 INFO: Mods manager initialize success
+20:44:04.010 INFO: Loaded 0 dlls;0 dlls not loaded
+20:44:04.090 INFO: Downloading MOTD
+20:44:05.166 INFO: Downloaded MOTD
+20:44:25.459 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Hollowshore, VisibilityRange=112, Resolution=High
+20:48:25.209 INFO: PerformanceManager Measurement: frames=25863, avgFrameTime=5ms, avgFrameCpuTime=0ms
+20:49:50.651 INFO: Saved settings
+15:30:57.248 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+15:30:57.263 INFO: GLES Vendor: ATI Technologies Inc.
+15:30:57.263 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+15:30:57.263 INFO: GLES Version: 4.6.14761 Compatibility Profile Context 21.30.02.01 30.0.13002.1001
+15:30:57.931 INFO: Survivalcraft starting up at 03/12/2023 15:30:57, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=320162MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1996MB, 64bit=True
+15:30:58.027 INFO: Loaded settings.
+15:30:58.105 INFO: Mods manager initialize success
+15:30:58.105 INFO: Loaded 0 dlls;0 dlls not loaded
+15:30:58.227 INFO: Downloading MOTD
+15:30:59.505 INFO: Downloaded MOTD
+15:31:23.054 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Aldley, VisibilityRange=112, Resolution=High
+15:32:07.682 INFO: Saved settings
+21:30:58.041 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+21:30:58.052 INFO: GLES Vendor: ATI Technologies Inc.
+21:30:58.052 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+21:30:58.052 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+21:30:58.808 INFO: Survivalcraft starting up at 06/20/2023 21:30:58, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294518MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1852MB, 64bit=True
+21:30:58.901 INFO: Loaded settings.
+21:30:58.997 INFO: Mods manager initialize success
+21:30:58.997 INFO: Loaded 0 dlls;0 dlls not loaded
+21:30:59.056 INFO: Downloading MOTD
+21:31:00.108 INFO: Downloaded MOTD
+21:31:12.962 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Violetdale, VisibilityRange=112, Resolution=High
+21:31:52.740 INFO: Saved settings
+21:32:23.292 INFO: Saved settings
+21:33:29.552 INFO: Saved settings
+22:34:07.355 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+22:34:07.364 INFO: GLES Vendor: ATI Technologies Inc.
+22:34:07.364 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+22:34:07.364 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+22:34:08.719 INFO: Survivalcraft starting up at 06/20/2023 22:34:08, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294047MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1662MB, 64bit=True
+22:34:08.796 INFO: Loaded settings.
+22:34:08.871 INFO: Mods manager initialize success
+22:34:08.871 INFO: Loaded 0 dlls;0 dlls not loaded
+22:38:13.746 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Mallowhurst, VisibilityRange=112, Resolution=High
+22:49:38.878 INFO: Saved settings
+22:53:18.654 INFO: Saved settings
+23:29:32.822 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+23:29:32.830 INFO: GLES Vendor: ATI Technologies Inc.
+23:29:32.830 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+23:29:32.830 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+23:29:34.066 INFO: Survivalcraft starting up at 06/20/2023 23:29:33, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294046MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1821MB, 64bit=True
+23:29:34.135 INFO: Loaded settings.
+23:29:34.153 INFO: Mods manager initialize success
+23:29:34.153 INFO: Loaded 0 dlls;0 dlls not loaded
+23:29:40.470 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 111
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+23:29:47.802 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Woodholt, VisibilityRange=112, Resolution=High
+23:30:54.382 INFO: Saved settings
+23:34:15.329 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+23:34:15.337 INFO: GLES Vendor: ATI Technologies Inc.
+23:34:15.337 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+23:34:15.337 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+23:34:16.538 INFO: Survivalcraft starting up at 06/20/2023 23:34:16, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294048MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1820MB, 64bit=True
+23:34:16.608 INFO: Loaded settings.
+23:34:16.625 INFO: Mods manager initialize success
+23:34:16.625 INFO: Loaded 0 dlls;0 dlls not loaded
+23:34:36.866 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Ironfalcon, VisibilityRange=112, Resolution=High
+23:36:26.016 INFO: Saved settings
+09:36:57.107 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:36:57.118 INFO: GLES Vendor: ATI Technologies Inc.
+09:36:57.118 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:36:57.118 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+09:36:58.785 INFO: Survivalcraft starting up at 06/21/2023 09:36:58, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294373MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1312MB, 64bit=True
+09:36:58.880 INFO: Loaded settings.
+09:36:58.970 INFO: Mods manager initialize success
+09:36:58.971 INFO: Loaded 0 dlls;0 dlls not loaded
+09:36:59.038 INFO: Downloading MOTD
+09:37:00.155 INFO: Downloaded MOTD
+09:37:06.418 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Ashhaven, VisibilityRange=112, Resolution=High
+09:38:01.068 INFO: Saved settings
+09:43:00.218 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:43:00.232 INFO: GLES Vendor: ATI Technologies Inc.
+09:43:00.232 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:43:00.232 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+09:43:01.642 INFO: Survivalcraft starting up at 06/21/2023 09:43:01, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294371MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1968MB, 64bit=True
+09:43:01.733 INFO: Loaded settings.
+09:43:01.754 INFO: Mods manager initialize success
+09:43:01.754 INFO: Loaded 0 dlls;0 dlls not loaded
+09:43:13.921 INFO: Saved settings
+09:43:25.506 INFO: Saved settings
+09:43:43.568 INFO: Saved settings
+09:52:19.487 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:52:19.499 INFO: GLES Vendor: ATI Technologies Inc.
+09:52:19.499 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:52:19.499 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+09:52:20.980 INFO: Survivalcraft starting up at 06/21/2023 09:52:20, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294367MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1827MB, 64bit=True
+09:52:21.063 INFO: Loaded settings.
+09:52:21.084 INFO: Mods manager initialize success
+09:52:21.084 INFO: Loaded 0 dlls;0 dlls not loaded
+09:52:32.021 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Beechbush, VisibilityRange=112, Resolution=High
+09:52:46.936 INFO: Saved settings
+09:55:42.333 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+09:55:42.345 INFO: GLES Vendor: ATI Technologies Inc.
+09:55:42.345 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+09:55:42.345 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+09:55:43.760 INFO: Survivalcraft starting up at 06/21/2023 09:55:43, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294366MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1843MB, 64bit=True
+09:55:43.845 INFO: Loaded settings.
+09:55:43.865 INFO: Mods manager initialize success
+09:55:43.865 INFO: Loaded 0 dlls;0 dlls not loaded
+09:56:02.785 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 111
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+09:56:09.460 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Norpond, VisibilityRange=112, Resolution=High
+09:57:13.695 INFO: Saved settings
+10:17:16.803 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+10:17:16.816 INFO: GLES Vendor: ATI Technologies Inc.
+10:17:16.816 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+10:17:16.816 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+10:17:18.442 INFO: Survivalcraft starting up at 06/21/2023 10:17:18, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294389MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1619MB, 64bit=True
+10:17:18.523 INFO: Loaded settings.
+10:17:18.542 INFO: Mods manager initialize success
+10:17:18.542 INFO: Loaded 0 dlls;0 dlls not loaded
+10:17:25.938 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Whitefox, VisibilityRange=112, Resolution=High
+10:21:25.693 INFO: PerformanceManager Measurement: frames=25464, avgFrameTime=5ms, avgFrameCpuTime=5ms
+10:22:18.650 INFO: Saved settings
+10:27:09.178 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+10:27:09.195 INFO: GLES Vendor: ATI Technologies Inc.
+10:27:09.195 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+10:27:09.196 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+10:27:10.737 INFO: Survivalcraft starting up at 06/21/2023 10:27:10, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=294384MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-882MB, 64bit=True
+10:27:10.818 INFO: Loaded settings.
+10:27:10.837 INFO: Mods manager initialize success
+10:27:10.837 INFO: Loaded 0 dlls;0 dlls not loaded
+10:27:20.994 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Strongsilver, VisibilityRange=112, Resolution=High
+10:27:28.486 INFO: Saved settings
+00:00:24.896 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+00:00:24.905 INFO: GLES Vendor: ATI Technologies Inc.
+00:00:24.905 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+00:00:24.905 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+00:00:25.715 INFO: Survivalcraft starting up at 06/24/2023 00:00:25, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=297479MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1055MB, 64bit=True
+00:00:25.798 INFO: Loaded settings.
+00:00:25.884 INFO: Mods manager initialize success
+00:00:25.884 INFO: Loaded 0 dlls;0 dlls not loaded
+00:00:25.939 INFO: Downloading MOTD
+00:00:27.021 INFO: Downloaded MOTD
+00:02:01.120 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Beechbush, VisibilityRange=112, Resolution=High
+00:06:00.887 INFO: PerformanceManager Measurement: frames=25921, avgFrameTime=5ms, avgFrameCpuTime=0ms
+00:06:46.980 INFO: Saved settings
+00:06:50.937 INFO: Saved settings
+11:35:19.589 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+11:35:19.599 INFO: GLES Vendor: ATI Technologies Inc.
+11:35:19.599 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+11:35:19.599 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+11:35:19.987 INFO: Survivalcraft starting up at 07/08/2023 11:35:19, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=305998MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1812MB, 64bit=True
+11:35:20.062 INFO: Loaded settings.
+11:35:20.143 INFO: Mods manager initialize success
+11:35:20.143 INFO: Loaded 0 dlls;0 dlls not loaded
+11:35:20.194 INFO: Downloading MOTD
+11:35:20.615 INFO: Downloaded MOTD
+11:35:28.091 INFO: Saved settings
+13:52:56.204 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+13:52:56.213 INFO: GLES Vendor: ATI Technologies Inc.
+13:52:56.213 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+13:52:56.213 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+13:52:56.979 INFO: Survivalcraft starting up at 07/09/2023 13:52:56, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300582MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=609MB, 64bit=True
+13:52:57.067 INFO: Loaded settings.
+13:52:57.153 INFO: Mods manager initialize success
+13:52:57.153 INFO: Loaded 0 dlls;0 dlls not loaded
+13:52:57.202 ERROR: Unhandled exception.
+Could not find file 'D:\C projects\VSCodeCsharpProj\Survivalcraft\bin\Debug\net7.0-windows\Content.pak'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.Open(String path, FileMode mode, FileAccess access, FileShare share)
+   at Engine.Storage.OpenFile(String path, OpenFileMode openFileMode)
+   at Engine.Content.ContentCache.<>c__DisplayClass9_0.<AddPackage>b__0()
+   at Engine.Content.ContentStream..ctor(Func`1 streamFactory)
+   at Engine.Content.ContentCache.AddPackage(Func`1 streamFactory, Byte[] tocPad, Byte[] contentPad)
+   at Engine.Content.ContentCache.AddPackage(String path, Byte[] tocPad, Byte[] contentPad)
+   at Game.ContentManager.Initialize() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ContentManager.cs:line 18
+   at Game.ProgramGame.Initialize() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 126
+   at Game.ProgramGame.FrameHandler() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 98
+   at Engine.Window.RenderFrameHandler(Object sender, EventArgs args)
+   at OpenTK.GameWindow.OnRenderFrame(FrameEventArgs e)
+   at OpenTK.GameWindow.OnRenderFrameInternal(FrameEventArgs e)
+   at OpenTK.GameWindow.RaiseRenderFrame(Double elapsed, Double& timestamp)
+   at OpenTK.GameWindow.DispatchUpdateAndRenderFrame(Object sender, EventArgs e)
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at Engine.Window.Run(Int32 width, Int32 height, WindowMode windowMode, String title)
+   at Game.ProgramGame.MainMethod() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 60
+   at GameMain.Program.Main(String[] args) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Program.cs:line 28
+13:53:43.268 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+13:53:43.277 INFO: GLES Vendor: ATI Technologies Inc.
+13:53:43.277 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+13:53:43.277 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+13:53:43.909 INFO: Survivalcraft starting up at 07/09/2023 13:53:43, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300584MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=1755MB, 64bit=True
+13:53:43.982 INFO: Loaded settings.
+13:53:44.000 INFO: Mods manager initialize success
+13:53:44.000 INFO: Loaded 0 dlls;0 dlls not loaded
+13:53:44.045 INFO: Downloading MOTD
+13:54:07.733 INFO: Saved settings
+13:54:16.004 ERROR: 522 (522)
+
+13:54:16.006 ERROR: Failed downloading MOTD. Reason: 522 (522)
+
+13:54:28.008 INFO: Saved settings
+13:54:54.489 INFO: Saved settings
+14:04:37.894 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+14:04:37.903 INFO: GLES Vendor: ATI Technologies Inc.
+14:04:37.903 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+14:04:37.903 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+14:04:38.520 INFO: Survivalcraft starting up at 07/09/2023 14:04:38, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300578MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1424MB, 64bit=True
+14:04:38.591 INFO: Loaded settings.
+14:04:38.608 INFO: Mods manager initialize success
+14:04:38.608 INFO: Loaded 0 dlls;0 dlls not loaded
+14:09:03.429 INFO: Saved settings
+14:09:07.699 INFO: Saved settings
+18:09:43.652 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:09:43.661 INFO: GLES Vendor: ATI Technologies Inc.
+18:09:43.661 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:09:43.661 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:09:44.340 INFO: Survivalcraft starting up at 07/09/2023 18:09:44, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300471MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1158MB, 64bit=True
+18:09:44.363 INFO: Loaded settings.
+18:09:44.379 INFO: Mods manager initialize success
+18:09:44.379 INFO: Loaded 0 dlls;0 dlls not loaded
+18:09:45.119 INFO: Downloading MOTD
+18:09:49.991 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Shuuko, VisibilityRange=112, Resolution=High
+18:10:16.641 ERROR: 522 (522)
+
+18:10:32.002 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:10:32.011 INFO: GLES Vendor: ATI Technologies Inc.
+18:10:32.011 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:10:32.011 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:10:32.659 INFO: Survivalcraft starting up at 07/09/2023 18:10:32, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300469MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1468MB, 64bit=True
+18:10:32.680 INFO: Loaded settings.
+18:10:32.695 INFO: Mods manager initialize success
+18:10:32.695 INFO: Loaded 0 dlls;0 dlls not loaded
+18:10:33.438 INFO: Downloading MOTD
+18:10:34.717 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+18:10:36.836 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Shuuko, VisibilityRange=112, Resolution=High
+18:10:44.808 INFO: Saved settings
+18:12:03.852 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:12:03.860 INFO: GLES Vendor: ATI Technologies Inc.
+18:12:03.860 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:12:03.860 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:12:04.535 INFO: Survivalcraft starting up at 07/09/2023 18:12:04, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300468MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1911MB, 64bit=True
+18:12:04.625 INFO: Loaded settings.
+18:12:04.643 INFO: Mods manager initialize success
+18:12:04.644 INFO: Loaded 0 dlls;0 dlls not loaded
+18:12:13.238 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Marshdell, VisibilityRange=64, Resolution=High
+18:12:19.569 INFO: Saved settings
+18:14:30.759 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:14:30.767 INFO: GLES Vendor: ATI Technologies Inc.
+18:14:30.767 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:14:30.767 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:14:31.423 INFO: Survivalcraft starting up at 07/09/2023 18:14:31, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300470MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-352MB, 64bit=True
+18:14:31.446 INFO: Loaded settings.
+18:14:31.465 INFO: Mods manager initialize success
+18:14:31.465 INFO: Loaded 0 dlls;0 dlls not loaded
+18:14:41.253 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Kocchikamigosh, VisibilityRange=64, Resolution=High
+18:16:25.727 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:16:25.735 INFO: GLES Vendor: ATI Technologies Inc.
+18:16:25.735 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:16:25.735 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:16:26.386 INFO: Survivalcraft starting up at 07/09/2023 18:16:26, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300467MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-649MB, 64bit=True
+18:16:26.410 INFO: Loaded settings.
+18:16:26.429 INFO: Mods manager initialize success
+18:16:26.429 INFO: Loaded 0 dlls;0 dlls not loaded
+18:16:35.162 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Nayami, VisibilityRange=64, Resolution=High
+18:16:43.643 INFO: Saved settings
+18:18:13.050 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+18:18:13.060 INFO: GLES Vendor: ATI Technologies Inc.
+18:18:13.060 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+18:18:13.060 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+18:18:13.695 INFO: Survivalcraft starting up at 07/09/2023 18:18:13, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300466MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1023MB, 64bit=True
+18:18:13.718 INFO: Loaded settings.
+18:18:13.737 INFO: Mods manager initialize success
+18:18:13.737 INFO: Loaded 0 dlls;0 dlls not loaded
+18:18:20.921 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Nayami, VisibilityRange=64, Resolution=High
+18:18:35.744 INFO: Saved settings
+19:14:28.971 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:14:28.979 INFO: GLES Vendor: ATI Technologies Inc.
+19:14:28.979 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:14:28.979 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+19:14:29.743 INFO: Survivalcraft starting up at 07/09/2023 19:14:29, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300464MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=680MB, 64bit=True
+19:14:29.770 INFO: Loaded settings.
+19:14:29.845 INFO: Mods manager initialize success
+19:14:29.845 INFO: Loaded 0 dlls;0 dlls not loaded
+19:14:50.315 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+19:14:50.338 INFO: Saved settings
+19:14:54.553 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Nayami, VisibilityRange=64, Resolution=High
+19:18:10.722 INFO: Saved settings
+19:18:56.071 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:18:56.081 INFO: GLES Vendor: ATI Technologies Inc.
+19:18:56.081 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:18:56.081 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+19:18:56.714 INFO: Survivalcraft starting up at 07/09/2023 19:18:56, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300462MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=573MB, 64bit=True
+19:18:56.735 INFO: Loaded settings.
+19:18:56.750 INFO: Mods manager initialize success
+19:18:56.750 INFO: Loaded 0 dlls;0 dlls not loaded
+19:19:59.311 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Asayami, VisibilityRange=64, Resolution=High
+19:20:05.725 INFO: Saved settings
+19:22:37.655 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:22:37.663 INFO: GLES Vendor: ATI Technologies Inc.
+19:22:37.663 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:22:37.663 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+19:22:38.304 INFO: Survivalcraft starting up at 07/09/2023 19:22:38, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300460MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=201MB, 64bit=True
+19:22:38.324 INFO: Loaded settings.
+19:22:38.339 INFO: Mods manager initialize success
+19:22:38.339 INFO: Loaded 0 dlls;0 dlls not loaded
+19:22:53.950 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Kocchikamigosh, VisibilityRange=64, Resolution=High
+19:23:41.912 INFO: Saved settings
+19:36:09.962 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:36:09.973 INFO: GLES Vendor: ATI Technologies Inc.
+19:36:09.973 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:36:09.973 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+19:36:10.629 INFO: Survivalcraft starting up at 07/09/2023 19:36:10, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300457MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-644MB, 64bit=True
+19:36:10.650 INFO: Loaded settings.
+19:36:10.666 INFO: Mods manager initialize success
+19:36:10.666 INFO: Loaded 0 dlls;0 dlls not loaded
+19:42:16.740 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:42:16.748 INFO: GLES Vendor: ATI Technologies Inc.
+19:42:16.748 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:42:16.748 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+19:42:17.410 INFO: Survivalcraft starting up at 07/09/2023 19:42:17, Version=1.0.0.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300427MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=798MB, 64bit=True
+19:42:17.431 INFO: Loaded settings.
+19:42:17.446 INFO: Mods manager initialize success
+19:42:17.447 INFO: Loaded 0 dlls;0 dlls not loaded
+19:42:19.980 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+19:57:06.809 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+19:57:06.818 INFO: GLES Vendor: ATI Technologies Inc.
+19:57:06.818 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+19:57:06.818 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+20:02:45.182 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:02:45.192 INFO: GLES Vendor: ATI Technologies Inc.
+20:02:45.192 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:02:45.192 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+20:04:33.424 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:04:33.432 INFO: GLES Vendor: ATI Technologies Inc.
+20:04:33.432 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:04:33.432 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+20:04:40.514 INFO: Survivalcraft starting up at 07/09/2023 20:04:33, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300222MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-701MB, 64bit=True
+20:04:40.538 INFO: Loaded settings.
+20:04:40.553 INFO: Mods manager initialize success
+20:04:40.553 INFO: Loaded 0 dlls;0 dlls not loaded
+20:04:40.598 INFO: Saved settings
+20:04:40.838 INFO: Downloading MOTD
+20:04:41.724 ERROR: 526 (526)
+
+20:04:41.735 ERROR: Failed downloading MOTD. Reason: 526 (526)
+
+20:04:51.909 INFO: Upgrading world version "1.0" to "1.4".
+20:04:51.909 INFO: Upgrading world version "1.4" to "1.5".
+20:04:51.910 INFO: Upgrading world version "1.5" to "1.6".
+20:04:51.910 INFO: Upgrading world version "1.6" to "1.7".
+20:04:51.910 INFO: Upgrading world version "1.7" to "1.8".
+20:04:51.910 INFO: Upgrading world version "1.8" to "1.9".
+20:04:51.910 INFO: Upgrading world version "1.9" to "1.10".
+20:04:51.910 INFO: Upgrading world version "1.10" to "1.11".
+20:04:51.910 INFO: Upgrading world version "1.11" to "1.12".
+20:04:51.910 INFO: Upgrading world version "1.12" to "1.13".
+20:04:51.910 INFO: Upgrading world version "1.13" to "1.14".
+20:04:51.910 INFO: Upgrading world version "1.14" to "1.15".
+20:04:51.910 INFO: Upgrading world version "1.15" to "1.16".
+20:04:51.910 INFO: Upgrading world version "1.16" to "1.17".
+20:04:51.911 INFO: Upgrading world version "1.17" to "1.18".
+20:04:51.911 INFO: Upgrading world version "1.18" to "1.19".
+20:04:51.911 INFO: Upgrading world version "1.19" to "1.20".
+20:04:51.911 INFO: Upgrading world version "1.20" to "1.21".
+20:04:51.923 ERROR: Error getting data from project file "app:/Worlds/World4/Project.xml".
+Object reference not set to an instance of an object.
+20:04:59.867 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Noriko, VisibilityRange=64, Resolution=High
+20:06:47.847 INFO: Saved settings
+20:07:34.231 INFO: OpenGL framebuffer created, R=8 G=8 B=8 A=8, D=16 S=0
+20:07:34.240 INFO: GLES Vendor: ATI Technologies Inc.
+20:07:34.240 INFO: GLES Renderer: AMD Radeon(TM) Graphics
+20:07:34.240 INFO: GLES Version: 4.6.0 Compatibility Profile Context 22.20.14.220712
+20:07:34.875 INFO: Survivalcraft starting up at 07/09/2023 20:07:34, Version=2.2.40.0, BuildConfiguration=Release, Platform=Android, Storage.AvailableFreeSpace=300219MB, ApproximateScreenDpi=96.0, ApproxScreenInches=22.9, ScreenResolution=1080,780, ProcessorsCount=16, RAM=-1518MB, 64bit=True
+20:07:34.896 INFO: Loaded settings.
+20:07:34.912 INFO: Mods manager initialize success
+20:07:34.912 INFO: Loaded 0 dlls;0 dlls not loaded
+20:07:52.285 ERROR: Cannot access a closed Stream.
+   at System.IO.Strategies.BufferedFileStreamStrategy.Seek(Int64 offset, SeekOrigin origin)
+   at Game.PlayScreen.SaveLoadedModInfo(Stream stream) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 58
+   at Game.PlayScreen.Play(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 210
+   at Game.PlayScreen.<.ctor>b__0_1(Object item) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\PlayScreen.cs:line 50
+   at Game.ListPanelWidget.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ListPanelWidget.cs:line 290
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 834
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget widget, Boolean& isMouseCursorVisible) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 828
+   at Game.Widget.UpdateWidgetsHierarchy(Widget rootWidget) in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\Widget.cs:line 709
+   at Game.ScreensManager.Update() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ScreensManager.cs:line 237
+   at Game.ProgramGame.Run() in D:\C projects\VSCodeCsharpProj\Survivalcraft\GameMain\Game\ProgramGame.cs:line 167
+20:07:55.066 INFO: Loaded world, GameMode=Creative, StartingPosition=Easy, WorldName=Noriko, VisibilityRange=64, Resolution=High
+20:11:54.780 INFO: PerformanceManager Measurement: frames=25916, avgFrameTime=5ms, avgFrameCpuTime=0ms
+20:12:13.959 INFO: Saved settings

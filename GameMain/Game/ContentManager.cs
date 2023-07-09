@@ -5,6 +5,7 @@ using System.Text;
 using Engine;
 using Engine.Content;
 using OpenTK;
+using GameMain;
 
 namespace Game
 {
@@ -15,7 +16,7 @@ namespace Game
 		public static void Initialize()
 		{
 			ModsManager.Initialize();
-			ContentCache.AddPackage("app:/Content.pak", Encoding.UTF8.GetBytes(ContentManager.Pad()), new byte[]
+			ContentCache.AddPackage("app:/Nyaa/Content.pak", Encoding.UTF8.GetBytes(ContentManager.Pad()), new byte[]
 			{
 				63
 			});
@@ -90,17 +91,18 @@ namespace Game
 		// Token: 0x0600187C RID: 6268 RVA: 0x000C2AF0 File Offset: 0x000C0CF0
 		public static string Pad()
 		{
-			string text = string.Empty;
-			string text2 = "0123456789abdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			Game.Random random = new Game.Random(171);
-			int p;
-			for (int i = 0; i < 229; i++)
-			{
-				p = random.Int(text2.Length);
-				p = MathUtils.Abs(p);
-				text += text2[p].ToString();
-			}
-			return text;
+			// string text = string.Empty;
+			// string text2 = "0123456789abdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			// Game.Random random = new Game.Random(171);
+			// int p;
+			// for (int i = 0; i < 229; i++)
+			// {
+			// 	p = random.Int(text2.Length);
+			// 	p = MathUtils.Abs(p);
+			// 	text += text2[p].ToString();
+			// }
+			// return text;
+			return Program.contentpak_key;
 		}
 	}
 }

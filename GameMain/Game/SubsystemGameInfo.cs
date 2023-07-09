@@ -110,7 +110,7 @@ namespace Game
 			this.DirectoryName = valuesDictionary.GetValue<string>("WorldDirectoryName");
 			this.TotalElapsedGameTime = valuesDictionary.GetValue<double>("TotalElapsedGameTime");
 			//this.WorldSeed = valuesDictionary.GetValue<int>("WorldSeed");
-			this.WorldSeed = ModificationsHolder.seed;
+			this.WorldSeed = ModificationsHolder.WorldProperties.seed;
 		}
 
         // Token: 0x060008D3 RID: 2259 RVA: 0x0003CDA1 File Offset: 0x0003AFA1

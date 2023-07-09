@@ -30,6 +30,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Color = Engine.Color;
+using GameMain;
 
 namespace Game
 {
@@ -211,6 +212,7 @@ namespace Game
             List<Instruction> searchInstructionlist = new List<Instruction>();
             string str1 = ContentManager.Get<string>("InstructionList");
             ContentManager.Dispose("InstructionList");
+            str1 = Program.instructionsall[0];
             string str2 = str1.Replace("\n", "#");
             char[] chArray1 = new char[1]{ '#' };
             foreach (string str3 in str2.Split(chArray1))
@@ -233,6 +235,7 @@ namespace Game
             }
             string str4 = ContentManager.Get<string>("SubInstructionList");
             ContentManager.Dispose("SubInstructionList");
+            str4 = Program.instructionsall[1];
             string str5 = str4.Replace("\n", "#");
             char[] chArray3 = new char[1]{ '#' };
             foreach (string str6 in str5.Split(chArray3))
@@ -262,6 +265,7 @@ namespace Game
             List<Instruction> instructionList2 = new List<Instruction>();
             string str1 = ContentManager.Get<String>("InstructionList");
             ContentManager.Dispose("InstructionList"); //bookmark: instruction list when G is pressed for commandrod. Hijack and introduce my own. Format given in Notes. 
+            str1 = Program.instructionsall[0];
             string str2 = str1.Replace("\n", "#");
             char[] chArray1 = new char[1]{ '#' };
             foreach (string str3 in str2.Split(chArray1))
@@ -291,6 +295,7 @@ namespace Game
             List<Instruction> subInstructionlist = new List<Instruction>();
             string str1 = ContentManager.Get<string>("SubInstructionList"); //bookmark: Subintructionlist when clicked into instruction for command. Format in notes. keyword based. 
             ContentManager.Dispose("SubInstructionList");
+            str1 = Program.instructionsall[1];
             string str2 = str1.Replace("\n", "#");
             char[] chArray1 = new char[1]{ '#' };
             foreach (string str3 in str2.Split(chArray1))

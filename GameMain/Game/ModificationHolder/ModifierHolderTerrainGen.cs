@@ -11,8 +11,7 @@ namespace ModificationHolder
 
     class ModifierHolderTerrainGen
     {
-        private readonly bool useConstantp = true;
-        private readonly bool allowMethodOverride = false;
+        private readonly bool useConstantp = TerrainGenerator.TerrainProperties.allowConstantPermutationArray;
         //instances
         private readonly SubsystemTerrain terrainInput;
         public readonly WorldSettings worldSettings;
@@ -20,9 +19,9 @@ namespace ModificationHolder
         private readonly BlockPlacement placer;
         private readonly Calculator calc;
         private readonly float[] holder; 
-        private double[] r;
-        private double[] ar;
-        private double[] br;
+        private double[] r = new double[1100];
+        private double[] ar = new double[1100];
+        private double[] br = new double[1100];
         private NoiseMain noiseMain;
         private NoiseMain noiseMin;
         private NoiseMain noiseMax;
@@ -68,6 +67,23 @@ namespace ModificationHolder
             this.noiseMax = new NoiseMain(rand, 8);
             this.placer = new BlockPlacement(this, activeChunkProvider);
             this.calc = new Calculator(activeChunkProvider, this.noiseMain, this.holder);
+            InitNoiseArray(this);
+        }
+
+        public Calculator getCalculator() {
+            return this.calc;
+        }
+
+        private static void InitNoiseArray(ModifierHolderTerrainGen obj) {
+            for(int i = 0; i < obj.r.Length; i++) {
+                obj.r[i] = 0.0D;
+            }
+            for(int i = 0; i < obj.ar.Length; i++) {
+                obj.ar[i] = 0.0D;
+            }
+            for(int i = 0; i < obj.br.Length; i++) {
+                obj.br[i] = 0.0D;
+            }
         }
 
         public void GenerateTerrain(TerrainChunk chunkIn, bool type)
@@ -205,6 +221,9 @@ namespace ModificationHolder
 
         private void GenerateTerrainMod(TerrainChunk chunk, int x1, int z1, int x2, int z2)
         {
+            bool z_0 = TerrainGenerator.TerrainProperties.MethodControl.overrideOceanShoreDistance;
+            bool z_1 = TerrainGenerator.TerrainProperties.MethodControl.overrideMountainRangeFactor;
+            bool z_2 = TerrainGenerator.TerrainProperties.MethodControl.overrideCalculateHeight;
             int I = 0;
             float a0 = 684.412f;
             float a1 = a0;
@@ -239,9 +258,9 @@ namespace ModificationHolder
                        float f6 = this.activeChunkProvider.m_oceanCorner.Y + holder[0] * this.noiseMain.OctavedNoise(0f, x0, 0.005f / holder[1], 4, 1.95f, 1f, false);
                        f0 = MathUtils.Min(x0 - f5, z0 - f6);
                     }
-                    f0 = allowMethodOverride ? this.calc.CalculateOceanShoreDistance(x0, z0) : f0 * 1;
+                    f0 = z_0 ? this.calc.CalculateOceanShoreDistance(x0, z0) : f0 * 1;
                     grid2d.Set(j, i, f0);
-                    f0 = !allowMethodOverride ? this.noiseMain.OctavedNoise(
+                    f0 = !z_1 ? this.noiseMain.OctavedNoise(
                        x0 + this.activeChunkProvider.m_mountainsOffset.X,
                        z0 + this.activeChunkProvider.m_mountainsOffset.Y,
                        noiseConst.constants[9] / this.activeChunkProvider.TGBiomeScaling,
@@ -317,8 +336,9 @@ namespace ModificationHolder
                     float f_22 = f_16 + f_17 + f_18 + f_20 + f_19;
                     //float num19 = MathUtils.Min(MathUtils.Lerp(num18, x2, f3), num18);
                     float f_23 = MathUtils.Min(MathUtils.Lerp(f_22, f_14, f_21), f_22);
+                    //float f_23 = num19;
                     float v;
-                    float f0 = allowMethodOverride ? this.calc.CalculateHeight(x, y) : MathUtils.Clamp(64f + f_23, 10f, 251f);
+                    float f0 = z_2 ? this.calc.CalculateHeight(x, y) : MathUtils.Clamp(64f + f_23, 10f, 251f);
                     //num7 = this.activeChunkProvider.CalculateHeight(x, y);
                     v = this.calc.CalculateMountainRangeFactor((float)x, (float)y);
                     float f1 = MathUtils.Lerp(noiseConst.constants[0], 1f, Squish(v, noiseConst.constants[1], 1f));
@@ -350,7 +370,7 @@ namespace ModificationHolder
                                 noiseConst.constants[5]
                                 ) - 1f
                                 );
-                        float num11 = (float)(num9 + num10 + 0 * d3)
+                        float num11 = (float)(num9 + num10 + 1 * d3)
                             ;
                         float num12 = f0 - num11 + 18 * 0;
                         num12 += MathUtils.Max(4f * (noiseConst.constants[6] - (float)num9), 0f);
