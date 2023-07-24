@@ -1,0 +1,37 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="680, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+	
+	
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near">
+      
+		<LabelWidget Text="One click generation" HorizontalAlignment="Center" Color="127,255,127" Margin="5, 5"/>
+	  
+        <CanvasWidget Size="600, 220" Margin="5, 5" HorizontalAlignment="Center">
+          <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="128, 128, 128, 128" />
+          <ListPanelWidget Name="ListView" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" ItemSize="40" SelectionColor="10, 70, 0, 90"/>
+        </CanvasWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+		<BevelledButtonWidget Text="开启" Size="133, 55"  Name="On" Margin="5, 5" />
+		<BevelledButtonWidget Text="创建" Size="133, 55"  Name="Create" Margin="5, 5" />
+		<BevelledButtonWidget Text="类型" Size="133, 55"  Name="Type" Margin="5, 5" />
+      </StackPanelWidget>
+	  
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+		<BevelledButtonWidget Text="确定" Size="100, 55"  Name="OK" Margin="5, 5" />
+		<BevelledButtonWidget Text="导入" Size="100, 55"  Name="Import" Margin="5, 5" />
+		<BevelledButtonWidget Text="导出" Size="100, 55"  Name="Export" Margin="5, 5" />
+		<BevelledButtonWidget Text="删除" Size="100, 55"  Name="Delete" Margin="5, 5" />
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	
+	
+	
+  </CanvasWidget>
+
+</CanvasWidget>

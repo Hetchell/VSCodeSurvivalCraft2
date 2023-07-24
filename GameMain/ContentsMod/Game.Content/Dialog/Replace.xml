@@ -1,0 +1,44 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 360" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+	  
+	  <LabelWidget Name="Replace1" Text="Replace" HorizontalAlignment="Center" Color="127,255,127"/>
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+          <LabelWidget Name="Index1:" Text="Index1: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="BlockID" Title="BlockID" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />
+	  
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+          <LabelWidget Name="Index2:" Text="Index2: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="BlockID2" Title="BlockID2" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="替换" Style="{Styles/ButtonStyle_160x60}" Name="Replace" Margin="20, 0" />
+      <BevelledButtonWidget Text="取消" Style="{Styles/ButtonStyle_160x60}" Name="Cancel" Margin="20, 0"/>
+      </StackPanelWidget>
+	  
+	  
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

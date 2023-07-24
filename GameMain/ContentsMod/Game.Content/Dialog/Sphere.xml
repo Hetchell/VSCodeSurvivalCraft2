@@ -1,0 +1,62 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+	<RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+	<CanvasWidget Size="650, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+		<StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 15">
+
+			<LabelWidget Name="Sphere" Text="Sphere" HorizontalAlignment="Center" Color="127,255,127" />
+
+
+			<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+				<SliderWidget Name="XSlider" IsLabelVisible="false" Size="360, 50" Granularity="1" Value="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="10, 0" />
+				<LabelWidget Name="XR" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0" />
+			</StackPanelWidget>
+
+
+			<StackPanelWidget Name="ADVG" Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+					<SliderWidget Name="YSlider" IsLabelVisible="false" Size="360, 50" Granularity="1" Value="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="10, 0" />
+					<LabelWidget Name="YR" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0" />
+				</StackPanelWidget>
+				<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+					<SliderWidget Name="ZSlider" IsLabelVisible="false" Size="360, 50" Granularity="1" Value="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="10, 0" />
+					<LabelWidget Name="ZR" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0" />
+				</StackPanelWidget>
+			</StackPanelWidget>
+
+
+			<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+				<BlockIconWidget Name="Block" Size="50, 50" VerticalAlignment="Center" HorizontalAlignment="Center" Contents="1" />
+				<CanvasWidget Size="360, 50" VerticalAlignment="Center">
+					<RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+					<TextBoxWidget Name="BlockID" Title="BlockID" Text="2" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0" />
+				</CanvasWidget>
+				<BevelledButtonWidget Name="SelectBlock" Size="60, 50" Text="..." VerticalAlignment="Center" />
+			</StackPanelWidget>
+
+			<!--<CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Name="X轴" Style="{Styles/ButtonStyle_160x60}" Text="X轴" Margin="20, 0" />
+	    <BevelledButtonWidget Name="Y轴" Style="{Styles/ButtonStyle_160x60}" Text="Y轴" Margin="20, 0" />
+        <BevelledButtonWidget Name="Z轴" Style="{Styles/ButtonStyle_160x60}" Text="Z轴" Margin="20, 0"/>
+      </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />-->
+
+			<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+				<BevelledButtonWidget Text="Solid" Size="100, 60" Name="Solid" />
+				<BevelledButtonWidget Text="Hollow" Size="100, 60" Name="Hollow" />
+				<BevelledButtonWidget Text="ADV" Size="100, 60" Name="ADV" />
+				<BevelledButtonWidget Text="Limit" Size="150, 60" Name="Limit" />
+				<BevelledButtonWidget Text="Cancel" Size="100, 60" Name="Cancel" />
+			</StackPanelWidget>
+
+
+		</StackPanelWidget>
+
+	</CanvasWidget>
+
+</CanvasWidget>

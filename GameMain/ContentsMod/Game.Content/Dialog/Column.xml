@@ -1,0 +1,51 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 15">
+      
+	  <LabelWidget Name="Name" HorizontalAlignment="Center" Color="127,255,127"/>
+
+	  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <SliderWidget Name="Slider1" IsLabelVisible="false" Size="360, 50" Granularity="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="30, 0" />
+		<LabelWidget Name="Slider data1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0"/>
+	  </StackPanelWidget>
+	  
+	  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <SliderWidget Name="Slider2" IsLabelVisible="false" Size="360, 50" Granularity="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="30, 0" />
+		<LabelWidget Name="Slider data2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0"/>
+	  </StackPanelWidget>
+	  
+	  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Name="Data3">
+        <SliderWidget Name="Slider3" IsLabelVisible="false" Size="360, 50" Granularity="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="30, 0" />
+		<LabelWidget Name="Slider data3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10, 0"/>
+	  </StackPanelWidget>
+	  <!-- 交互界面-->
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BlockIconWidget Name="Block" Size="50, 50" VerticalAlignment="Center" HorizontalAlignment="Center" Contents="1" />
+        <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		  <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+          <TextBoxWidget Name="BlockID" Title="BlockID" Text="2" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+        </CanvasWidget>
+		<BevelledButtonWidget Name="SelectBlock" Size="60, 50"  Text="..." VerticalAlignment="Center"/>
+      </StackPanelWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Name="XYZ">
+	    <BevelledButtonWidget Text="X-axis" Size="120, 50"  Name="X-axis"/>
+	    <BevelledButtonWidget Text="Y-axis" Size="120, 50"  Name="Y-axis"/>
+        <BevelledButtonWidget Text="Z-axis" Size="120, 50"  Name="Z-axis"/>
+      </StackPanelWidget>
+<!-- /交互界面-->
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="Solid" Size="120, 50"  Name="Solid"/>
+	    <BevelledButtonWidget Text="Hollow" Size="120, 50"  Name="Hollow"/>
+        <BevelledButtonWidget Text="Cancel" Size="120, 50"  Name="Cancel"/>
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

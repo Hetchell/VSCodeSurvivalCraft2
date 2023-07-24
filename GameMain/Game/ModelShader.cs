@@ -150,7 +150,7 @@ namespace Game
 		}
 
 		// Token: 0x170002ED RID: 749
-		// (get) Token: 0x060013C3 RID: 5059 RVA: 0x00099063 File Offset: 0x00097263
+		// (GetPoint) Token: 0x060013C3 RID: 5059 RVA: 0x00099063 File Offset: 0x00097263
 		// (set) Token: 0x060013C4 RID: 5060 RVA: 0x0009906B File Offset: 0x0009726B
 		public int InstancesCount
 		{

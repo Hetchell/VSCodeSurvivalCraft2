@@ -7,7 +7,7 @@ namespace Game
 	public struct CellFace : IEquatable<CellFace>
 	{
 		// Token: 0x17000288 RID: 648
-		// (get) Token: 0x06001178 RID: 4472 RVA: 0x000876CA File Offset: 0x000858CA
+		// (GetPoint) Token: 0x06001178 RID: 4472 RVA: 0x000876CA File Offset: 0x000858CA
 		// (set) Token: 0x06001179 RID: 4473 RVA: 0x000876E3 File Offset: 0x000858E3
 		public Point3 Point
 		{

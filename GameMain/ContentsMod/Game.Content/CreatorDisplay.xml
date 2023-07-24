@@ -1,0 +1,839 @@
+<CreatorDisplay>
+    <CreatorDisplayDialog>
+        <CreatorDisplayData Language="zh_CN" Text="chunkDataErr" DisplayName="缓存生成发生错误:" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorAPIsetpoint1" DisplayName="坐标1设置完成\n X:{0} ,Y:{1} ,Z:{2}\n方块ID : {3}\n方块完整值 : {4}\n特殊值一 : {5} , 特殊值二 : {6} \n面向：{7} , 旋转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorAPIsetpoint2" DisplayName="坐标2设置完成\n X:{0} ,Y:{1} ,Z:{2}\n方块ID : {3}\n方块完整值 : {4}\n特殊值一 : {5} , 特殊值二 : {6} \n面向：{7} , 旋转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorAPIsetpoint3" DisplayName="坐标3设置完成\n X:{0} ,Y:{1} ,Z:{2}\n方块ID : {3}\n方块完整值 : {4}\n特殊值一 : {5} , 特殊值二 : {6} \n面向：{7} , 旋转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorAPIsetpoint4" DisplayName="坐标4设置完成\n X:{0} ,Y:{1} ,Z:{2}\n方块ID : {3}\n方块完整值 : {4}\n特殊值一 : {5} , 特殊值二 : {6} \n面向：{7} , 旋转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorAPIsetblock" DisplayName="快速生成发生错误:" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetclear" DisplayName="可在设置中关闭生成在来停止正在清理的进程，在超距模式下谨慎使用清理方块" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetsetpt" DisplayName="选择设置的点" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetsetp1" DisplayName="设置点" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetsetpd" DisplayName="成功设置点{0}：\nX:{1} , Y:{2} , Z:{3}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetundo" DisplayName="撤回成功" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetrp" DisplayName="玩家重生点位置设置\n X: {0} Y : {1} Z : {2}" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetcls" DisplayName="清除成功" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetclf" DisplayName="清除失败" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetcla" DisplayName="清除成功，共清除{0}只动物" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetcld" DisplayName="清除成功，共清除{0}个掉落物" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetseld" DisplayName="选择难度" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetde" DisplayName="容易" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetdm" DisplayName="一般" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetdh" DisplayName="困难" />
+        <CreatorDisplayData Language="zh_CN" Text="creatorWidgetdd" DisplayName="成功设置难度为: " />
+        <CreatorDisplayData Language="zh_CN" Text="setdialogp1" DisplayName="1点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialogp2" DisplayName="2点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialogp3" DisplayName="3点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialogp4" DisplayName="4点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialospm" DisplayName="选择设置点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialospm1" DisplayName="点模式" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialounl" DisplayName="超距模式建议在性能强劲的设备上使用，而且请不要空间过大，不然可能造成内存溢出而导致毁图" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialorbu" DisplayName="超距模式下尽量不要使用撤回功能" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialocbtn" DisplayName="正常生成" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialocbtq" DisplayName="快速生成" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialocbtc" DisplayName="缓存生成" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialoscbt" DisplayName="选择生成类型" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopass" DisplayName="请输入密匙" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopass1" DisplayName="请输入密匙" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopasst" DisplayName="GoGoRo" />
+        <CreatorDisplayData Language="zh_CN" Text="Creator" DisplayName="创世神" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopasstp" DisplayName="专业模式开启" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopasstl" DisplayName="界面语言: {0}" />
+        <CreatorDisplayData Language="zh_CN" Text="setdialopasstp1" DisplayName="专业模式开启失败" />
+        <CreatorDisplayData Language="zh_CN" Text="fpointSdialog1" DisplayName="4点空间" />
+        <CreatorDisplayData Language="zh_CN" Text="tpointSdialog1" DisplayName="3点成面" />
+        <CreatorDisplayData Language="zh_CN" Text="twpointSdialog1" DisplayName="2点连线" />
+        <CreatorDisplayData Language="zh_CN" Text="fpointSdialog2" DisplayName="操作成功，共生成{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="editchunkdialog1" DisplayName="修改成功" />
+        <CreatorDisplayData Language="zh_CN" Text="editchunkdialog2" DisplayName="修改失败，请检查是否选择了区域" />
+        <CreatorDisplayData Language="zh_CN" Text="editchunkdialog3" DisplayName="温度 :{0} 湿度 :{1}" />
+        <CreatorDisplayData Language="zh_CN" Text="editworlddialogs" DisplayName="刷新完成！" />
+        <CreatorDisplayData Language="zh_CN" Text="editleveldialogs" DisplayName="操作成功，等级设置成：{0}级" />
+        <CreatorDisplayData Language="zh_CN" Text="editleveldialogl" DisplayName="设置等级：{0}" />
+        <CreatorDisplayData Language="zh_CN" Text="editmodedialogc" DisplayName="模式改变为： 挑战模式" />
+        <CreatorDisplayData Language="zh_CN" Text="editmodedialogh" DisplayName="模式改变为： 无害模式" />
+        <CreatorDisplayData Language="zh_CN" Text="editmodedialoga" DisplayName="模式改变为： 闯关模式" />
+        <CreatorDisplayData Language="zh_CN" Text="editmodedialogcr" DisplayName="模式改变为： 残酷模式" />
+        <CreatorDisplayData Language="zh_CN" Text="editmodedialogcv" DisplayName="模式改变为： 创造模式" />
+        <CreatorDisplayData Language="zh_CN" Text="rpldialogrs" DisplayName="操作成功，共替换{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="rpldialogrf" DisplayName="操作失败" />
+        <CreatorDisplayData Language="zh_CN" Text="capadialogc1" DisplayName="复制失败，共{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="capadialogc2" DisplayName="复制成功，共{0}个方块\n文件长度：{1}" />
+        <CreatorDisplayData Language="zh_CN" Text="capadialogp1" DisplayName="粘贴失败，共{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="capadialogp2" DisplayName="粘贴成功，共{0}个方块\n文件长度：{1}" />
+        <CreatorDisplayData Language="zh_CN" Text="capadialogex" DisplayName="文件被占用" />
+        <CreatorDisplayData Language="zh_CN" Text="moddialogname" DisplayName="请输入名称" />
+        <CreatorDisplayData Language="zh_CN" Text="moddialogdel1" DisplayName="删除成功！" />
+        <CreatorDisplayData Language="zh_CN" Text="moddialogdel2" DisplayName="删除失败！" />
+        <CreatorDisplayData Language="zh_CN" Text="okeydialogs" DisplayName="创建一键生成成功，共{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="okeydialogs2" DisplayName="操作成功，共{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="tradialog1" DisplayName="请输入正当的坐标" />
+        <CreatorDisplayData Language="zh_CN" Text="tradialog2" DisplayName="成功传送到：\nX:{0} , Y:{1} , Z:{2}" />
+        <CreatorDisplayData Language="zh_CN" Text="filldialog1" DisplayName="操作成功，共生成{0}个方块" />
+        <CreatorDisplayData Language="zh_CN" Text="cyldialog1" DisplayName="X半径{0}格" />
+        <CreatorDisplayData Language="zh_CN" Text="cyldialog2" DisplayName="Z半径{0}格" />
+        <CreatorDisplayData Language="zh_CN" Text="mazedialog1" DisplayName="迷宫" />
+        <CreatorDisplayData Language="zh_CN" Text="moundialog1" DisplayName="参数1 :{0}" />
+        <CreatorDisplayData Language="zh_CN" Text="moundialog2" DisplayName="参数2 :{0}" />
+        <CreatorDisplayData Language="zh_CN" Text="moundialog3" DisplayName="参数3 :{0}" />
+        <CreatorDisplayData Language="zh_CN" Text="pavdialog1" DisplayName="大小:" />
+        <CreatorDisplayData Language="zh_CN" Text="pavdialog2" DisplayName="操作失败" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialog1" DisplayName="X轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialog2" DisplayName="Y轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialog3" DisplayName="Z轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialog4" DisplayName="柱子" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogr" DisplayName="半径{0}格" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogl" DisplayName="长度{0}格" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogx" DisplayName="轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogx1" DisplayName="X轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogx2" DisplayName="Y轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pilldialogx3" DisplayName="Z轴" />
+        <CreatorDisplayData Language="zh_CN" Text="pcddialog1" DisplayName="棱柱" />
+        <CreatorDisplayData Language="zh_CN" Text="pddialog1" DisplayName="棱体" />
+        <CreatorDisplayData Language="zh_CN" Text="pddialog2" DisplayName="大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="pyddialog1" DisplayName="棱锥" />
+        <CreatorDisplayData Language="zh_CN" Text="pyddialog2" DisplayName="大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="spdialogx" DisplayName="X半径大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="spdialogy" DisplayName="Y半径大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="spdialogz" DisplayName="Z半径大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="spdialogr" DisplayName="半径大小{0}块" />
+        <CreatorDisplayData Language="zh_CN" Text="spidialog1" DisplayName="螺旋" />
+        <CreatorDisplayData Language="zh_CN" Text="spidialog2" DisplayName="确定" />
+        <CreatorDisplayData Language="zh_CN" Text="spidialogr" DisplayName="间距{0}格" />
+        <CreatorDisplayData Language="zh_CN" Text="spidialogn" DisplayName="圈数{0}环" />
+        <CreatorDisplayData Language="zh_CN" Text="cyldialogn" DisplayName="圆柱" />
+        <CreatorDisplayData Language="zh_CN" Text="cirdialogn" DisplayName="圆环" />
+        <CreatorDisplayData Language="zh_CN" Text="intdialogs" DisplayName="选择方块" />
+        <CreatorDisplayData Language="en_US" Text="chunkDataErr" DisplayName="An error has occurred in the cache generation function:" />
+        <CreatorDisplayData Language="en_US" Text="creatorAPIsetpoint1" DisplayName="The point 1 setting is complete\n X:{0} ,Y:{1} ,Z:{2}\nBlockID : {3}\nblock complete value : {4}\nspecial value 1 : {5} , special value 2 : {6} \nFace : {7} , Rotate : {8} \nTemperature：{9} , Humidity：{10}" />
+        <CreatorDisplayData Language="en_US" Text="creatorAPIsetpoint2" DisplayName="The point 2 setting is complete\n X:{0} ,Y:{1} ,Z:{2}\nBlockID : {3}\nblock complete value : {4}\nspecial value 1 : {5} , special value 2 : {6} \nFace : {7} , Rotate : {8} \nTemperature：{9} , Humidity：{10}" />
+        <CreatorDisplayData Language="en_US" Text="creatorAPIsetpoint3" DisplayName="The point 3 setting is complete\n X:{0} ,Y:{1} ,Z:{2}\nBlockID : {3}\nblock complete value : {4}\nspecial value 1 : {5} , special value 2 : {6} \nFace : {7} , Rotate : {8} \nTemperature：{9} , Humidity：{10}" />
+        <CreatorDisplayData Language="en_US" Text="creatorAPIsetpoint4" DisplayName="The point 4 setting is complete\n X:{0} ,Y:{1} ,Z:{2}\nBlockID : {3}\nblock complete value : {4}\nspecial value 1 : {5} , special value 2 : {6} \nFace : {7} , Rotate : {8} \nTemperature：{9} , Humidity：{10}" />
+        <CreatorDisplayData Language="en_US" Text="creatorAPIsetblock" DisplayName="An error has occurred in the Quick Generate function:" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetclear" DisplayName="The generation function can be switched off in the settings to stop the process being cleaned up and the clean-up block function can be used sparingly in overdistance mode" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetsetpt" DisplayName="Which point to set to player's coordinates?" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetsetp1" DisplayName="Set" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetsetpd" DisplayName="Success set point{0}：\nX:{1} , Y:{2} , Z:{3}" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetundo" DisplayName="Undo" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetrp" DisplayName="Set the spawn point\n X: {0} Y : {1} Z : {2}" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetcls" DisplayName="Successful clearance" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetclf" DisplayName="Clearance failure" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetcla" DisplayName="Successful clearance, a total of {0} animals removed" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetcld" DisplayName="Successful clearance, total of {0} dropped objects removed" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetseld" DisplayName="Select the init difficulty" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetde" DisplayName="Easy" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetdm" DisplayName="Medium" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetdh" DisplayName="Hard" />
+        <CreatorDisplayData Language="en_US" Text="creatorWidgetdd" DisplayName="Successfully set the difficulty to: " />
+        <CreatorDisplayData Language="en_US" Text="setdialogp1" DisplayName="1-point" />
+        <CreatorDisplayData Language="en_US" Text="setdialogp2" DisplayName="2-point" />
+        <CreatorDisplayData Language="en_US" Text="setdialogp3" DisplayName="3-point" />
+        <CreatorDisplayData Language="en_US" Text="setdialogp4" DisplayName="4-point" />
+        <CreatorDisplayData Language="en_US" Text="setdialospm" DisplayName="Select Setpoint mode" />
+        <CreatorDisplayData Language="en_US" Text="setdialospm1" DisplayName="-point mode" />
+        <CreatorDisplayData Language="en_US" Text="setdialounl" DisplayName="High performance requirement" />
+        <CreatorDisplayData Language="en_US" Text="setdialorbu" DisplayName="Do not change the options if you do not need them" />
+        <CreatorDisplayData Language="en_US" Text="setdialocbtn" DisplayName="Normal" />
+        <CreatorDisplayData Language="en_US" Text="setdialocbtq" DisplayName="Quick" />
+        <CreatorDisplayData Language="en_US" Text="setdialocbtc" DisplayName="Cache" />
+        <CreatorDisplayData Language="en_US" Text="setdialoscbt" DisplayName="Select generation type" />
+        <CreatorDisplayData Language="en_US" Text="setdialopass" DisplayName="Warning:Please enter the secret key!!!" />
+        <CreatorDisplayData Language="en_US" Text="setdialopass1" DisplayName="Please enter the secret key" />
+        <CreatorDisplayData Language="en_US" Text="setdialopasst" DisplayName="GoGoRo" />
+        <CreatorDisplayData Language="en_US" Text="Creator" DisplayName="CreatorAPI" />
+        <CreatorDisplayData Language="en_US" Text="setdialopasstp" DisplayName="Professional mode On" />
+        <CreatorDisplayData Language="en_US" Text="setdialopasstl" DisplayName="Language: {0}" />
+        <CreatorDisplayData Language="en_US" Text="setdialopasstp1" DisplayName="Professional mode Off" />
+        <CreatorDisplayData Language="en_US" Text="fpointSdialog1" DisplayName="Connect 4 Points" />
+        <CreatorDisplayData Language="en_US" Text="tpointSdialog1" DisplayName="Connect 3 Points" />
+        <CreatorDisplayData Language="en_US" Text="twpointSdialog1" DisplayName="Connect 2 Points" />
+        <CreatorDisplayData Language="en_US" Text="fpointSdialog2" DisplayName="The operation was successful, generating a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="editchunkdialog1" DisplayName="Modified successfully" />
+        <CreatorDisplayData Language="en_US" Text="editchunkdialog2" DisplayName="Modification failed, please check if region is selected" />
+        <CreatorDisplayData Language="en_US" Text="editchunkdialog3" DisplayName="Temperature :{0} Humidity :{1}" />
+        <CreatorDisplayData Language="en_US" Text="editworlddialogs" DisplayName="Updata successfully!" />
+        <CreatorDisplayData Language="en_US" Text="editleveldialogs" DisplayName="Successful operation, level set to: {0} level" />
+        <CreatorDisplayData Language="en_US" Text="editleveldialogl" DisplayName="Set the level：{0}" />
+        <CreatorDisplayData Language="en_US" Text="editmodedialogc" DisplayName="Mode: Challenging" />
+        <CreatorDisplayData Language="en_US" Text="editmodedialogh" DisplayName="Mode: Harmless" />
+        <CreatorDisplayData Language="en_US" Text="editmodedialoga" DisplayName="Mode: Adventure" />
+        <CreatorDisplayData Language="en_US" Text="editmodedialogcr" DisplayName="Mode: Cruel" />
+        <CreatorDisplayData Language="en_US" Text="editmodedialogcv" DisplayName="Mode: Creative" />
+        <CreatorDisplayData Language="en_US" Text="rpldialogrs" DisplayName="Successful operation, replace a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="rpldialogrf" DisplayName="Failed operation" />
+        <CreatorDisplayData Language="en_US" Text="capadialogc1" DisplayName="Copied failed for a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="capadialogc2" DisplayName="Copied successfully for a total of {0} blocks\nFile size:{1}" />
+        <CreatorDisplayData Language="en_US" Text="capadialogp1" DisplayName="Copied failed for a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="capadialogp2" DisplayName="Paste successfully for a total of {0} blocks\nFile size:{1}" />
+        <CreatorDisplayData Language="en_US" Text="capadialogex" DisplayName="File occupied" />
+        <CreatorDisplayData Language="en_US" Text="moddialogname" DisplayName="Please enter name" />
+        <CreatorDisplayData Language="en_US" Text="moddialogdel1" DisplayName="File Deleted" />
+        <CreatorDisplayData Language="en_US" Text="moddialogdel2" DisplayName="File Del-Failed" />
+        <CreatorDisplayData Language="en_US" Text="okeydialogs" DisplayName="Create one key successfully,a total {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="okeydialogs2" DisplayName="Successful operation,a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="tradialog1" DisplayName="Please enter the correct coordinates" />
+        <CreatorDisplayData Language="en_US" Text="tradialog2" DisplayName="Successful transmission to：\nX:{0} , Y:{1} , Z:{2}" />
+        <CreatorDisplayData Language="en_US" Text="filldialog1" DisplayName="The operation was successful, generating a total of {0} blocks" />
+        <CreatorDisplayData Language="en_US" Text="cyldialog1" DisplayName="X-Radius: {0}" />
+        <CreatorDisplayData Language="en_US" Text="cyldialog2" DisplayName="Z-Radius: {0}" />
+        <CreatorDisplayData Language="en_US" Text="mazedialog1" DisplayName="Maze" />
+        <CreatorDisplayData Language="en_US" Text="moundialog1" DisplayName="X-length:{0}" />
+        <CreatorDisplayData Language="en_US" Text="moundialog2" DisplayName="Y-length:{0}" />
+        <CreatorDisplayData Language="en_US" Text="moundialog3" DisplayName="Z-length:{0}" />
+        <CreatorDisplayData Language="en_US" Text="pavdialog1" DisplayName="Side:" />
+        <CreatorDisplayData Language="en_US" Text="pavdialog2" DisplayName="Operational failure" />
+        <CreatorDisplayData Language="en_US" Text="pilldialog1" DisplayName="X-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialog2" DisplayName="Y-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialog3" DisplayName="Z-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialog4" DisplayName="BCC Square Column" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogr" DisplayName="Pitch D: {0}" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogl" DisplayName="Length: {0}" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogx" DisplayName="-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogx1" DisplayName="X-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogx2" DisplayName="Y-axis" />
+        <CreatorDisplayData Language="en_US" Text="pilldialogx3" DisplayName="Z-axis" />
+        <CreatorDisplayData Language="en_US" Text="pcddialog1" DisplayName="FCC Square Column" />
+        <CreatorDisplayData Language="en_US" Text="pddialog1" DisplayName="FCC Octahedron" />
+        <CreatorDisplayData Language="en_US" Text="pddialog2" DisplayName="C-edge D:{0}" />
+        <CreatorDisplayData Language="en_US" Text="pyddialog1" DisplayName="BCC Octahedron" />
+        <CreatorDisplayData Language="en_US" Text="pyddialog2" DisplayName="C-vertex D:{0}" />
+        <CreatorDisplayData Language="en_US" Text="spdialogx" DisplayName="X-Radius:{0}" />
+        <CreatorDisplayData Language="en_US" Text="spdialogy" DisplayName="Y-Radius:{0}" />
+        <CreatorDisplayData Language="en_US" Text="spdialogz" DisplayName="Z-Radius:{0}" />
+        <CreatorDisplayData Language="en_US" Text="spdialogr" DisplayName="Radius: {0}" />
+        <CreatorDisplayData Language="en_US" Text="spidialog1" DisplayName="Spirals" />
+        <CreatorDisplayData Language="en_US" Text="spidialog2" DisplayName="OK" />
+        <CreatorDisplayData Language="en_US" Text="spidialogr" DisplayName="Pitch: {0}" />
+        <CreatorDisplayData Language="en_US" Text="spidialogn" DisplayName="Turns: {0}" />
+        <CreatorDisplayData Language="en_US" Text="cyldialogn" DisplayName="Cylinder" />
+        <CreatorDisplayData Language="en_US" Text="cirdialogn" DisplayName="Torus" />
+        <CreatorDisplayData Language="en_US" Text="intdialogs" DisplayName="Select Block" />
+        <CreatorDisplayData Language="ja_JP" Text="chunkDataErr" DisplayName="キャッシュ生成エラ一が发生しました。" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorAPIsetpoint1" DisplayName="座标1を设定\n X:{0},Y:{1},Z:{2}のようになります。\nスクエアID : {3}\n正方形の完全值: {4}\n特殊值1：{5}、特殊值2：{6}。\n向き：{7} , 回转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorAPIsetpoint2" DisplayName="座标2を设定\n X:{0},Y:{1},Z:{2}のようになります。\nスクエアID : {3}\n正方形の完全值: {4}\n特殊值1：{5}、特殊值2：{6}。\n向き：{7} , 回转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorAPIsetpoint3" DisplayName="座标3を设定\n X:{0},Y:{1},Z:{2}のようになります。\nスクエアID : {3}\n正方形の完全值: {4}\n特殊值1：{5}、特殊值2：{6}。\n向き：{7} , 回转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorAPIsetpoint4" DisplayName="座标4を设定\n X:{0},Y:{1},Z:{2}のようになります。\nスクエアID : {3}\n正方形の完全值: {4}\n特殊值1：{5}、特殊值2：{6}。\n向き：{7} , 回转：{8} \n温度：{9} , 湿度：{10}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorAPIsetblock" DisplayName="发生エラ一を素早く生成する" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetclear" DisplayName="生成は设定でオフにしてクリ一ンアップ処理を停止することができます、过距离モ一ドではクリ一ンアップマスを慎重に使用してください" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetsetpt" DisplayName="设定ポイントの选谈" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetsetp1" DisplayName="设定ポイント" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetsetpd" DisplayName="设定值成功 {0}:\nX:{1} , Y:{2} , Z:{3}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetundo" DisplayName="取り下げ成功" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetrp" DisplayName="Player respawn point location set X: {0} Y: {1} Z: {2}" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetcls" DisplayName="クリア成功" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetclf" DisplayName="クリアに失败しました" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetcla" DisplayName="クリア成功、合计{0}匹クリア" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetcld" DisplayName="クリア成功、{0}ドロップ削除" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetseld" DisplayName="难易度を选谈してください" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetde" DisplayName="简単" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetdm" DisplayName="普通" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetdh" DisplayName="难しい" />
+        <CreatorDisplayData Language="ja_JP" Text="creatorWidgetdd" DisplayName="难易度设定に成功しました：" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialogp1" DisplayName="1点モ一ド" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialogp2" DisplayName="2点モ一ド" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialogp3" DisplayName="3点モ一ド" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialogp4" DisplayName="4点モ一ド" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialospm" DisplayName="设定值モ一ドの选谈" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialospm1" DisplayName="ポイントモ一ド" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialounl" DisplayName="オ一バ一ディスタンスモ一ドは强力なデバイスには推街されており、メモリオ一バ一フロ一を起こして画像が台无しになる可能性がありますので、オ一バ一サイズは避けてください。" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialorbu" DisplayName="过距离モ一ドでは引出し机能を使用しないでください。" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialocbtn" DisplayName="普通の生成" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialocbtq" DisplayName="ファストジェネレ一ション" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialocbtc" DisplayName="キャッシュ生成" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialoscbt" DisplayName="生成别选谈タイプ" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopass" DisplayName="秘密の键を入力してください" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopass1" DisplayName="秘密の键を入力してください" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopasst" DisplayName="GoGoRo" />
+        <CreatorDisplayData Language="ja_JP" Text="Creator" DisplayName="创世神" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopasstp" DisplayName="プロモ一ドオン" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopasstl" DisplayName="インタフェ一ス言语: {0}" />
+        <CreatorDisplayData Language="ja_JP" Text="setdialopasstp1" DisplayName="プロモ一ドに失败しました" />
+        <CreatorDisplayData Language="ja_JP" Text="fpointSdialog1" DisplayName="空间の4つのポイント" />
+        <CreatorDisplayData Language="ja_JP" Text="tpointSdialog1" DisplayName="面を形成する3つのポイント" />
+        <CreatorDisplayData Language="ja_JP" Text="twpointSdialog1" DisplayName="2点锁线" />
+        <CreatorDisplayData Language="ja_JP" Text="fpointSdialog2" DisplayName="操作成功、{0}のマスが作成されました" />
+        <CreatorDisplayData Language="ja_JP" Text="editchunkdialog1" DisplayName="修正成功" />
+        <CreatorDisplayData Language="ja_JP" Text="editchunkdialog2" DisplayName="修正に失败しました、エリアが选谈されているか确认してください" />
+        <CreatorDisplayData Language="ja_JP" Text="editchunkdialog3" DisplayName="温度 :{0} 湿度 :{1}" />
+        <CreatorDisplayData Language="ja_JP" Text="editworlddialogs" DisplayName="リフレッシュ完了！" />
+        <CreatorDisplayData Language="ja_JP" Text="editleveldialogs" DisplayName="操作成功、レベルは :{0} に设定されています" />
+        <CreatorDisplayData Language="ja_JP" Text="editleveldialogl" DisplayName="设定レベル: {0}" />
+        <CreatorDisplayData Language="ja_JP" Text="editmodedialogc" DisplayName="モ一ドが我更されました： 挑战模式" />
+        <CreatorDisplayData Language="ja_JP" Text="editmodedialogh" DisplayName="モ一ドが我更されました： 无害模式" />
+        <CreatorDisplayData Language="ja_JP" Text="editmodedialoga" DisplayName="モ一ドが我更されました： 闯关模式" />
+        <CreatorDisplayData Language="ja_JP" Text="editmodedialogcr" DisplayName="モ一ドが我更されました： 残酷模式" />
+        <CreatorDisplayData Language="ja_JP" Text="editmodedialogcv" DisplayName="モ一ドが我更されました： 创造模式" />
+        <CreatorDisplayData Language="ja_JP" Text="rpldialogrs" DisplayName="操作成功、{0}キュ一ブの置换" />
+        <CreatorDisplayData Language="ja_JP" Text="rpldialogrf" DisplayName="操作に失败しました" />
+        <CreatorDisplayData Language="ja_JP" Text="capadialogc1" DisplayName="コピ一に失败しました、合计{0}マス" />
+        <CreatorDisplayData Language="ja_JP" Text="capadialogc2" DisplayName="复制成功，共{0}个方块\n文件长度：{1}" />
+        <CreatorDisplayData Language="ja_JP" Text="capadialogp1" DisplayName="贴り付けに失败しました、合计{0}マス" />
+        <CreatorDisplayData Language="ja_JP" Text="capadialogp2" DisplayName="粘贴成功，共{0}个方块\n文件长度：{1}" />
+        <CreatorDisplayData Language="ja_JP" Text="capadialogex" DisplayName="ファイルが占有されています" />
+        <CreatorDisplayData Language="ja_JP" Text="moddialogname" DisplayName="名前を入力してください" />
+        <CreatorDisplayData Language="ja_JP" Text="moddialogdel1" DisplayName="削除成功！" />
+        <CreatorDisplayData Language="ja_JP" Text="moddialogdel2" DisplayName="削除に失败しました！" />
+        <CreatorDisplayData Language="ja_JP" Text="okeydialogs" DisplayName="ワンクリック生成成功、合计{0}マス" />
+        <CreatorDisplayData Language="ja_JP" Text="okeydialogs2" DisplayName="操作成功、合计{0}マス" />
+        <CreatorDisplayData Language="ja_JP" Text="tradialog1" DisplayName="适切な座标を入力してください" />
+        <CreatorDisplayData Language="ja_JP" Text="tradialog2" DisplayName="成功传送到：\nX:{0} , Y:{1} , Z:{2}" />
+        <CreatorDisplayData Language="ja_JP" Text="filldialog1" DisplayName="操作成功、{0}の升目が生成されました" />
+        <CreatorDisplayData Language="ja_JP" Text="cyldialog1" DisplayName="X半径{0}の正方形" />
+        <CreatorDisplayData Language="ja_JP" Text="cyldialog2" DisplayName="Z半径{0}の正方形" />
+        <CreatorDisplayData Language="ja_JP" Text="mazedialog1" DisplayName="迷路" />
+        <CreatorDisplayData Language="ja_JP" Text="moundialog1" DisplayName="パラメ一タX :{0}" />
+        <CreatorDisplayData Language="ja_JP" Text="moundialog2" DisplayName="パラメ一タY :{0}" />
+        <CreatorDisplayData Language="ja_JP" Text="moundialog3" DisplayName="パラメ一タZ :{0}" />
+        <CreatorDisplayData Language="ja_JP" Text="pavdialog1" DisplayName="サイズ:" />
+        <CreatorDisplayData Language="ja_JP" Text="pavdialog2" DisplayName="操作に失败しました" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialog1" DisplayName="X轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialog2" DisplayName="Y轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialog3" DisplayName="Z轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialog4" DisplayName="BCCカラム" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialogr" DisplayName="半径{0}セル" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialogl" DisplayName="长度{0}格" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialogx" DisplayName="轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialogx1" DisplayName="X轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pilldialogx2" DisplayName="Y轴" />
+        <CreatorDixsplayData Language="ja_JP" Text="pilldialogx3" DisplayName="Z轴" />
+        <CreatorDisplayData Language="ja_JP" Text="pcddialog1" DisplayName="FCCプリズム" />
+        <CreatorDisplayData Language="ja_JP" Text="pddialog1" DisplayName="FCCプリズム" />
+        <CreatorDisplayData Language="ja_JP" Text="pddialog2" DisplayName="大小{0}块" />
+        <CreatorDisplayData Language="ja_JP" Text="pyddialog1" DisplayName="BCCプリズム" />
+        <CreatorDisplayData Language="ja_JP" Text="pyddialog2" DisplayName="大小{0}块" />
+        <CreatorDisplayData Language="ja_JP" Text="spdialogx" DisplayName="X半径サイズ{0}ブロック" />
+        <CreatorDisplayData Language="ja_JP" Text="spdialogy" DisplayName="Y半径サイズ{0}ブロック" />
+        <CreatorDisplayData Language="ja_JP" Text="spdialogz" DisplayName="Z半径サイズ{0}ブロック" />
+        <CreatorDisplayData Language="ja_JP" Text="spdialogr" DisplayName="半径サイズ{0}ブロック" />
+        <CreatorDisplayData Language="ja_JP" Text="spidialog1" DisplayName="スパイラル" />
+        <CreatorDisplayData Language="ja_JP" Text="spidialog2" DisplayName="确定" />
+        <CreatorDisplayData Language="ja_JP" Text="spidialogr" DisplayName="间距{0}格" />
+        <CreatorDisplayData Language="ja_JP" Text="spidialogn" DisplayName="タ一ン数{0}のリング" />
+        <CreatorDisplayData Language="ja_JP" Text="cyldialogn" DisplayName="シリンダ一" />
+        <CreatorDisplayData Language="ja_JP" Text="cirdialogn" DisplayName="サ一クル" />
+        <CreatorDisplayData Language="ja_JP" Text="intdialogs" DisplayName="正方形を选谈してください" />
+    </CreatorDisplayDialog>
+    <CreatorDisplayUI>
+        <NewCreatorAPIWidget>
+            <CreatorDisplayData Language="zh_CN" Text="Sphere" DisplayName="球体" />
+            <CreatorDisplayData Language="zh_CN" Text="FCC Octahedron" DisplayName="棱体" />
+            <CreatorDisplayData Language="zh_CN" Text="BCC Octahedron" DisplayName="棱锥" />
+            <CreatorDisplayData Language="zh_CN" Text="Cylinder" DisplayName="圆柱" />
+            <CreatorDisplayData Language="zh_CN" Text="FCC Square Column" DisplayName="棱柱" />
+            <CreatorDisplayData Language="zh_CN" Text="BCC Square Column" DisplayName="柱子" />
+            <CreatorDisplayData Language="zh_CN" Text="Cuboid" DisplayName="矩形" />
+            <CreatorDisplayData Language="zh_CN" Text="Torus" DisplayName="圆环" />
+            <CreatorDisplayData Language="zh_CN" Text="Maze" DisplayName="迷宫" />
+            <CreatorDisplayData Language="zh_CN" Text="Set the Point" DisplayName="设点" />
+            <CreatorDisplayData Language="zh_CN" Text="Undo" DisplayName="撤回" />
+            <CreatorDisplayData Language="zh_CN" Text="Copy and Paste" DisplayName="复制粘贴" />
+            <CreatorDisplayData Language="zh_CN" Text="Fill" DisplayName="填充" />
+            <CreatorDisplayData Language="zh_CN" Text="Mountains" DisplayName="山脉" />
+            <CreatorDisplayData Language="zh_CN" Text="Teleport" DisplayName="传送" />
+            <CreatorDisplayData Language="zh_CN" Text="Replace" DisplayName="方块替换" />
+            <CreatorDisplayData Language="zh_CN" Text="Spiral" DisplayName="螺旋" />
+            <CreatorDisplayData Language="zh_CN" Text="Connect 2 Points" DisplayName="连线" />
+            <CreatorDisplayData Language="zh_CN" Text="Level" DisplayName="等级" />
+            <CreatorDisplayData Language="zh_CN" Text="Tile" DisplayName="棋盘" />
+            <CreatorDisplayData Language="zh_CN" Text="Mod Settings" DisplayName="设置" />
+            <CreatorDisplayData Language="zh_CN" Text="Disable Collision" DisplayName="穿透" />
+            <CreatorDisplayData Language="zh_CN" Text="One Click Generation" DisplayName="一键生成" />
+            <CreatorDisplayData Language="zh_CN" Text="Set the Spawn Point" DisplayName="出生点" />
+            <CreatorDisplayData Language="zh_CN" Text="Clear Cache" DisplayName="清除缓存" />
+            <CreatorDisplayData Language="zh_CN" Text="Game Mode" DisplayName="变更模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Init Difficulty" DisplayName="变更难度" />
+            <CreatorDisplayData Language="zh_CN" Text="World Settings" DisplayName="编辑世界" />
+            <CreatorDisplayData Language="zh_CN" Text="Edit Chunk" DisplayName="编辑区域" />
+            <CreatorDisplayData Language="zh_CN" Text="Remove Drops" DisplayName="清除掉落" />
+            <CreatorDisplayData Language="zh_CN" Text="Despawn Entities" DisplayName="清除动物" />
+            <CreatorDisplayData Language="zh_CN" Text="Clear Blocks" DisplayName="清理方块" />
+            <CreatorDisplayData Language="zh_CN" Text="Terrain" DisplayName="测试地形" />
+            <CreatorDisplayData Language="zh_CN" Text="Custom Module" DisplayName="模组专用" />
+            <CreatorDisplayData Language="zh_CN" Text="Custom Point" DisplayName="精准设点" />
+            <CreatorDisplayData Language="zh_CN" Text="Point adjustment" DisplayName="点位调整" />
+            <CreatorDisplayData Language="zh_CN" Text="Connect 3 Points" DisplayName="3点成面" />
+            <CreatorDisplayData Language="zh_CN" Text="Connect 4 Points" DisplayName="4点空间" />
+            <CreatorDisplayData Language="zh_CN" Text="Light Up Blocks" DisplayName="发光世界" />
+            <CreatorDisplayData Language="zh_CN" Text="Language" DisplayName="语言设置" />
+            <CreatorDisplayData Language="zh_CN" Text="Coming Soon" DisplayName="敬请期待" />
+            <CreatorDisplayData Language="en_US" Text="Sphere" DisplayName="Sphere" />
+            <CreatorDisplayData Language="en_US" Text="FCC Octahedron" DisplayName="FCC Octahedron" />
+            <CreatorDisplayData Language="en_US" Text="BCC Octahedron" DisplayName="BCC Octahedron" />
+            <CreatorDisplayData Language="en_US" Text="Cylinder" DisplayName="Cylinder" />
+            <CreatorDisplayData Language="en_US" Text="FCC Square Column" DisplayName="FCC Square Column" />
+            <CreatorDisplayData Language="en_US" Text="BCC Square Column" DisplayName="BCC Square Column" />
+            <CreatorDisplayData Language="en_US" Text="Cuboid" DisplayName="Cuboid" />
+            <CreatorDisplayData Language="en_US" Text="Torus" DisplayName="Torus" />
+            <CreatorDisplayData Language="en_US" Text="Maze" DisplayName="Maze" />
+            <CreatorDisplayData Language="en_US" Text="Set the Point" DisplayName="Set the Point" />
+            <CreatorDisplayData Language="en_US" Text="Undo" DisplayName="Undo" />
+            <CreatorDisplayData Language="en_US" Text="Copy and Paste" DisplayName="Copy and Paste" />
+            <CreatorDisplayData Language="en_US" Text="Fill" DisplayName="Fill" />
+            <CreatorDisplayData Language="en_US" Text="Mountains" DisplayName="Mountains" />
+            <CreatorDisplayData Language="en_US" Text="Teleport" DisplayName="Teleport" />
+            <CreatorDisplayData Language="en_US" Text="Replace" DisplayName="Replace" />
+            <CreatorDisplayData Language="en_US" Text="Spiral" DisplayName="Spiral" />
+            <CreatorDisplayData Language="en_US" Text="Connect 2 Points" DisplayName="Connect 2 Points" />
+            <CreatorDisplayData Language="en_US" Text="Level" DisplayName="Level" />
+            <CreatorDisplayData Language="en_US" Text="Tile" DisplayName="Tile" />
+            <CreatorDisplayData Language="en_US" Text="Mod Settings" DisplayName="Mod Settings" />
+            <CreatorDisplayData Language="en_US" Text="Disable Collision" DisplayName="Disable Collision" />
+            <CreatorDisplayData Language="en_US" Text="One Click Generation" DisplayName="One Click Generation" />
+            <CreatorDisplayData Language="en_US" Text="Set the Spawn Point" DisplayName="Set the Spawn Point" />
+            <CreatorDisplayData Language="en_US" Text="Clear Cache" DisplayName="Clear Cache" />
+            <CreatorDisplayData Language="en_US" Text="Game Mode" DisplayName="Game Mode" />
+            <CreatorDisplayData Language="en_US" Text="Init Difficulty" DisplayName="Init Difficulty" />
+            <CreatorDisplayData Language="en_US" Text="World Settings" DisplayName="World Settings" />
+            <CreatorDisplayData Language="en_US" Text="Edit Chunk" DisplayName="Edit Chunk" />
+            <CreatorDisplayData Language="en_US" Text="Remove Drops" DisplayName="Remove Drops" />
+            <CreatorDisplayData Language="en_US" Text="Despawn Entities" DisplayName="Despawn Entities" />
+            <CreatorDisplayData Language="en_US" Text="Clear Blocks" DisplayName="Clear Blocks" />
+            <CreatorDisplayData Language="en_US" Text="Terrain" DisplayName="Terrain" />
+            <CreatorDisplayData Language="en_US" Text="Custom Module" DisplayName="Custom Module" />
+            <CreatorDisplayData Language="en_US" Text="Custom Point" DisplayName="Custom Point" />
+            <CreatorDisplayData Language="en_US" Text="Point adjustment" DisplayName="Point adjustment" />
+            <CreatorDisplayData Language="en_US" Text="Connect 3 Points" DisplayName="Connect 3 Points" />
+            <CreatorDisplayData Language="en_US" Text="Connect 4 Points" DisplayName="Connect 4 Points" />
+            <CreatorDisplayData Language="en_US" Text="Light Up Blocks" DisplayName="Light Up Blocks" />
+            <CreatorDisplayData Language="en_US" Text="Language" DisplayName="Language" />
+            <CreatorDisplayData Language="en_US" Text="Coming Soon" DisplayName="Coming Soon" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Sphere" DisplayName="球体" />
+            <CreatorDisplayData Language="ja_JP" Text="FCC Octahedron" DisplayName="FCCプリズム" />
+            <CreatorDisplayData Language="ja_JP" Text="BCC Octahedron" DisplayName="BCCプリズム" />
+            <CreatorDisplayData Language="ja_JP" Text="Cylinder" DisplayName="シリンダ一" />
+            <CreatorDisplayData Language="ja_JP" Text="FCC Square Column" DisplayName="FCCプリズム" />
+            <CreatorDisplayData Language="ja_JP" Text="BCC Square Column" DisplayName="BCCカラム" />
+            <CreatorDisplayData Language="ja_JP" Text="Cuboid" DisplayName="长方形" />
+            <CreatorDisplayData Language="ja_JP" Text="Torus" DisplayName="环" />
+            <CreatorDisplayData Language="ja_JP" Text="Maze" DisplayName="迷路" />
+            <CreatorDisplayData Language="ja_JP" Text="Set the Point" DisplayName="设点" />
+            <CreatorDisplayData Language="ja_JP" Text="Undo" DisplayName="撤回" />
+            <CreatorDisplayData Language="ja_JP" Text="Copy and Paste" DisplayName="コピ一＆ペ一スト" />
+            <CreatorDisplayData Language="ja_JP" Text="Fill" DisplayName="填充" />
+            <CreatorDisplayData Language="ja_JP" Text="Mountains" DisplayName="山" />
+            <CreatorDisplayData Language="ja_JP" Text="Teleport" DisplayName="テレポ一ト" />
+            <CreatorDisplayData Language="ja_JP" Text="Replace" DisplayName="正方形の置换" />
+            <CreatorDisplayData Language="ja_JP" Text="Spiral" DisplayName="スパイラル" />
+            <CreatorDisplayData Language="ja_JP" Text="Connect 2 Points" DisplayName="连接" />
+            <CreatorDisplayData Language="ja_JP" Text="Level" DisplayName="レベル" />
+            <CreatorDisplayData Language="ja_JP" Text="Tile" DisplayName="ボ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Mod Settings" DisplayName="セット" />
+            <CreatorDisplayData Language="ja_JP" Text="Disable Collision" DisplayName="ペネトレ一ション" />
+            <CreatorDisplayData Language="ja_JP" Text="One Click Generation" DisplayName="ワンクリック世代" />
+            <CreatorDisplayData Language="ja_JP" Text="Set the Spawn Point" DisplayName="出生点" />
+            <CreatorDisplayData Language="ja_JP" Text="Clear Cache" DisplayName="キャッシュのクリア" />
+            <CreatorDisplayData Language="ja_JP" Text="Game Mode" DisplayName="变更チェンジモ一ド模式" />
+            <CreatorDisplayData Language="ja_JP" Text="Init Difficulty" DisplayName="难易度変更" />
+            <CreatorDisplayData Language="ja_JP" Text="World Settings" DisplayName="エディットワ一ルド" />
+            <CreatorDisplayData Language="ja_JP" Text="Edit Chunk" DisplayName="编集エリア" />
+            <CreatorDisplayData Language="ja_JP" Text="Remove Drops" DisplayName="クリアドロップス" />
+            <CreatorDisplayData Language="ja_JP" Text="Despawn Entities" DisplayName="クリア一アニマル" />
+            <CreatorDisplayData Language="ja_JP" Text="Clear Blocks" DisplayName="クリアキュ一ブ" />
+            <CreatorDisplayData Language="ja_JP" Text="Terrain" DisplayName="テスト地形" />
+            <CreatorDisplayData Language="ja_JP" Text="Custom Module" DisplayName="モジュ一ル固有" />
+            <CreatorDisplayData Language="ja_JP" Text="Custom Point" DisplayName="スポッティング" />
+            <CreatorDisplayData Language="ja_JP" Text="Point adjustment" DisplayName="ポイント调整" />
+            <CreatorDisplayData Language="ja_JP" Text="Connect 3 Points" DisplayName="3点面" />
+            <CreatorDisplayData Language="ja_JP" Text="Connect 4 Points" DisplayName="4ポイントスペ一ス" />
+            <CreatorDisplayData Language="ja_JP" Text="Light Up Blocks" DisplayName="光る世界" />
+            <CreatorDisplayData Language="ja_JP" Text="Language" DisplayName="言语设定" />
+            <CreatorDisplayData Language="ja_JP" Text="Coming Soon" DisplayName="Stay tuned" />
+
+            <CreatorDisplayData Language="zh_CN" Text="Rain:" DisplayName="降雨:" />
+            <CreatorDisplayData Language="en_US" Text="Rain:" DisplayName="Rain:" />
+            <CreatorDisplayData Language="ja_JP" Text="Rain:" DisplayName="雨の日" />
+            <CreatorDisplayData Language="zh_CN" Text="No Rain:" DisplayName="天晴:" />
+            <CreatorDisplayData Language="en_US" Text="No Rain:" DisplayName="No Rain:" />
+            <CreatorDisplayData Language="ja_JP" Text="No Rain:" DisplayName="晴の日" />
+            <CreatorDisplayData Language="zh_CN" Text="Snow:" DisplayName="降雪:" />
+            <CreatorDisplayData Language="en_US" Text="Snow:" DisplayName="Snow:" />
+            <CreatorDisplayData Language="ja_JP" Text="Snow:" DisplayName="雪の日" />
+            <CreatorDisplayData Language="zh_CN" Text="No Snow:" DisplayName="天晴:" />
+            <CreatorDisplayData Language="en_US" Text="No Snow:" DisplayName="No Snow:" />
+            <CreatorDisplayData Language="ja_JP" Text="No Snow:" DisplayName="晴の日" />
+        </NewCreatorAPIWidget>
+        <EditChunk>
+            <CreatorDisplayData Language="zh_CN" Text="EditingChunk" DisplayName="编辑区域" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="EditingChunk" DisplayName="Editing Chunk" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="EditingChunk" DisplayName="编集エリア" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </EditChunk>
+        <EditWorld>
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Reload" DisplayName="重载" />
+            <CreatorDisplayData Language="zh_CN" Text="Refresh" DisplayName="刷新" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Reload" DisplayName="Reload" />
+            <CreatorDisplayData Language="en_US" Text="Refresh" DisplayName="Refresh" />
+
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Reload" DisplayName="リロ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Refresh" DisplayName="リフレッシュ" />
+        </EditWorld>
+        <Teleport>
+            <CreatorDisplayData Language="zh_CN" Text="Teleport" DisplayName="传送" />
+            <CreatorDisplayData Language="zh_CN" Text="X:" DisplayName="坐标X: " />
+            <CreatorDisplayData Language="zh_CN" Text="Y:" DisplayName="坐标Y: " />
+            <CreatorDisplayData Language="zh_CN" Text="Z:" DisplayName="坐标Z: " />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Teleport" DisplayName="Teleport" />
+            <CreatorDisplayData Language="en_US" Text="X:" DisplayName="X: " />
+            <CreatorDisplayData Language="en_US" Text="Y:" DisplayName="Y: " />
+            <CreatorDisplayData Language="en_US" Text="Z:" DisplayName="Z: " />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Teleport" DisplayName="トランスミッション" />
+            <CreatorDisplayData Language="ja_JP" Text="X:" DisplayName="座标X: " />
+            <CreatorDisplayData Language="ja_JP" Text="Y:" DisplayName="座标Y: " />
+            <CreatorDisplayData Language="ja_JP" Text="Z:" DisplayName="座标Z: " />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Teleport>
+        <Level>
+            <CreatorDisplayData Language="zh_CN" Text="Level1" DisplayName="等级" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Level1" DisplayName="Level" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Level1" DisplayName="レベル" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Level>
+        <CopyandPaste>
+            <CreatorDisplayData Language="zh_CN" Text="Copy and Paste" DisplayName="复制粘贴" />
+            <CreatorDisplayData Language="zh_CN" Text="Copy" DisplayName="复制" />
+            <CreatorDisplayData Language="zh_CN" Text="Export" DisplayName="导出" />
+            <CreatorDisplayData Language="zh_CN" Text="Import" DisplayName="导入" />
+            <CreatorDisplayData Language="zh_CN" Text="Delete" DisplayName="删除" />
+            <CreatorDisplayData Language="zh_CN" Text="Paste" DisplayName="粘贴" />
+            <CreatorDisplayData Language="zh_CN" Text="Mirror" DisplayName="镜像" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Copy and Paste" DisplayName="Copy and Paste" />
+            <CreatorDisplayData Language="en_US" Text="Copy" DisplayName="Copy" />
+            <CreatorDisplayData Language="en_US" Text="Export" DisplayName="Export" />
+            <CreatorDisplayData Language="en_US" Text="Import" DisplayName="Import" />
+            <CreatorDisplayData Language="en_US" Text="Delete" DisplayName="Delete" />
+            <CreatorDisplayData Language="en_US" Text="Paste" DisplayName="Paste" />
+            <CreatorDisplayData Language="en_US" Text="Mirror" DisplayName="Mirror" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Copy and Paste" DisplayName="コピ一＆ペ一スト" />
+            <CreatorDisplayData Language="ja_JP" Text="Copy" DisplayName="コピ一" />
+            <CreatorDisplayData Language="ja_JP" Text="Export" DisplayName="エクスポ一ト" />
+            <CreatorDisplayData Language="ja_JP" Text="Import" DisplayName="インポ一ト" />
+            <CreatorDisplayData Language="ja_JP" Text="Delete" DisplayName="削除" />
+            <CreatorDisplayData Language="ja_JP" Text="Paste" DisplayName="贴り付け" />
+            <CreatorDisplayData Language="ja_JP" Text="Mirror" DisplayName="镜" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </CopyandPaste>
+        <CustomPoint>
+            <CreatorDisplayData Language="zh_CN" Text="CustomPoint" DisplayName="精准设点" />
+            <CreatorDisplayData Language="zh_CN" Text="X:" DisplayName="坐标X: " />
+            <CreatorDisplayData Language="zh_CN" Text="Y:" DisplayName="坐标Y: " />
+            <CreatorDisplayData Language="zh_CN" Text="Z:" DisplayName="坐标Z: " />
+            <CreatorDisplayData Language="zh_CN" Text="Point1" DisplayName="点1" />
+            <CreatorDisplayData Language="zh_CN" Text="Point2" DisplayName="点2" />
+            <CreatorDisplayData Language="zh_CN" Text="Point3" DisplayName="点3" />
+            <CreatorDisplayData Language="zh_CN" Text="Point4" DisplayName="点4" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="CustomPoint" DisplayName="CustomPoint" />
+            <CreatorDisplayData Language="en_US" Text="X:" DisplayName="X: " />
+            <CreatorDisplayData Language="en_US" Text="Y:" DisplayName="Y: " />
+            <CreatorDisplayData Language="en_US" Text="Z:" DisplayName="Z: " />
+            <CreatorDisplayData Language="en_US" Text="Point1" DisplayName="Point1" />
+            <CreatorDisplayData Language="en_US" Text="Point2" DisplayName="Point2" />
+            <CreatorDisplayData Language="en_US" Text="Point3" DisplayName="Point3" />
+            <CreatorDisplayData Language="en_US" Text="Point4" DisplayName="Point4" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="CustomPoint" DisplayName="精密设定点" />
+            <CreatorDisplayData Language="ja_JP" Text="X:" DisplayName="座标X: " />
+            <CreatorDisplayData Language="ja_JP" Text="Y:" DisplayName="座标Y: " />
+            <CreatorDisplayData Language="ja_JP" Text="Z:" DisplayName="座标Z: " />
+            <CreatorDisplayData Language="ja_JP" Text="Point1" DisplayName="ポイント1" />
+            <CreatorDisplayData Language="ja_JP" Text="Point2" DisplayName="ポイント2" />
+            <CreatorDisplayData Language="ja_JP" Text="Point3" DisplayName="ポイント3" />
+            <CreatorDisplayData Language="ja_JP" Text="Point4" DisplayName="ポイント4" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </CustomPoint>
+        <Cuboid>
+            <CreatorDisplayData Language="zh_CN" Text="Cuboid" DisplayName="矩形" />
+            <CreatorDisplayData Language="zh_CN" Text="Solid" DisplayName="实心" />
+            <CreatorDisplayData Language="zh_CN" Text="Hollow" DisplayName="空心" />
+            <CreatorDisplayData Language="zh_CN" Text="Edges" DisplayName="框架" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Cuboid" DisplayName="Cuboid" />
+            <CreatorDisplayData Language="en_US" Text="Solid" DisplayName="Solid" />
+            <CreatorDisplayData Language="en_US" Text="Hollow" DisplayName="Hollow" />
+            <CreatorDisplayData Language="en_US" Text="Edges" DisplayName="Edges" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Cuboid" DisplayName="长方形" />
+            <CreatorDisplayData Language="ja_JP" Text="Solid" DisplayName="固体" />
+            <CreatorDisplayData Language="ja_JP" Text="Hollow" DisplayName="中空" />
+            <CreatorDisplayData Language="ja_JP" Text="Edges" DisplayName="フレ一ム" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Cuboid>
+        <Octahedron>
+            <CreatorDisplayData Language="zh_CN" Text="X-axis" DisplayName="X轴" />
+            <CreatorDisplayData Language="zh_CN" Text="Y-axis" DisplayName="Y轴" />
+            <CreatorDisplayData Language="zh_CN" Text="Z-axis" DisplayName="Z轴" />
+            <CreatorDisplayData Language="zh_CN" Text="Solid" DisplayName="实心" />
+            <CreatorDisplayData Language="zh_CN" Text="Hollow" DisplayName="空心" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="X-axis" DisplayName="X-axis" />
+            <CreatorDisplayData Language="en_US" Text="Y-axis" DisplayName="Y-axis" />
+            <CreatorDisplayData Language="en_US" Text="Z-axis" DisplayName="Z-axis" />
+            <CreatorDisplayData Language="en_US" Text="Solid" DisplayName="Solid" />
+            <CreatorDisplayData Language="en_US" Text="Hollow" DisplayName="Hollow" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="X-axis" DisplayName="X轴" />
+            <CreatorDisplayData Language="ja_JP" Text="Y-axis" DisplayName="Y轴" />
+            <CreatorDisplayData Language="ja_JP" Text="Z-axis" DisplayName="Z轴" />
+            <CreatorDisplayData Language="ja_JP" Text="Solid" DisplayName="固体" />
+            <CreatorDisplayData Language="ja_JP" Text="Hollow" DisplayName="中空" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Octahedron>
+        <Column>
+            <CreatorDisplayData Language="zh_CN" Text="Solid" DisplayName="实心" />
+            <CreatorDisplayData Language="zh_CN" Text="Hollow" DisplayName="空心" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Solid" DisplayName="Solid" />
+            <CreatorDisplayData Language="en_US" Text="Hollow" DisplayName="Hollow" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Solid" DisplayName="固体" />
+            <CreatorDisplayData Language="ja_JP" Text="Hollow" DisplayName="中空" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Column>
+        <GameMode>
+            <CreatorDisplayData Language="zh_CN" Text="Creative" DisplayName="创造模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Challenging" DisplayName="挑战模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Harmless" DisplayName="无害模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Adventure" DisplayName="闯关模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Cruel" DisplayName="残酷模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Creative" DisplayName="Creative" />
+            <CreatorDisplayData Language="en_US" Text="Challenging" DisplayName="Challenging" />
+            <CreatorDisplayData Language="en_US" Text="Harmless" DisplayName="Harmless" />
+            <CreatorDisplayData Language="en_US" Text="Adventure" DisplayName="Adventure" />
+            <CreatorDisplayData Language="en_US" Text="Cruel" DisplayName="Cruel" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Creative" DisplayName="作成モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Challenging" DisplayName="チャレンジモ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Harmless" DisplayName="无害モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Adventure" DisplayName="ブレイクアウトモ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Cruel" DisplayName="残酷モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </GameMode>
+        <Tile>
+            <CreatorDisplayData Language="zh_CN" Text="Tile" DisplayName="棋盘" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Tile" DisplayName="Tile" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Tile" DisplayName="チェス盘" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Tile>
+        <ModSettings>
+            <CreatorDisplayData Language="zh_CN" Text="Pro Mode" DisplayName="专业模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Old UI" DisplayName="旧主界面" />
+            <CreatorDisplayData Language="zh_CN" Text="PointMode" DisplayName="设点模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Generati" DisplayName="生成模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Generation" DisplayName="生成开关" />
+            <CreatorDisplayData Language="zh_CN" Text="SelectAir" DisplayName="空气识别" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Reset" DisplayName="重置" />
+            <CreatorDisplayData Language="zh_CN" Text="HyV Genera" DisplayName="超距生成" />
+            <CreatorDisplayData Language="zh_CN" Text="Undoing" DisplayName="撤回开关" />
+            <CreatorDisplayData Language="en_US" Text="Pro Mode" DisplayName="Pro Mode" />
+            <CreatorDisplayData Language="en_US" Text="Old UI" DisplayName="Old UI" />
+            <CreatorDisplayData Language="en_US" Text="2-point" DisplayName="2-point" />
+            <CreatorDisplayData Language="en_US" Text="Generati" DisplayName="Generati" />
+            <CreatorDisplayData Language="en_US" Text="Generation" DisplayName="Generation" />
+            <CreatorDisplayData Language="en_US" Text="SelectAir" DisplayName="SelectAir" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Reset" DisplayName="Reset" />
+            <CreatorDisplayData Language="en_US" Text="HyV Genera" DisplayName="HyV Genera" />
+            <CreatorDisplayData Language="en_US" Text="Undoing" DisplayName="Undoing" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Pro Mode" DisplayName="プロモ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Old UI" DisplayName="旧メイン画面" />
+            <CreatorDisplayData Language="ja_JP" Text="PointMode" DisplayName="设定值モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Generati" DisplayName="生成モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Generation" DisplayName="ExportOldKey" />
+            <CreatorDisplayData Language="ja_JP" Text="SelectAir" DisplayName="空気认识" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Reset" DisplayName="リセット" />
+            <CreatorDisplayData Language="ja_JP" Text="HyV Genera" DisplayName="过距离世代" />
+            <CreatorDisplayData Language="ja_JP" Text="Undoing" DisplayName="Undoing" />
+        </ModSettings>
+        <Mountains>
+            <CreatorDisplayData Language="zh_CN" Text="Mountains" DisplayName="山脉" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="zh_CN" Text="Reset" DisplayName="重置" />
+            <CreatorDisplayData Language="en_US" Text="Mountains" DisplayName="Mountains" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+            <CreatorDisplayData Language="en_US" Text="Reset" DisplayName="Reset" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Mountains" DisplayName="山" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+            <CreatorDisplayData Language="ja_JP" Text="Reset" DisplayName="リセット" />
+        </Mountains>
+        <Sphere>
+            <CreatorDisplayData Language="zh_CN" Text="Sphere" DisplayName="球体" />
+            <CreatorDisplayData Language="zh_CN" Text="Solid" DisplayName="实心" />
+            <CreatorDisplayData Language="zh_CN" Text="Hollow" DisplayName="空心" />
+            <CreatorDisplayData Language="zh_CN" Text="ADV" DisplayName="高级" />
+            <CreatorDisplayData Language="zh_CN" Text="Limit" DisplayName="2点模式" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Sphere" DisplayName="Sphere" />
+            <CreatorDisplayData Language="en_US" Text="Solid" DisplayName="Solid" />
+            <CreatorDisplayData Language="en_US" Text="Hollow" DisplayName="Hollow" />
+            <CreatorDisplayData Language="en_US" Text="ADV" DisplayName="ADV" />
+            <CreatorDisplayData Language="en_US" Text="Limit" DisplayName="Limit" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Sphere" DisplayName="球体" />
+            <CreatorDisplayData Language="ja_JP" Text="Solid" DisplayName="固体" />
+            <CreatorDisplayData Language="ja_JP" Text="Hollow" DisplayName="中空" />
+            <CreatorDisplayData Language="ja_JP" Text="ADV" DisplayName="高度な" />
+            <CreatorDisplayData Language="ja_JP" Text="Limit" DisplayName="2点モ一ド" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Sphere>
+        <Replace>
+            <CreatorDisplayData Language="zh_CN" Text="Replace1" DisplayName="替换" />
+            <CreatorDisplayData Language="zh_CN" Text="Index1:" DisplayName="方块1:" />
+            <CreatorDisplayData Language="zh_CN" Text="Index2:" DisplayName="方块2:" />
+            <CreatorDisplayData Language="zh_CN" Text="Replace" DisplayName="替换" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Replace1" DisplayName="Replace" />
+            <CreatorDisplayData Language="en_US" Text="Index1:" DisplayName="Index1:" />
+            <CreatorDisplayData Language="en_US" Text="Index2:" DisplayName="Index2:" />
+            <CreatorDisplayData Language="en_US" Text="Replace" DisplayName="Replace" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+            <CreatorDisplayData Language="ja_JP" Text="Replace1" DisplayName="置换" />
+            <CreatorDisplayData Language="ja_JP" Text="Index1:" DisplayName="方块1:" />
+            <CreatorDisplayData Language="ja_JP" Text="Index2:" DisplayName="方块2:" />
+            <CreatorDisplayData Language="ja_JP" Text="Replace" DisplayName="置换" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Replace>
+        <Fill>
+            <CreatorDisplayData Language="zh_CN" Text="Fill" DisplayName="填充" />
+            <CreatorDisplayData Language="zh_CN" Text="Fill1" DisplayName="填充" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Fill" DisplayName="Fill" />
+            <CreatorDisplayData Language="en_US" Text="Fill1" DisplayName="Fill" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="Fill" DisplayName="填充" />
+            <CreatorDisplayData Language="ja_JP" Text="Fill1" DisplayName="填充" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Fill>
+        <Manager3>
+
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </Manager3>
+        <OneClickGeneration>
+            <CreatorDisplayData Language="zh_CN" Text="On" DisplayName="开启" />
+            <CreatorDisplayData Language="zh_CN" Text="Create" DisplayName="创建" />
+            <CreatorDisplayData Language="zh_CN" Text="Type" DisplayName="类型" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Import" DisplayName="导入" />
+            <CreatorDisplayData Language="zh_CN" Text="Export" DisplayName="导出" />
+            <CreatorDisplayData Language="zh_CN" Text="Delete" DisplayName="删除" />
+            <CreatorDisplayData Language="en_US" Text="On" DisplayName="On" />
+            <CreatorDisplayData Language="en_US" Text="Create" DisplayName="Create" />
+            <CreatorDisplayData Language="en_US" Text="Type" DisplayName="Type" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Import" DisplayName="Import" />
+            <CreatorDisplayData Language="en_US" Text="Export" DisplayName="Export" />
+            <CreatorDisplayData Language="en_US" Text="Delete" DisplayName="Delete" />
+
+            <CreatorDisplayData Language="ja_JP" Text="On" DisplayName="オ一プン" />
+            <CreatorDisplayData Language="ja_JP" Text="Create" DisplayName="作成" />
+            <CreatorDisplayData Language="ja_JP" Text="Type" DisplayName="タイプ" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Import" DisplayName="インポ一ト" />
+            <CreatorDisplayData Language="ja_JP" Text="Export" DisplayName="エクスポ一ト" />
+            <CreatorDisplayData Language="ja_JP" Text="Delete" DisplayName="削除" />
+        </OneClickGeneration>
+        <CustomModule>
+            <CreatorDisplayData Language="zh_CN" Text="ClassMOD" DisplayName="模组界面" />
+            <CreatorDisplayData Language="zh_CN" Text="OK" DisplayName="确定" />
+            <CreatorDisplayData Language="zh_CN" Text="Export Key" DisplayName="导出一键" />
+            <CreatorDisplayData Language="zh_CN" Text="Export Copy" DisplayName="导出复制" />
+            <CreatorDisplayData Language="zh_CN" Text="ImportConfig" DisplayName="导入配置" />
+            <CreatorDisplayData Language="zh_CN" Text="Del" DisplayName="删除" />
+            <CreatorDisplayData Language="zh_CN" Text="ExportOldCopy" DisplayName="导出旧复制" />
+            <CreatorDisplayData Language="zh_CN" Text="ExportOldKey" DisplayName="导出旧一键" />
+            <CreatorDisplayData Language="zh_CN" Text="Export Special" DisplayName="导出特殊" />
+            <CreatorDisplayData Language="en_US" Text="ClassMOD" DisplayName="Class MOD configurations" />
+            <CreatorDisplayData Language="en_US" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="en_US" Text="Export Key" DisplayName="Export Key" />
+            <CreatorDisplayData Language="en_US" Text="Export Copy" DisplayName="Export Copy" />
+            <CreatorDisplayData Language="en_US" Text="ImportConfig" DisplayName="ImportConfig" />
+            <CreatorDisplayData Language="en_US" Text="Del" DisplayName="Del" />
+            <CreatorDisplayData Language="en_US" Text="ExportOldCopy" DisplayName="ExportOldCopy" />
+            <CreatorDisplayData Language="en_US" Text="ExportOldKey" DisplayName="ExportOldKey" />
+            <CreatorDisplayData Language="en_US" Text="Export Special" DisplayName="Export Special" />
+
+            <CreatorDisplayData Language="ja_JP" Text="ClassMOD" DisplayName="モジュ一ルインタフェ一ス" />
+            <CreatorDisplayData Language="ja_JP" Text="OK" DisplayName="OK" />
+            <CreatorDisplayData Language="ja_JP" Text="Export Key" DisplayName="Export Key" />
+            <CreatorDisplayData Language="ja_JP" Text="Export Copy" DisplayName="Export Copy" />
+            <CreatorDisplayData Language="ja_JP" Text="ImportConfig" DisplayName="Import设定" />
+            <CreatorDisplayData Language="ja_JP" Text="Del" DisplayName="削除" />
+            <CreatorDisplayData Language="ja_JP" Text="ExportOldCopy" DisplayName="ExportOldCopy" />
+            <CreatorDisplayData Language="ja_JP" Text="ExportOldKey" DisplayName="ExportOldKey" />
+            <CreatorDisplayData Language="ja_JP" Text="Export Special" DisplayName="输出特集" />
+        </CustomModule>
+        <EditMemeryDialog>
+            <CreatorDisplayData Language="zh_CN" Text="Tilename" DisplayName="M板编辑器" />
+            <CreatorDisplayData Language="en_US" Text="Tilename" DisplayName="Edit Memory Bank" />
+            <CreatorDisplayData Language="ja_JP" Text="Tilename" DisplayName="エディットメモリバンク" />
+            <CreatorDisplayData Language="zh_CN" Text="clear" DisplayName="清除" />
+            <CreatorDisplayData Language="en_US" Text="clear" DisplayName="Clear" />
+            <CreatorDisplayData Language="ja_JP" Text="clear" DisplayName="削除" />
+            <CreatorDisplayData Language="zh_CN" Text="transpose" DisplayName="转置" />
+            <CreatorDisplayData Language="en_US" Text="transpose" DisplayName="Trans" />
+            <CreatorDisplayData Language="ja_JP" Text="transpose" DisplayName="转写" />
+            <CreatorDisplayData Language="zh_CN" Text="Sign" DisplayName="输入全部数据:" />
+            <CreatorDisplayData Language="en_US" Text="Sign" DisplayName="Input Data:" />
+            <CreatorDisplayData Language="ja_JP" Text="Sign" DisplayName="入力データ:" />
+            <CreatorDisplayData Language="zh_CN" Text="Save" DisplayName="保存" />
+            <CreatorDisplayData Language="en_US" Text="Save" DisplayName="Save" />
+            <CreatorDisplayData Language="ja_JP" Text="Save" DisplayName="セーブ" />
+            <CreatorDisplayData Language="zh_CN" Text="Cancel" DisplayName="取消" />
+            <CreatorDisplayData Language="en_US" Text="Cancel" DisplayName="Cancel" />
+            <CreatorDisplayData Language="ja_JP" Text="Cancel" DisplayName="キャンセル" />
+        </EditMemeryDialog>
+        <EditWorldDialog>
+        </EditWorldDialog>
+    </CreatorDisplayUI>
+</CreatorDisplay>

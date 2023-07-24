@@ -1,0 +1,91 @@
+debugmode b=Activate debugmode，b is true or false.
+message m=Put a message on screen.
+largemessage m m=Put a large message. First m will be large, the second m is small.
+place x y z i=Put block at position x, y, z. 
+places keyword value=Click for more information. 
+replace x1 y1 z1 to x2 y2 z2 i1 i2=Replace the blockID i1 to i2 within (x1, y1, z1) to (x2, y2, z2).
+dig x y z=Dig a hole (x, y, z) in size.
+digs x1 y1 z1 to x2 y2 z2 i=Within (x, y, z) dig up blockID i. 
+addentity x y z n=Add an entity，n is the entityID.
+removenpc value=Kick player with value. Click for more information.
+kill n=Kill entity，n is entityID.
+heal n v=Heal entity, n is entityID.
+injure n v=Hurt (n is entityID)
+catchfire value v=Set block at value on fire. Click for more information.
+shapeshifter b=Turn to Wolfman，b is true or false.
+invulnerable b=Godmode enable. 
+adddrops x y z i c=Add drops of blockID i at (x, y, z)，c is amount.
+removedrops value=Kill all drops. Click for more information. 
+launchdrops x y z i v1,v2,v3=Launch drops of blockID i from (x, y, z)，with speed (v1,v2,v3).
+tp x y z=Teleport to (x, y, z).
+spawn x y z=Set spawnpoint in world. 
+boxstage t=Player Hit box，t = [1, 5]. 
+playerstats keyword value=Change playerstats. Click for more information. 
+playeraction keyword value=Change playeraction. Click for more information. 
+playerinput keyword=Change playerinput. Click for more information. 
+additems s i c=Add c amount of ID i to your inventory，s is grid number. 
+removeitems value=Remove items from inventory. Click for more information. 
+addchestitems x y z s i c=Add items to chest at (x, y, z), c amount of ID i, s is grid no. 
+removechestitems value=Remove items from chest. Click for more information. 
+openchest x y z=Open chest at (x, y, z).
+openfurnace x y z=Open furnace at (x, y, z).
+opendispenser x y z=Open dispenser at (x, y, z).
+opentable x y z=Open table at (x, y, z).
+widget keyword=Activate widget. Click for more information. 
+clickbutton x y z=Activate the button at (x, y, z). 
+explosion x y z v=Make an explosion at (x, y, z). With barrel vol v. 
+lightning x y z=Summon lightning to (x, y, z). 
+rain b=Enable rain or snow，b is true or false.
+temperature x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at temperature v. 
+humidity x1 y1 z1 to x2 y2 z2 v=Put a region between (x1, y1, z1) and (x2, y2, z2) at humidity v
+copy x1 y1 z1 to x2 y2 z2 /paste x3 y3 z3 to x4 y4 z4 value=Copy one region to another.
+moveblock x1 y1 z1 to x2 y2 z2 v1,v2,v3 value=Move the region with velocity(v1,v2,v3) towards. 
+moveset keyword n value=Move set. Click for more information. 
+hammer x y z value=Hammer a surface, t is the side，t = [1, 4]. Click for more information. 
+unhammer x y z s=Modify furniture at (x, y, z)，s is furniture ID
+replacedesign x1 y1 z1 to x2 y2 z2 i1 i2=Replace design from i1 to i2. 
+linkdesign value=External design link. Click for more information.
+write m=Rewrite m to Survivalcraft2.2/Command directory's command.txt 
+writeappend m=Append m to command.txt 
+read c=Read cth line of command.txt
+copefile f=Copy file contents from file f. 
+getcell x1 y1 z1 to x2 y2 z2=Get a region's block contents and write to a cell.txt file. 
+getid v=Get the full information of block ID v. 
+getterrain x y z=Get terrain statistics. 
+getplayerstats=Get playerstats. 
+world f=Switch to another world，f is the world name. 
+worldtexture f=Change world texture pack，f using Command folder texture pack name. 
+audio f v=f is audio file name in Command folder，v is volume = [0, 15].
+image x y z f value=At (x, y, z) put the image，f is the image name. Click for more information. 
+pattern x y z f t v=At (x, y, z) put the image，f is image name，t = [1, 6] control image orientation，v is image size.
+removepattern x1 y1 z1 to x2 y2 z2=Get rid of image. 
+build x y z f=Read the block file in Command folder，build from (x, y, z). 
+model n f=Modelswap for the entity，n is the entityID，f is the .pak file pathname. 
+modeltexture n f=ModelTextureswap for the entity，n is entityID，f is the pathname for texture file.
+modelsize n v=Adjust model n size，v = [0, 10].
+gamemode t=Change gamemode, t = [0, 4].
+changetime t=Change time, t = [1, 4].
+capturephoto=ScreenCapture.
+web w=Open webpage, w is webpage.
+settings keyword value=Settings. Click for more information. 
+blockdata keyword i value=Change blockdata. i is blockID. Click for more information.
+clothesdata keyword s value=Change clothesdata. s is clothingID. Click for more information.
+creaturedata keyword n value=Change creaturedata. n is entityID. Click for more information.
+exit=Exit the game.
+
+place? x y z i=Check if block placed in (x, y, z) is i. Return boolean result. 
+places? x1 y1 z1 to x2 y2 z2 i=Check if block(s) placed in region is i. Return boolean result. 
+dig? i=Check if block i is dug by player. Return boolean result. 
+blockchange? x y z=Check if block changed at (x, y , z). Return boolean result. 
+dropsexist? x1 y1 z1 to x2 y2 z2 i=Check if block drop i exists within a region. Return boolean result. 
+entityexist? x1 y1 z1 to x2 y2 z2 n=Check if entity n exists within a region. Return boolean result. 
+itemsexist? value=Check if item = value. Return boolean result. Click for more information. 
+chestitemsexist? x y z value=Check if chest at (x, y, z) contains value. Return boolean result. Click for more information. 
+handitemsexist? i value=Check if handitem[i] = value. Return boolean result. Click for more information. 
+playerstats? keyword v1 to v2=Check player statistics. Return boolean result. Click for more information. 
+playeraction? keyword=Check player action. Return boolean result. Click for more information. 
+playerinput? keyword=Check playerinput now. Return boolean result. Click for more information. 
+playerheight? y1 to y2=Check player height level now, x : y1 <= x <= y2. Return boolean result.
+eyesangle? x1 to y1 and x2 to y2=Check eye angle range (hori, vert) of player. Return boolean result. 
+widget? keyword=Check if widget = keyword, return boolean result. Click for more information. 
+gamemode? t=Check if gamemode = t, return boolean result. t = [1, 4]. 

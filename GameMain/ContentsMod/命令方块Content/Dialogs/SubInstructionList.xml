@@ -1,0 +1,27 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <CanvasWidget Size="720, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+  
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+      <LabelWidget Font="{Fonts/Pericles}" Text="分级指令列表" HorizontalAlignment="Center"/>
+      
+      <CanvasWidget Margin="20, 15">
+        <RectangleWidget FillColor="0, 0, 0, 0" OutlineColor="128, 128, 128, 128" OutlineThickness="1" />
+        <StackPanelWidget Direction="Vertical">
+           <ListPanelWidget Name="SubInstruction.List" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" SelectionColor="10, 70, 0, 90"/>
+        </StackPanelWidget>
+      </CanvasWidget>
+
+      <StackPanelWidget HorizontalAlignment="Center">
+		  <BevelledButtonWidget Name="OkButton" Text="关闭" Style="{Styles/ButtonStyle_160x60}"  />
+		  <CanvasWidget Size="30, 0" />
+        <BevelledButtonWidget Name="BackButton" Text="返回" Style="{Styles/ButtonStyle_160x60}"  />
+       </StackPanelWidget>
+
+    </StackPanelWidget>
+    
+  </CanvasWidget>
+  
+</CanvasWidget>

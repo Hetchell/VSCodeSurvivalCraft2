@@ -10,52 +10,52 @@ namespace Game
 	public class ScreenSpaceFireRenderer
 	{
 		// Token: 0x17000017 RID: 23
-		// (get) Token: 0x06000648 RID: 1608 RVA: 0x000266BC File Offset: 0x000248BC
+		// (GetPoint) Token: 0x06000648 RID: 1608 RVA: 0x000266BC File Offset: 0x000248BC
 		// (set) Token: 0x06000649 RID: 1609 RVA: 0x000266C4 File Offset: 0x000248C4
 		public float ParticlesPerSecond { get; set; }
 
 		// Token: 0x17000018 RID: 24
-		// (get) Token: 0x0600064A RID: 1610 RVA: 0x000266CD File Offset: 0x000248CD
+		// (GetPoint) Token: 0x0600064A RID: 1610 RVA: 0x000266CD File Offset: 0x000248CD
 		// (set) Token: 0x0600064B RID: 1611 RVA: 0x000266D5 File Offset: 0x000248D5
 		public float ParticleSpeed { get; set; }
 
 		// Token: 0x17000019 RID: 25
-		// (get) Token: 0x0600064C RID: 1612 RVA: 0x000266DE File Offset: 0x000248DE
+		// (GetPoint) Token: 0x0600064C RID: 1612 RVA: 0x000266DE File Offset: 0x000248DE
 		// (set) Token: 0x0600064D RID: 1613 RVA: 0x000266E6 File Offset: 0x000248E6
 		public float MinTimeToLive { get; set; }
 
 		// Token: 0x1700001A RID: 26
-		// (get) Token: 0x0600064E RID: 1614 RVA: 0x000266EF File Offset: 0x000248EF
+		// (GetPoint) Token: 0x0600064E RID: 1614 RVA: 0x000266EF File Offset: 0x000248EF
 		// (set) Token: 0x0600064F RID: 1615 RVA: 0x000266F7 File Offset: 0x000248F7
 		public float MaxTimeToLive { get; set; }
 
 		// Token: 0x1700001B RID: 27
-		// (get) Token: 0x06000650 RID: 1616 RVA: 0x00026700 File Offset: 0x00024900
+		// (GetPoint) Token: 0x06000650 RID: 1616 RVA: 0x00026700 File Offset: 0x00024900
 		// (set) Token: 0x06000651 RID: 1617 RVA: 0x00026708 File Offset: 0x00024908
 		public float ParticleSize { get; set; }
 
 		// Token: 0x1700001C RID: 28
-		// (get) Token: 0x06000652 RID: 1618 RVA: 0x00026711 File Offset: 0x00024911
+		// (GetPoint) Token: 0x06000652 RID: 1618 RVA: 0x00026711 File Offset: 0x00024911
 		// (set) Token: 0x06000653 RID: 1619 RVA: 0x00026719 File Offset: 0x00024919
 		public float ParticleAnimationPeriod { get; set; }
 
 		// Token: 0x1700001D RID: 29
-		// (get) Token: 0x06000654 RID: 1620 RVA: 0x00026722 File Offset: 0x00024922
+		// (GetPoint) Token: 0x06000654 RID: 1620 RVA: 0x00026722 File Offset: 0x00024922
 		// (set) Token: 0x06000655 RID: 1621 RVA: 0x0002672A File Offset: 0x0002492A
 		public float ParticleAnimationOffset { get; set; }
 
 		// Token: 0x1700001E RID: 30
-		// (get) Token: 0x06000656 RID: 1622 RVA: 0x00026733 File Offset: 0x00024933
+		// (GetPoint) Token: 0x06000656 RID: 1622 RVA: 0x00026733 File Offset: 0x00024933
 		// (set) Token: 0x06000657 RID: 1623 RVA: 0x0002673B File Offset: 0x0002493B
 		public Vector2 Origin { get; set; }
 
 		// Token: 0x1700001F RID: 31
-		// (get) Token: 0x06000658 RID: 1624 RVA: 0x00026744 File Offset: 0x00024944
+		// (GetPoint) Token: 0x06000658 RID: 1624 RVA: 0x00026744 File Offset: 0x00024944
 		// (set) Token: 0x06000659 RID: 1625 RVA: 0x0002674C File Offset: 0x0002494C
 		public float Width { get; set; }
 
 		// Token: 0x17000020 RID: 32
-		// (get) Token: 0x0600065A RID: 1626 RVA: 0x00026755 File Offset: 0x00024955
+		// (GetPoint) Token: 0x0600065A RID: 1626 RVA: 0x00026755 File Offset: 0x00024955
 		// (set) Token: 0x0600065B RID: 1627 RVA: 0x0002675D File Offset: 0x0002495D
 		public float CutoffPosition { get; set; }
 

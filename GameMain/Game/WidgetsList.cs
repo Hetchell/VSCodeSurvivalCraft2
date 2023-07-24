@@ -9,7 +9,7 @@ namespace Game
 	public class WidgetsList : IEnumerable<Widget>, IEnumerable
 	{
 		// Token: 0x170004FE RID: 1278
-		// (get) Token: 0x06001C2F RID: 7215 RVA: 0x000D99D3 File Offset: 0x000D7BD3
+		// (GetPoint) Token: 0x06001C2F RID: 7215 RVA: 0x000D99D3 File Offset: 0x000D7BD3
 		public int Count
 		{
 			get
@@ -215,7 +215,7 @@ namespace Game
 		public struct Enumerator : IEnumerator<Widget>, IDisposable, IEnumerator
 		{
 			// Token: 0x1700056E RID: 1390
-			// (get) Token: 0x0600216A RID: 8554 RVA: 0x000E71D6 File Offset: 0x000E53D6
+			// (GetPoint) Token: 0x0600216A RID: 8554 RVA: 0x000E71D6 File Offset: 0x000E53D6
 			public Widget Current
 			{
 				get
@@ -225,7 +225,7 @@ namespace Game
 			}
 
 			// Token: 0x1700056F RID: 1391
-			// (get) Token: 0x0600216B RID: 8555 RVA: 0x000E71DE File Offset: 0x000E53DE
+			// (GetPoint) Token: 0x0600216B RID: 8555 RVA: 0x000E71DE File Offset: 0x000E53DE
 			object IEnumerator.Current
 			{
 				get

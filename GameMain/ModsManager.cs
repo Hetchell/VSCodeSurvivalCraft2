@@ -49,7 +49,6 @@ public static class ModsManager
 		{
 			XmlUtils.SaveXmlToStream(xelement, stream, null, true);
 		}
-		Debug.WriteLine("Score for this session! : " + ModificationsHolder.score);
 	}
 
 	// Token: 0x06000011 RID: 17 RVA: 0x00002C40 File Offset: 0x00000E40

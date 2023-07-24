@@ -8,7 +8,7 @@ namespace Game
 	public class SortedMultiCollection<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable
 	{
 		// Token: 0x1700035D RID: 861
-		// (get) Token: 0x06001588 RID: 5512 RVA: 0x000A472C File Offset: 0x000A292C
+		// (GetPoint) Token: 0x06001588 RID: 5512 RVA: 0x000A472C File Offset: 0x000A292C
 		public int Count
 		{
 			get
@@ -18,7 +18,7 @@ namespace Game
 		}
 
 		// Token: 0x1700035E RID: 862
-		// (get) Token: 0x06001589 RID: 5513 RVA: 0x000A4734 File Offset: 0x000A2934
+		// (GetPoint) Token: 0x06001589 RID: 5513 RVA: 0x000A4734 File Offset: 0x000A2934
 		// (set) Token: 0x0600158A RID: 5514 RVA: 0x000A4740 File Offset: 0x000A2940
 		public int Capacity
 		{
@@ -225,7 +225,7 @@ namespace Game
 		public struct Enumerator : IEnumerator<KeyValuePair<TKey, TValue>>, IDisposable, IEnumerator
 		{
 			// Token: 0x1700055E RID: 1374
-			// (get) Token: 0x06002056 RID: 8278 RVA: 0x000E4108 File Offset: 0x000E2308
+			// (GetPoint) Token: 0x06002056 RID: 8278 RVA: 0x000E4108 File Offset: 0x000E2308
 			public KeyValuePair<TKey, TValue> Current
 			{
 				get
@@ -235,7 +235,7 @@ namespace Game
 			}
 
 			// Token: 0x1700055F RID: 1375
-			// (get) Token: 0x06002057 RID: 8279 RVA: 0x000E4110 File Offset: 0x000E2310
+			// (GetPoint) Token: 0x06002057 RID: 8279 RVA: 0x000E4110 File Offset: 0x000E2310
 			object IEnumerator.Current
 			{
 				get

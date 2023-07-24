@@ -276,7 +276,7 @@ namespace SimpleJson.Reflection
 		public sealed class ThreadSafeDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ICollection<KeyValuePair<TKey, TValue>>, IEnumerable<KeyValuePair<TKey, TValue>>, IEnumerable
 		{
 			// Token: 0x17000502 RID: 1282
-			// (get) Token: 0x06001C66 RID: 7270 RVA: 0x000D9F12 File Offset: 0x000D8112
+			// (GetPoint) Token: 0x06001C66 RID: 7270 RVA: 0x000D9F12 File Offset: 0x000D8112
 			public ICollection<TKey> Keys
 			{
 				get
@@ -286,7 +286,7 @@ namespace SimpleJson.Reflection
 			}
 
 			// Token: 0x17000503 RID: 1283
-			// (get) Token: 0x06001C67 RID: 7271 RVA: 0x000D9F1F File Offset: 0x000D811F
+			// (GetPoint) Token: 0x06001C67 RID: 7271 RVA: 0x000D9F1F File Offset: 0x000D811F
 			public ICollection<TValue> Values
 			{
 				get
@@ -309,7 +309,7 @@ namespace SimpleJson.Reflection
 			}
 
 			// Token: 0x17000505 RID: 1285
-			// (get) Token: 0x06001C6A RID: 7274 RVA: 0x000D9F3C File Offset: 0x000D813C
+			// (GetPoint) Token: 0x06001C6A RID: 7274 RVA: 0x000D9F3C File Offset: 0x000D813C
 			public int Count
 			{
 				get
@@ -319,7 +319,7 @@ namespace SimpleJson.Reflection
 			}
 
 			// Token: 0x17000506 RID: 1286
-			// (get) Token: 0x06001C6B RID: 7275 RVA: 0x000D9F49 File Offset: 0x000D8149
+			// (GetPoint) Token: 0x06001C6B RID: 7275 RVA: 0x000D9F49 File Offset: 0x000D8149
 			public bool IsReadOnly
 			{
 				get

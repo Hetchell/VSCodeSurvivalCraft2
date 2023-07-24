@@ -1,0 +1,58 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+  <CanvasWidget Size="600, 360" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+	<ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3, 3">
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+      
+      <LabelWidget Name="CustomPoint"  Text="Precise targeting" HorizontalAlignment="Center" Color="127,255,127"/>
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="X:" Text="X: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="X" Title="X" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />
+	  
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="Y:" Text="Y: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="Y" Title="Y" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+	  <CanvasWidget Size="0, Infinity" />
+	  
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="Z:" Text="Z: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="Z" Title="Z" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget  Text="点1" Size="100, 55"  Name="Point1" Margin="5, 0" />
+        <BevelledButtonWidget  Text="点2" Size="100, 55"  Name="Point2" Margin="5, 0"/>
+	    <BevelledButtonWidget  Text="点3" Size="100, 55"  Name="Point3" Margin="5, 0" />
+        <BevelledButtonWidget  Text="点4" Size="100, 55" Name="Point4" Margin="5, 0"/>
+      </StackPanelWidget>
+
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <BevelledButtonWidget  Text="取消" Size="420, 55"  Name="Cancel" Margin="20, 0"/>
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	</ScrollPanelWidget>
+  </CanvasWidget>
+</CanvasWidget>

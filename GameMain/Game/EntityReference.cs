@@ -8,7 +8,7 @@ namespace Game
 	public struct EntityReference
 	{
 		// Token: 0x170002A1 RID: 673
-		// (get) Token: 0x0600124E RID: 4686 RVA: 0x0008D9E0 File Offset: 0x0008BBE0
+		// (GetPoint) Token: 0x0600124E RID: 4686 RVA: 0x0008D9E0 File Offset: 0x0008BBE0
 		public string ReferenceString
 		{
 			get
@@ -34,7 +34,7 @@ namespace Game
 		}
 
 		// Token: 0x170002A2 RID: 674
-		// (get) Token: 0x0600124F RID: 4687 RVA: 0x0008DA6C File Offset: 0x0008BC6C
+		// (GetPoint) Token: 0x0600124F RID: 4687 RVA: 0x0008DA6C File Offset: 0x0008BC6C
 		public static EntityReference Null
 		{
 			get

@@ -9,7 +9,7 @@ namespace Game
 	public class MemoryBankData : IEditableItemData
 	{
 		// Token: 0x170002DD RID: 733
-		// (get) Token: 0x060013A2 RID: 5026 RVA: 0x000986F2 File Offset: 0x000968F2
+		// (GetPoint) Token: 0x060013A2 RID: 5026 RVA: 0x000986F2 File Offset: 0x000968F2
 		// (set) Token: 0x060013A3 RID: 5027 RVA: 0x000986FA File Offset: 0x000968FA
 		public byte LastOutput { get; set; }
 

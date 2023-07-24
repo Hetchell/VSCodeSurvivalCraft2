@@ -1,14 +1,14 @@
 <Settings>
   <Setting Name="SoundsVolume" Value="0.1" />
   <Setting Name="MusicVolume" Value="0" />
-  <Setting Name="VisibilityRange" Value="256" />
+  <Setting Name="VisibilityRange" Value="64" />
   <Setting Name="UseVr" Value="False" />
   <Setting Name="ResolutionMode" Value="High" />
   <Setting Name="ViewAngleMode" Value="Normal" />
   <Setting Name="SkyRenderingMode" Value="Full" />
   <Setting Name="TerrainMipmapsEnabled" Value="True" />
   <Setting Name="ObjectsShadowsEnabled" Value="True" />
-  <Setting Name="Brightness" Value="1" />
+  <Setting Name="Brightness" Value="0.5" />
   <Setting Name="PresentationInterval" Value="1" />
   <Setting Name="ShowGuiInScreenshots" Value="False" />
   <Setting Name="ShowLogoInScreenshots" Value="True" />
@@ -37,7 +37,7 @@
   <Setting Name="ScpboxAccessToken" Value="" />
   <Setting Name="MotdUseBackupUrl" Value="False" />
   <Setting Name="MotdUpdatePeriodHours" Value="12" />
-  <Setting Name="MotdLastUpdateTime" Value="638258275990060831" />
+  <Setting Name="MotdLastUpdateTime" Value="638258332384180025" />
   <Setting Name="MotdLastDownloadedData" Value="NullPointerException!" />
   <Setting Name="UserId" Value="" />
   <Setting Name="LastLaunchedVersion" Value="2.2.40.0" />

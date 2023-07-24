@@ -1,0 +1,35 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="200, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+      
+        <BevelledButtonWidget Text="创造模式" Size="150, 50" Name="Creative" Margin="20, 0" />
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+        <BevelledButtonWidget Text="挑战模式" Size="150, 50" Name="Challenging" Margin="20, 0" />
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+        <BevelledButtonWidget Text="无害模式" Size="150, 50" Name="Harmless" Margin="20, 0" />
+	  
+      <CanvasWidget Size="0, Infinity" />
+	  
+	    <BevelledButtonWidget Text="闯关模式" Size="150, 50" Name="Adventure" Margin="20, 0" />
+	  
+      <CanvasWidget Size="0, Infinity" />
+	  
+	    <BevelledButtonWidget Text="残酷模式" Size="150, 50" Name="Cruel" Margin="20, 0" />
+		
+      <CanvasWidget Size="0, Infinity" />
+	  
+	    <BevelledButtonWidget Text="取消" Size="150, 50" Name="Cancel" Margin="20, 0" />
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

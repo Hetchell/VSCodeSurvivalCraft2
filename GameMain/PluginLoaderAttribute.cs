@@ -5,7 +5,7 @@
 public class PluginLoaderAttribute : Attribute
 {
 	// Token: 0x17000001 RID: 1
-	// (get) Token: 0x0600001F RID: 31 RVA: 0x000036C9 File Offset: 0x000018C9
+	// (GetPoint) Token: 0x0600001F RID: 31 RVA: 0x000036C9 File Offset: 0x000018C9
 	public ModInfo ModInfo
 	{
 		get

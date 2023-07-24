@@ -9,92 +9,92 @@ namespace Game
 	public class WidgetInput
 	{
 		// Token: 0x170004DD RID: 1245
-		// (get) Token: 0x06001BD9 RID: 7129 RVA: 0x000D8059 File Offset: 0x000D6259
+		// (GetPoint) Token: 0x06001BD9 RID: 7129 RVA: 0x000D8059 File Offset: 0x000D6259
 		// (set) Token: 0x06001BDA RID: 7130 RVA: 0x000D8061 File Offset: 0x000D6261
 		public bool Any { get; set; }
 
 		// Token: 0x170004DE RID: 1246
-		// (get) Token: 0x06001BDB RID: 7131 RVA: 0x000D806A File Offset: 0x000D626A
+		// (GetPoint) Token: 0x06001BDB RID: 7131 RVA: 0x000D806A File Offset: 0x000D626A
 		// (set) Token: 0x06001BDC RID: 7132 RVA: 0x000D8072 File Offset: 0x000D6272
 		public bool Ok { get; set; }
 
 		// Token: 0x170004DF RID: 1247
-		// (get) Token: 0x06001BDD RID: 7133 RVA: 0x000D807B File Offset: 0x000D627B
+		// (GetPoint) Token: 0x06001BDD RID: 7133 RVA: 0x000D807B File Offset: 0x000D627B
 		// (set) Token: 0x06001BDE RID: 7134 RVA: 0x000D8083 File Offset: 0x000D6283
 		public bool Cancel { get; set; }
 
 		// Token: 0x170004E0 RID: 1248
-		// (get) Token: 0x06001BDF RID: 7135 RVA: 0x000D808C File Offset: 0x000D628C
+		// (GetPoint) Token: 0x06001BDF RID: 7135 RVA: 0x000D808C File Offset: 0x000D628C
 		// (set) Token: 0x06001BE0 RID: 7136 RVA: 0x000D8094 File Offset: 0x000D6294
 		public bool Back { get; set; }
 
 		// Token: 0x170004E1 RID: 1249
-		// (get) Token: 0x06001BE1 RID: 7137 RVA: 0x000D809D File Offset: 0x000D629D
+		// (GetPoint) Token: 0x06001BE1 RID: 7137 RVA: 0x000D809D File Offset: 0x000D629D
 		// (set) Token: 0x06001BE2 RID: 7138 RVA: 0x000D80A5 File Offset: 0x000D62A5
 		public bool Left { get; set; }
 
 		// Token: 0x170004E2 RID: 1250
-		// (get) Token: 0x06001BE3 RID: 7139 RVA: 0x000D80AE File Offset: 0x000D62AE
+		// (GetPoint) Token: 0x06001BE3 RID: 7139 RVA: 0x000D80AE File Offset: 0x000D62AE
 		// (set) Token: 0x06001BE4 RID: 7140 RVA: 0x000D80B6 File Offset: 0x000D62B6
 		public bool Right { get; set; }
 
 		// Token: 0x170004E3 RID: 1251
-		// (get) Token: 0x06001BE5 RID: 7141 RVA: 0x000D80BF File Offset: 0x000D62BF
+		// (GetPoint) Token: 0x06001BE5 RID: 7141 RVA: 0x000D80BF File Offset: 0x000D62BF
 		// (set) Token: 0x06001BE6 RID: 7142 RVA: 0x000D80C7 File Offset: 0x000D62C7
 		public bool Up { get; set; }
 
 		// Token: 0x170004E4 RID: 1252
-		// (get) Token: 0x06001BE7 RID: 7143 RVA: 0x000D80D0 File Offset: 0x000D62D0
+		// (GetPoint) Token: 0x06001BE7 RID: 7143 RVA: 0x000D80D0 File Offset: 0x000D62D0
 		// (set) Token: 0x06001BE8 RID: 7144 RVA: 0x000D80D8 File Offset: 0x000D62D8
 		public bool Down { get; set; }
 
 		// Token: 0x170004E5 RID: 1253
-		// (get) Token: 0x06001BE9 RID: 7145 RVA: 0x000D80E1 File Offset: 0x000D62E1
+		// (GetPoint) Token: 0x06001BE9 RID: 7145 RVA: 0x000D80E1 File Offset: 0x000D62E1
 		// (set) Token: 0x06001BEA RID: 7146 RVA: 0x000D80E9 File Offset: 0x000D62E9
 		public Vector2? Press { get; set; }
 
 		// Token: 0x170004E6 RID: 1254
-		// (get) Token: 0x06001BEB RID: 7147 RVA: 0x000D80F2 File Offset: 0x000D62F2
+		// (GetPoint) Token: 0x06001BEB RID: 7147 RVA: 0x000D80F2 File Offset: 0x000D62F2
 		// (set) Token: 0x06001BEC RID: 7148 RVA: 0x000D80FA File Offset: 0x000D62FA
 		public Vector2? Tap { get; set; }
 
 		// Token: 0x170004E7 RID: 1255
-		// (get) Token: 0x06001BED RID: 7149 RVA: 0x000D8103 File Offset: 0x000D6303
+		// (GetPoint) Token: 0x06001BED RID: 7149 RVA: 0x000D8103 File Offset: 0x000D6303
 		// (set) Token: 0x06001BEE RID: 7150 RVA: 0x000D810B File Offset: 0x000D630B
 		public Segment2? Click { get; set; }
 
 		// Token: 0x170004E8 RID: 1256
-		// (get) Token: 0x06001BEF RID: 7151 RVA: 0x000D8114 File Offset: 0x000D6314
+		// (GetPoint) Token: 0x06001BEF RID: 7151 RVA: 0x000D8114 File Offset: 0x000D6314
 		// (set) Token: 0x06001BF0 RID: 7152 RVA: 0x000D811C File Offset: 0x000D631C
 		public Segment2? SpecialClick { get; set; }
 
 		// Token: 0x170004E9 RID: 1257
-		// (get) Token: 0x06001BF1 RID: 7153 RVA: 0x000D8125 File Offset: 0x000D6325
+		// (GetPoint) Token: 0x06001BF1 RID: 7153 RVA: 0x000D8125 File Offset: 0x000D6325
 		// (set) Token: 0x06001BF2 RID: 7154 RVA: 0x000D812D File Offset: 0x000D632D
 		public Vector2? Drag { get; set; }
 
 		// Token: 0x170004EA RID: 1258
-		// (get) Token: 0x06001BF3 RID: 7155 RVA: 0x000D8136 File Offset: 0x000D6336
+		// (GetPoint) Token: 0x06001BF3 RID: 7155 RVA: 0x000D8136 File Offset: 0x000D6336
 		// (set) Token: 0x06001BF4 RID: 7156 RVA: 0x000D813E File Offset: 0x000D633E
 		public DragMode DragMode { get; set; }
 
 		// Token: 0x170004EB RID: 1259
-		// (get) Token: 0x06001BF5 RID: 7157 RVA: 0x000D8147 File Offset: 0x000D6347
+		// (GetPoint) Token: 0x06001BF5 RID: 7157 RVA: 0x000D8147 File Offset: 0x000D6347
 		// (set) Token: 0x06001BF6 RID: 7158 RVA: 0x000D814F File Offset: 0x000D634F
 		public Vector2? Hold { get; set; }
 
 		// Token: 0x170004EC RID: 1260
-		// (get) Token: 0x06001BF7 RID: 7159 RVA: 0x000D8158 File Offset: 0x000D6358
+		// (GetPoint) Token: 0x06001BF7 RID: 7159 RVA: 0x000D8158 File Offset: 0x000D6358
 		// (set) Token: 0x06001BF8 RID: 7160 RVA: 0x000D8160 File Offset: 0x000D6360
 		public float HoldTime { get; set; }
 
 		// Token: 0x170004ED RID: 1261
-		// (get) Token: 0x06001BF9 RID: 7161 RVA: 0x000D8169 File Offset: 0x000D6369
+		// (GetPoint) Token: 0x06001BF9 RID: 7161 RVA: 0x000D8169 File Offset: 0x000D6369
 		// (set) Token: 0x06001BFA RID: 7162 RVA: 0x000D8171 File Offset: 0x000D6371
 		public Vector3? Scroll { get; set; }
 
 		// Token: 0x170004EE RID: 1262
-		// (get) Token: 0x06001BFB RID: 7163 RVA: 0x000D817C File Offset: 0x000D637C
+		// (GetPoint) Token: 0x06001BFB RID: 7163 RVA: 0x000D817C File Offset: 0x000D637C
 		public Key? LastKey
 		{
 			get
@@ -108,7 +108,7 @@ namespace Game
 		}
 
 		// Token: 0x170004EF RID: 1263
-		// (get) Token: 0x06001BFC RID: 7164 RVA: 0x000D81AC File Offset: 0x000D63AC
+		// (GetPoint) Token: 0x06001BFC RID: 7164 RVA: 0x000D81AC File Offset: 0x000D63AC
 		public char? LastChar
 		{
 			get
@@ -122,7 +122,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F0 RID: 1264
-		// (get) Token: 0x06001BFD RID: 7165 RVA: 0x000D81DA File Offset: 0x000D63DA
+		// (GetPoint) Token: 0x06001BFD RID: 7165 RVA: 0x000D81DA File Offset: 0x000D63DA
 		// (set) Token: 0x06001BFE RID: 7166 RVA: 0x000D81E2 File Offset: 0x000D63E2
 		public bool UseSoftMouseCursor
 		{
@@ -137,7 +137,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F1 RID: 1265
-		// (get) Token: 0x06001BFF RID: 7167 RVA: 0x000D81EB File Offset: 0x000D63EB
+		// (GetPoint) Token: 0x06001BFF RID: 7167 RVA: 0x000D81EB File Offset: 0x000D63EB
 		// (set) Token: 0x06001C00 RID: 7168 RVA: 0x000D81FF File Offset: 0x000D63FF
 		public bool IsMouseCursorVisible
 		{
@@ -152,7 +152,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F2 RID: 1266
-		// (get) Token: 0x06001C01 RID: 7169 RVA: 0x000D8208 File Offset: 0x000D6408
+		// (GetPoint) Token: 0x06001C01 RID: 7169 RVA: 0x000D8208 File Offset: 0x000D6408
 		// (set) Token: 0x06001C02 RID: 7170 RVA: 0x000D8278 File Offset: 0x000D6478
 		public Vector2? MousePosition
 		{
@@ -200,7 +200,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F3 RID: 1267
-		// (get) Token: 0x06001C03 RID: 7171 RVA: 0x000D8353 File Offset: 0x000D6553
+		// (GetPoint) Token: 0x06001C03 RID: 7171 RVA: 0x000D8353 File Offset: 0x000D6553
 		public Point2 MouseMovement
 		{
 			get
@@ -214,7 +214,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F4 RID: 1268
-		// (get) Token: 0x06001C04 RID: 7172 RVA: 0x000D8372 File Offset: 0x000D6572
+		// (GetPoint) Token: 0x06001C04 RID: 7172 RVA: 0x000D8372 File Offset: 0x000D6572
 		public int MouseWheelMovement
 		{
 			get
@@ -228,7 +228,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F5 RID: 1269
-		// (get) Token: 0x06001C05 RID: 7173 RVA: 0x000D8390 File Offset: 0x000D6590
+		// (GetPoint) Token: 0x06001C05 RID: 7173 RVA: 0x000D8390 File Offset: 0x000D6590
 		// (set) Token: 0x06001C06 RID: 7174 RVA: 0x000D83F4 File Offset: 0x000D65F4
 		public bool IsPadCursorVisible
 		{
@@ -243,7 +243,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F6 RID: 1270
-		// (get) Token: 0x06001C07 RID: 7175 RVA: 0x000D83FD File Offset: 0x000D65FD
+		// (GetPoint) Token: 0x06001C07 RID: 7175 RVA: 0x000D83FD File Offset: 0x000D65FD
 		// (set) Token: 0x06001C08 RID: 7176 RVA: 0x000D8408 File Offset: 0x000D6608
 		public Vector2 PadCursorPosition
 		{
@@ -272,7 +272,7 @@ namespace Game
 		}
 
 		// Token: 0x170004F7 RID: 1271
-		// (get) Token: 0x06001C09 RID: 7177 RVA: 0x000D84A2 File Offset: 0x000D66A2
+		// (GetPoint) Token: 0x06001C09 RID: 7177 RVA: 0x000D84A2 File Offset: 0x000D66A2
 		public ReadOnlyList<TouchLocation> TouchLocations
 		{
 			get
@@ -286,12 +286,12 @@ namespace Game
 		}
 
 		// Token: 0x170004F8 RID: 1272
-		// (get) Token: 0x06001C0A RID: 7178 RVA: 0x000D84C1 File Offset: 0x000D66C1
+		// (GetPoint) Token: 0x06001C0A RID: 7178 RVA: 0x000D84C1 File Offset: 0x000D66C1
 		// (set) Token: 0x06001C0B RID: 7179 RVA: 0x000D84C9 File Offset: 0x000D66C9
 		public Matrix? VrQuadMatrix { get; set; }
 
 		// Token: 0x170004F9 RID: 1273
-		// (get) Token: 0x06001C0C RID: 7180 RVA: 0x000D84D2 File Offset: 0x000D66D2
+		// (GetPoint) Token: 0x06001C0C RID: 7180 RVA: 0x000D84D2 File Offset: 0x000D66D2
 		// (set) Token: 0x06001C0D RID: 7181 RVA: 0x000D84F3 File Offset: 0x000D66F3
 		public bool IsVrCursorVisible
 		{
@@ -306,16 +306,16 @@ namespace Game
 		}
 
 		// Token: 0x170004FA RID: 1274
-		// (get) Token: 0x06001C0E RID: 7182 RVA: 0x000D84FC File Offset: 0x000D66FC
+		// (GetPoint) Token: 0x06001C0E RID: 7182 RVA: 0x000D84FC File Offset: 0x000D66FC
 		// (set) Token: 0x06001C0F RID: 7183 RVA: 0x000D8504 File Offset: 0x000D6704
 		public Vector2? VrCursorPosition { get; set; }
 
 		// Token: 0x170004FB RID: 1275
-		// (get) Token: 0x06001C10 RID: 7184 RVA: 0x000D850D File Offset: 0x000D670D
+		// (GetPoint) Token: 0x06001C10 RID: 7184 RVA: 0x000D850D File Offset: 0x000D670D
 		public static WidgetInput EmptyInput { get; } = new WidgetInput(WidgetInputDevice.None);
 
 		// Token: 0x170004FC RID: 1276
-		// (get) Token: 0x06001C11 RID: 7185 RVA: 0x000D8514 File Offset: 0x000D6714
+		// (GetPoint) Token: 0x06001C11 RID: 7185 RVA: 0x000D8514 File Offset: 0x000D6714
 		public Widget Widget
 		{
 			get
@@ -325,7 +325,7 @@ namespace Game
 		}
 
 		// Token: 0x170004FD RID: 1277
-		// (get) Token: 0x06001C12 RID: 7186 RVA: 0x000D851C File Offset: 0x000D671C
+		// (GetPoint) Token: 0x06001C12 RID: 7186 RVA: 0x000D851C File Offset: 0x000D671C
 		// (set) Token: 0x06001C13 RID: 7187 RVA: 0x000D8524 File Offset: 0x000D6724
 		public WidgetInputDevice Devices { get; set; }
 

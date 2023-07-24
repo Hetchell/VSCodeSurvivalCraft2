@@ -1,0 +1,35 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 25">
+      
+	  <LabelWidget Text="Settings" HorizontalAlignment="Center" Color="127,255,127" Margin="0, 10"/>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+		<BevelledButtonWidget Text="专业模式" Size="135, 60" Name="Pro Mode"/>
+		<BevelledButtonWidget Text="旧主界面" Size="135, 60" Name="Old UI"/>
+      </StackPanelWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+	    <BevelledButtonWidget Text="设点模式" Size="135, 60" Name="PointMode"/>
+		<BevelledButtonWidget Text="生成模式" Size="135, 60" Name="Generati"/>
+		<BevelledButtonWidget Text="生成开关" Size="135, 60" Name="Generation"/>
+	    <BevelledButtonWidget Text="空气识别" Size="135, 60" Name="SelectAir"/>
+      </StackPanelWidget>
+	  
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+	    <BevelledButtonWidget Text="确定" Size="135, 60" Name="OK"/>
+		<BevelledButtonWidget Text="重置" Size="135, 60" Name="Reset"/>
+	    <BevelledButtonWidget Text="超距生成" Size="135, 60" Name="HyV Genera"/>
+		<BevelledButtonWidget Text="撤回开关" Size="135, 60" Name="Undoing"/>
+      </StackPanelWidget>
+	  
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

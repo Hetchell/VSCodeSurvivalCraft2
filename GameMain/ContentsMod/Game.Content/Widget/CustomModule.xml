@@ -1,0 +1,38 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="700, 460" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+	
+	
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near">
+      
+		<LabelWidget Name="ClassMOD" Text="Class MOD configurations" HorizontalAlignment="Center" Color="127,255,127" Margin="5, 5"/>
+	  
+        <CanvasWidget Size="600, 260" HorizontalAlignment="Center">
+          <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="128, 128, 128, 128" />
+          <ListPanelWidget Name="ListView" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" ItemSize="40" SelectionColor="10, 70, 0, 90"/>
+        </CanvasWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+		<BevelledButtonWidget Text="确定" Size="80, 55" Name="OK" Margin="5, 5" />
+		<BevelledButtonWidget Text="导出一键" Size="150, 55" Name="Export Key" Margin="5, 5" />
+		<BevelledButtonWidget Text="导出复制" Size="150, 55" Name="Export Copy" Margin="5, 5" />
+		<BevelledButtonWidget Text="导入配置" Size="150, 55" Name="ImportConfig" Margin="5, 5" />
+		<BevelledButtonWidget Text="删除" Size="80, 55" Name="Del" Margin="5, 5" />
+      </StackPanelWidget>
+	  
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" >
+		<BevelledButtonWidget Text="导出旧复制" Size="200, 55" Name="ExportOldCopy" Margin="5, 5" />
+		<BevelledButtonWidget Text="导出旧一键" Size="200, 55" Name="ExportOldKey" Margin="5, 5" />
+		<BevelledButtonWidget Text="导出特殊" Size="180, 55" Name="Export Special" Margin="5, 5"/>
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	
+	
+	
+  </CanvasWidget>
+
+</CanvasWidget>

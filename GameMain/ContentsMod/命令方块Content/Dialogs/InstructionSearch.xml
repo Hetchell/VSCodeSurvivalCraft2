@@ -1,0 +1,41 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+	<CanvasWidget Size="720, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+		<RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+
+		<StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+
+			<StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<StackPanelWidget Margin="0, 2">
+					<CanvasWidget Size="100, 25" VerticalAlignment="Center">
+						<LabelWidget Text="Enter search key：" Font="{Fonts/Pericles}" VerticalAlignment="Center" Color="128, 128, 128" />
+					</CanvasWidget>
+					<CanvasWidget Size="30, 0" />
+					<CanvasWidget Size="450, 40" VerticalAlignment="Center" >
+						<RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+						<TextBoxWidget Name="TextBox" Title="Please enter search key" Size="400, 50" Font="{Fonts/Pericles}" VerticalAlignment="Center" MaximumLength="128" Margin="10, 0"/>
+					</CanvasWidget>
+				</StackPanelWidget>
+			</StackPanelWidget>
+			
+			<CanvasWidget Margin="20, 15">
+				<RectangleWidget FillColor="0, 0, 0, 0" OutlineColor="128, 128, 128, 128" OutlineThickness="1" />
+				<StackPanelWidget Direction="Vertical">
+					<ListPanelWidget Name="Instruction.List" Direction="Vertical" HorizontalAlignment="Center" Margin="3, 3" SelectionColor="10, 70, 0, 90"/>
+				</StackPanelWidget>
+			</CanvasWidget>
+
+			<StackPanelWidget HorizontalAlignment="Center">
+				<BevelledButtonWidget Name="OkButton" Text="Close" Style="{Styles/ButtonStyle_160x60}"  />
+				<CanvasWidget Size="30, 0" />
+				<BevelledButtonWidget Name="QuireButton" Text="Search" Style="{Styles/ButtonStyle_160x60}"  />
+				<CanvasWidget Size="30, 0" />
+				<BevelledButtonWidget Name="BackButton" Text="Return" Style="{Styles/ButtonStyle_160x60}"  />
+			</StackPanelWidget>
+
+		</StackPanelWidget>
+
+	</CanvasWidget>
+
+</CanvasWidget>
