@@ -1,5 +1,6 @@
 ﻿using System;
 using Engine;
+using ModificationHolder;
 
 namespace Game
 {
@@ -36,6 +37,10 @@ namespace Game
 			this.m_shoreRoughnessOffset[3] = random.Float(-2000f, 2000f);
 		}
 
+		public string GetType(DebuggerHelper debugger) {
+			return "TerrainGeneratorFlatType";
+		}
+
 		// Token: 0x06001696 RID: 5782 RVA: 0x000B31F8 File Offset: 0x000B13F8
 		public Vector3 FindCoarseSpawnPosition()
 		{
@@ -55,7 +60,7 @@ namespace Game
 		}
 
 		// Token: 0x06001697 RID: 5783 RVA: 0x000B32C4 File Offset: 0x000B14C4
-		public void GenerateChunkContentsPass1(TerrainChunk chunk)
+		public void GenerateChunkContentsPass1(TerrainChunk chunk, bool non_air)
 		{
 			for (int i = 0; i < 16; i++)
 			{
@@ -104,7 +109,7 @@ namespace Game
 		}
 
 		// Token: 0x06001698 RID: 5784 RVA: 0x000B343F File Offset: 0x000B163F
-		public void GenerateChunkContentsPass2(TerrainChunk chunk)
+		public void GenerateChunkContentsPass2(TerrainChunk chunk, bool non_air)
 		{
 			this.UpdateFluidIsTop(chunk);
 		}

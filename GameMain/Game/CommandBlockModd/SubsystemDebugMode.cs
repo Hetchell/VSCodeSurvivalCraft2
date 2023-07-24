@@ -141,6 +141,7 @@ namespace Game
             Point3 point3 = Datahandle.Coordbodyhandle(componentMiner.ComponentCreature.ComponentBody.Position);
             ClipboardManager.ClipboardString = point3.X.ToString() + " " + point3.Y.ToString() + " " + point3.Z.ToString();
             componentMiner.ComponentPlayer.ComponentGui.DisplaySmallMessage("DebugMode-PlayerCoord:(" + point3.X.ToString() + "," + point3.Y.ToString() + "," + point3.Z.ToString() + "); " + str1, color, false, false);
+            
             return true;
           }
           break;

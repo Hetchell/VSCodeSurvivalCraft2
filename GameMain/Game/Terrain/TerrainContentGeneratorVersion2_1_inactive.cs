@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Engine;
+using ModificationHolder;
 
 namespace Game
 {
@@ -19,6 +20,10 @@ namespace Game
 			{
 				return 64 + this.m_worldSettings.SeaLevelOffset;
 			}
+		}
+
+		public string GetType(DebuggerHelper debugger) {
+			return "TerrainContentGeneratorVersion2.1_INACTIVE";
 		}
 
 		// Token: 0x0600164A RID: 5706 RVA: 0x000A7C00 File Offset: 0x000A5E00
@@ -163,14 +168,14 @@ namespace Game
 		}
 
 		// Token: 0x0600164D RID: 5709 RVA: 0x000A8326 File Offset: 0x000A6526
-		public void GenerateChunkContentsPass1(TerrainChunk chunk)
+		public void GenerateChunkContentsPass1(TerrainChunk chunk, bool non_air)
 		{
 			this.GenerateSurfaceParameters(chunk, 0, 0, 16, 8);
 			this.GenerateTerrain(chunk, 0, 0, 16, 8);
 		}
 
 		// Token: 0x0600164E RID: 5710 RVA: 0x000A8340 File Offset: 0x000A6540
-		public void GenerateChunkContentsPass2(TerrainChunk chunk)
+		public void GenerateChunkContentsPass2(TerrainChunk chunk, bool non_air)
 		{
 			this.GenerateSurfaceParameters(chunk, 0, 8, 16, 16);
 			this.GenerateTerrain(chunk, 0, 8, 16, 16);

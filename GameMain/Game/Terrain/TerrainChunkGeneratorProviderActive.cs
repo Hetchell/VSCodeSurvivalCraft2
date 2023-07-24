@@ -4,6 +4,8 @@ using System.Diagnostics;
 using Engine;
 using Survivalcraft.Game;
 using ModifierHolderTerrainGen = ModificationHolder.ModifierHolderTerrainGen;
+using ExperimentalTerrain;
+using ModificationHolder;
 
 namespace Game
 {
@@ -15,6 +17,9 @@ namespace Game
 		// Token: 0x1700036A RID: 874
 		// (get) Token: 0x0600166E RID: 5742 RVA: 0x000AD68E File Offset: 0x000AB88E
 		private ModifierHolderTerrainGen modifyTerrain;
+        private ExperimentalTerrainGenerator expgen;
+		private ChunkGeneratorOverworldProvider.WorldProviderState state;
+
         public int OceanLevel
 		{
 			get
@@ -27,6 +32,10 @@ namespace Game
 		static TerrainChunkGeneratorProviderActive()
 		{
 			TerrainChunkGeneratorProviderActive.CreateBrushes();
+		}
+
+		public virtual string GetType(DebuggerHelper debugger) {
+			return "TerrainChunkGeneratorProviderActive";
 		}
 
 		// Token: 0x06001670 RID: 5744 RVA: 0x000AD75C File Offset: 0x000AB95C
@@ -75,11 +84,10 @@ namespace Game
 			this.TGWater = true;
 			this.TGExtras = true;
 			this.TGCavesAndPockets = true;
-			this.modifyTerrain = new ModifierHolderTerrainGen(subsystemTerrain, this, num, random);
 		}
 
 		// Token: 0x06001671 RID: 5745 RVA: 0x000ADA54 File Offset: 0x000ABC54
-		public Vector3 FindCoarseSpawnPosition()
+		public virtual Vector3 FindCoarseSpawnPosition()
 		{
 			Vector2 zero = Vector2.Zero;
 			float num = float.MinValue;
@@ -110,32 +118,30 @@ namespace Game
 					}
 				}
 			}
-			int u = 1371930;
-			//return new Vector3(zero.X + 0, this.CalculateHeight(zero.X, zero.Y), zero.Y);
-			return new Vector3(0, 300, 0);
+			return new Vector3(zero.X + 0, this.CalculateHeight(zero.X, zero.Y), zero.Y);
 		}
 
 		// Token: 0x06001672 RID: 5746 RVA: 0x000ADB2F File Offset: 0x000ABD2F
-		public void GenerateChunkContentsPass1(TerrainChunk chunk)
+		public virtual void GenerateChunkContentsPass1(TerrainChunk chunk, bool non_air)
 		{
-			this.GenerateSurfaceParameters(chunk, 0, 0, 16, 8);
-            //this.modifyTerrain.GenerateTerrain(chunk, true);
+			//this.GenerateSurfaceParameters(chunk, 0, 0, 16, 8);
             //this.GenerateTerrain(chunk, chunk.Origin.X, chunk.Origin.Y, 3, 3);
             //this.GenerateTerrain(chunk, 14, 27, 16, 5);
             this.GenerateTerrain(chunk, 0, 0, 16, 8);
         }
 
 		// Token: 0x06001673 RID: 5747 RVA: 0x000ADB49 File Offset: 0x000ABD49
-		public void GenerateChunkContentsPass2(TerrainChunk chunk)
+		public virtual void GenerateChunkContentsPass2(TerrainChunk chunk, bool non_air)
 		{
-			this.GenerateSurfaceParameters(chunk, 0, 8, 16, 16);
-			this.modifyTerrain.GenerateTerrain(chunk, false);
-            //this.GenerateTerrain(chunk, 0, 8, 16, 16);
+			this.GenerateTerrain(chunk, 0, 8, 16, 16);
         }
 
 		// Token: 0x06001674 RID: 5748 RVA: 0x000ADB65 File Offset: 0x000ABD65
-		public void GenerateChunkContentsPass3(TerrainChunk chunk)
+		public virtual void GenerateChunkContentsPass3(TerrainChunk chunk)
 		{
+			if (chunk.isEmpty) {
+				return;
+			}
 			this.GenerateCaves(chunk);
 			this.GeneratePockets(chunk);
 			this.GenerateMinerals(chunk);
@@ -149,8 +155,11 @@ namespace Game
 		}
 
 		// Token: 0x06001675 RID: 5749 RVA: 0x000ADB9C File Offset: 0x000ABD9C
-		public void GenerateChunkContentsPass4(TerrainChunk chunk)
+		public virtual void GenerateChunkContentsPass4(TerrainChunk chunk)
 		{
+			if (chunk.isEmpty) {
+				return;
+			}
 			this.GenerateGrassAndPlants(chunk);
 			this.GenerateTreesAndLogs(chunk);
 			this.GenerateCacti(chunk);
@@ -395,7 +404,7 @@ namespace Game
 
         // Token: 0x06001680 RID: 5760 RVA: 0x000AE480 File Offset: 0x000AC680
 		//This is hijacked by ModifierHolder.
-        public void GenerateTerrain(TerrainChunk chunk, int x1, int z1, int x2, int z2)
+        public virtual void GenerateTerrain(TerrainChunk chunk, int x1, int z1, int x2, int z2)
         {
             int num = x2 - x1;
             int num2 = z2 - z1;
@@ -772,10 +781,10 @@ namespace Game
 		// Token: 0x06001684 RID: 5764 RVA: 0x000AF5FC File Offset: 0x000AD7FC
 		public void GenerateCaves(TerrainChunk chunk)
 		{
-			if (!this.TGCavesAndPockets)
-			{
-				return;
-			}
+			// if (!this.TGCavesAndPockets)
+			// {
+			// 	return;
+			// }
 			List<TerrainChunkGeneratorProviderActive.CavePoint> list = new List<TerrainChunkGeneratorProviderActive.CavePoint>();
 			int x = chunk.Coords.X;
 			int y = chunk.Coords.Y;

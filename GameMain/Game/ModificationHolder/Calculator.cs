@@ -160,5 +160,29 @@ namespace ModificationHolder
 
         }
 
+        public static long HashSpecSum(int[] ar) {
+            long L = 0;
+            foreach(int i in ar) {
+                L += (long)i  ^ 31;
+            }
+            return L;
+        }
+
+        public static double AvgArrayWithFunction(int[] ar, Func<int, int> map) {
+            double d0 = 0.0D;
+            foreach(int i in ar) {
+                d0 += map(i);
+            }
+            return d0 / ar.Length;
+        }
+
+        public static string ToArrayString(float[] item) {
+            string string_builder = "{";
+            foreach(float f in item) {
+                string_builder += f.ToString() + ",";
+            }
+            return string_builder.Remove(string_builder.Length - 1) + "}";
+        }
+
     }
 }

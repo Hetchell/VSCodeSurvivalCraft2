@@ -1,5 +1,6 @@
 ﻿using System;
 using Engine;
+using static ModificationHolder.ChunkGeneratorOverworldProvider;
 using Color = Engine.Color;
 
 namespace Game
@@ -7,6 +8,9 @@ namespace Game
 	// Token: 0x0200030C RID: 780
 	public class TerrainChunk : IDisposable
 	{
+
+		public WorldProviderState provider_state_pass1;
+		public WorldProviderState provider_state_pass2;
 		// Token: 0x0600162C RID: 5676 RVA: 0x000A7698 File Offset: 0x000A5898
 		public TerrainChunk(Terrain terrain, int x, int z)
 		{
@@ -80,6 +84,12 @@ namespace Game
 			// 		"Hakkeyoicchi!"
 			// 	);
 			// }
+		}
+
+		public void FillAir() {
+			for (int i = 0; i < this.Cells.Length; i++) {
+				this.Cells[i] = AIR;
+			}
 		}
 
 		private static int getIndex(int x, int y, int z)
@@ -261,10 +271,14 @@ namespace Game
 		// Token: 0x04000FB7 RID: 4023
 		public TerrainChunkGeometry Geometry = new TerrainChunkGeometry();
 
+		private static readonly int AIR = BlocksManager.getID(block => block is AirBlock);
+
 		// Token: 0x04000FB8 RID: 4024
 		public int[] Cells = new int[65536];
 
 		// Token: 0x04000FB9 RID: 4025
 		public int[] Shafts = new int[256];
+
+		public bool isEmpty = false;
 	}
 }

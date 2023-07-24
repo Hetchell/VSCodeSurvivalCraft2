@@ -5,13 +5,14 @@ using Random = Game.Random;
 using Engine;
 using mod = Survivalcraft.Game.ModifierHolder; //old class
 using noiseConst = Survivalcraft.Game.ModificationHolder.ModificationsHolder.NoiseConstants;
+using ExperimentalTerrain;
 
 namespace ModificationHolder
 {
 
     class ModifierHolderTerrainGen
     {
-        private readonly bool useConstantp = true;
+        private readonly bool useConstantp = false;
         private readonly bool allowMethodOverride = false;
         //instances
         private readonly SubsystemTerrain terrainInput;
@@ -72,18 +73,11 @@ namespace ModificationHolder
 
         public void GenerateTerrain(TerrainChunk chunkIn, bool type)
         {
-            if (type)
-            {
-                this.GenerateTerrainMod(chunkIn, 0, 0, 16, 8);//0, 0, 16, 8
-                //this.GenerateTerrain(chunk, chunk.Origin.X, chunk.Origin.Y, 3, 3);
-                //this.GenerateTerrain(chunk, 14, 27, 16, 5);
-                //this.GenerateTerrainOr(chunkIn, 0, 0, 16, 8);
-            }
-            else
-            {
-                this.GenerateTerrainMod(chunkIn, 0, 8, 16, 16);//0, 8, 16, 16
-                //this.GenerateTerrainOr(chunkIn, 0, 8, 16, 16);
-            }
+                if (type) {
+                    this.GenerateTerrainMod(chunkIn, 0, 0, 16, 8);
+                } else {
+                    this.GenerateTerrainMod(chunkIn, 0, 8, 16, 16);
+                }
         }
 
         //original

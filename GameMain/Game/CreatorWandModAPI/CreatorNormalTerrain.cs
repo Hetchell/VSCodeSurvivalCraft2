@@ -2,6 +2,7 @@
 
 using Engine;
 using Game;
+using ModificationHolder;
 using System;
 
 namespace CreatorWandModAPI
@@ -13,6 +14,10 @@ namespace CreatorWandModAPI
         public float CalculateHeight(float x, float z)
         {
             throw new NotImplementedException();
+        }
+
+        public string GetType(DebuggerHelper debugger) {
+            return "CreatorNormalTerrain";
         }
 
         public int CalculateHumidity(float x, float z)
@@ -40,12 +45,12 @@ namespace CreatorWandModAPI
             throw new NotImplementedException();
         }
 
-        public void GenerateChunkContentsPass1(TerrainChunk chunk)
+        public void GenerateChunkContentsPass1(TerrainChunk chunk, bool non_air)
         {
             throw new NotImplementedException();
         }
 
-        public void GenerateChunkContentsPass2(TerrainChunk chunk)
+        public void GenerateChunkContentsPass2(TerrainChunk chunk, bool non_air)
         {
             throw new NotImplementedException();
         }

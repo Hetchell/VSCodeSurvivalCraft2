@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Engine;
 using GameEntitySystem;
+using ModificationHolder;
 using TemplatesDatabase;
 
 namespace Game
@@ -402,7 +403,7 @@ namespace Game
 					this.TerrainContentsGenerator = new TerrainContentsGeneratorFlat(this);
 					return;
 				}
-				this.TerrainContentsGenerator = new TerrainChunkGeneratorProviderActive(this);
+				this.TerrainContentsGenerator = new ChunkGeneratorOverworldProvider(this);
 				return;
 			}
 		}

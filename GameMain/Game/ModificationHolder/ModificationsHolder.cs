@@ -6,11 +6,13 @@ using Engine;
 using System.Threading.Tasks;
 using Color = Engine.Color;
 using Random = Game.Random;
+using static ModificationHolder.ChunkGeneratorOverworldProvider;
 
 namespace Survivalcraft.Game.ModificationHolder
 {
     public class ModificationsHolder
     {
+        public static bool returnNullMessageOfTheDay = true;
         public static bool allowFlyingAnimal = false;
         public static bool allowWolfDespawn = true;
 
@@ -130,7 +132,11 @@ namespace Survivalcraft.Game.ModificationHolder
 
         public static void keyboardActions(WidgetInput input, ComponentPlayer componentPlayer)
         {
+            Color color = Color.Yellow;
+            ComponentMiner componentMiner = componentPlayer.ComponentMiner;
             ComponentGui gui_throwback = componentPlayer.ComponentGui;
+            ITerrainContentsGenerator terrain = componentPlayer.m_subsystemTerrain.TerrainContentsGenerator;
+            DebuggerHelper debugger = new DebuggerHelper(componentMiner.ComponentPlayer.ComponentGui.DisplaySmallMessage, componentMiner);
             gui_handler = gui_throwback;
             if (input.IsKeyDownOnce(Key.UpArrow) && !input.IsKeyDown(Key.B))
             {
@@ -218,19 +224,76 @@ namespace Survivalcraft.Game.ModificationHolder
                     Debug.WriteLine("Explosion power is decreased to: " + SubsystemProjectiles.explosionPower);
                 }
             }
-            // if(input.IsKeyDownOnce(Key.L) && input.IsKeyDown(Key.Shift)) {
-            //     if (repeatLight == 0)
-            //    {
-            //        night_vision = true;
-            //        repeatLight++;
-            //    }
-            //    else
-            //    {
-            //        --repeatLight;
-            //        night_vision = false;
-            //    }
-            //    LightingManager.Initialize();
-            // }
+            if(input.IsKeyDownOnce(Key.R)) {
+               Point3 point3 = Datahandle.Coordbodyhandle(componentMiner.ComponentCreature.ComponentBody.Position);
+               DebugHelper(componentMiner, point3, debugger, terrain);
+            }
+        }
+
+        private static bool CheckSpawnChunks(ITerrainContentsGenerator terrain, Point3 point) {
+            Vector3 spawn_pos = terrain.FindCoarseSpawnPosition();
+            //survivalcraft spawn chunk is in 800 block radius from point. Don't ask me why it is so large. 
+            return Vector3.Distance(spawn_pos, new(point.X, point.Y, point.Z)) < 800;
+        }
+
+        private static void DebugHelper(ComponentMiner componentMiner, Point3 point, DebuggerHelper debugger, ITerrainContentsGenerator terrain) {
+            int x = point.X;
+            int z = point.Z;
+            int chunkX = x >> 4;
+            int chunkZ = z >> 4;
+            string loc = CheckSpawnChunks(terrain, point) ? "Within spawn chunk" : "Outside spawn chunk";
+            SubsystemTerrain terrain_char = componentMiner.m_subsystemTerrain;
+            SubsystemGameInfo info = terrain_char.SubsystemGameInfo;
+            WorldSettings settings = info.WorldSettings;
+            Terrain terrainchunkaccessor = terrain_char.Terrain;
+            TerrainChunk terrainchunk = terrainchunkaccessor.GetChunkAtCoords(chunkX, chunkZ);
+            int[] slicecontenthashes = terrainchunk.SliceContentsHashes;
+            String time = "Time Passed = " + info.TotalElapsedGameTime;
+            String seed = "World seed : " + info.WorldSeed;
+            String worldname = "World name: " + settings.Name;
+            String islandsize = "Island size: " + settings.IslandSize;
+            String statistics = "SR: " + settings.ShoreRoughness;
+            statistics += ", BS : " + settings.BiomeSize;
+            statistics += ", Toff: " + settings.TemperatureOffset;
+            statistics += ", Hoff: " + settings.HumidityOffset;
+            string chunkloc = "Chunk Location = (" + chunkX + "," + chunkZ + ")";
+            String from_terraingenerator = terrain.GetType(debugger);
+            string terraininfo = "SliceContentHashSum: " + Calculator.HashSpecSum(slicecontenthashes);
+            terraininfo += ", T(x, z): " + Calculator.AvgArrayWithFunction(terrainchunk.Shafts, Terrain.ExtractTemperature); 
+            terraininfo += ", H(x, z): " + Calculator.AvgArrayWithFunction(terrainchunk.Shafts, Terrain.ExtractHumidity);
+            terraininfo += ", \nF{}: " + Calculator.ToArrayString(terrainchunk.FogEnds);
+            if (terrain is ChunkGeneratorOverworldProvider) {
+                terraininfo += "\nNoiseFactors: " + from_terraingenerator;
+                terraininfo += ", Generator: " + PassGeneratorType(x, z, terrainchunk).ToString();
+            } else {
+                terraininfo = "TerrainGenInfo: " + from_terraingenerator;
+            }
+            debugger
+               .AddToDebugger(chunkloc)
+               .AddToDebugger(loc)
+               .AddToDebugger(time)
+               .AddToDebugger(seed + "#" + worldname)
+               .AddToDebugger(islandsize + "," + statistics)
+               .AddToDebugger(terraininfo)
+               .Print();
+        }
+
+        private static WorldProviderState PassGeneratorType(int x, int z, TerrainChunk terrainChunk) {
+            int marker = (Math.Abs(z) - 1) / 8;
+            marker %= 2;
+            if (marker == 0) {
+                if (z < 0) {
+                    return terrainChunk.provider_state_pass2;
+                }
+                return terrainChunk.provider_state_pass1;
+            }
+            if (marker == 1) {
+                if (z < 0) {
+                    return terrainChunk.provider_state_pass1;
+                }
+                return terrainChunk.provider_state_pass2;
+            }
+            throw new Exception("Marker value somehow became wrong!");
         }
 
         public static void UpdateCommand(){
@@ -264,7 +327,11 @@ namespace Survivalcraft.Game.ModificationHolder
             bool result = false;
             for (int i = 0; i < mayNotDieFromExplosion.Length; i++)
             {
-                result = result || body.getCreature() != null ? body.getCreature().DisplayName.Contains(mayNotDieFromExplosion[i]) : true;
+                bool s = false;
+                if (body.getCreature() != null) {
+                    s = body.getCreature().DisplayName.Contains(mayNotDieFromExplosion[i]);
+                }
+                result = result || s;
             }
             if(result) {
                 float r = random.NormalFloat(0.48f, 1.97f);

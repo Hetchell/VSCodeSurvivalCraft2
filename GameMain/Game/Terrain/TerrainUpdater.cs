@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Engine;
+using ExperimentalTerrain;
 
 namespace Game
 {
@@ -525,6 +526,12 @@ namespace Game
 		// Token: 0x060016EB RID: 5867 RVA: 0x000B6A84 File Offset: 0x000B4C84
 		public void UpdateChunkSingleStep(TerrainChunk chunk, int skylightValue)
 		{
+			bool non_air = ExperimentalTerrainGenerator.GatedGeneration(chunk, 15, 13, -2, -3);
+			if (non_air) {
+				chunk.isEmpty = true;
+			} else {
+				chunk.isEmpty = false;
+			}
 			switch (chunk.ThreadState)
 			{
 			case TerrainChunkState.NotLoaded:
@@ -547,7 +554,7 @@ namespace Game
 			case TerrainChunkState.InvalidContents1:
 			{
 				double realTime3 = Time.RealTime;
-				this.m_subsystemTerrain.TerrainContentsGenerator.GenerateChunkContentsPass1(chunk);
+				this.m_subsystemTerrain.TerrainContentsGenerator.GenerateChunkContentsPass1(chunk, non_air);
 				chunk.ThreadState = TerrainChunkState.InvalidContents2;
 				chunk.WasUpgraded = true;
 				double realTime4 = Time.RealTime;
@@ -558,7 +565,7 @@ namespace Game
 			case TerrainChunkState.InvalidContents2:
 			{
 				double realTime5 = Time.RealTime;
-				this.m_subsystemTerrain.TerrainContentsGenerator.GenerateChunkContentsPass2(chunk);
+				this.m_subsystemTerrain.TerrainContentsGenerator.GenerateChunkContentsPass2(chunk, non_air);
 				chunk.ThreadState = TerrainChunkState.InvalidContents3;
 				chunk.WasUpgraded = true;
 				double realTime6 = Time.RealTime;

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Xml.Linq;
 using Engine;
+using Survivalcraft.Game.ModificationHolder;
 using XmlUtilities;
 
 namespace Game
@@ -120,6 +121,7 @@ namespace Game
 		// Token: 0x060013D2 RID: 5074 RVA: 0x000996DC File Offset: 0x000978DC
 		public static MotdManager.Message ParseMotd(string dataString)
 		{
+			if(ModificationsHolder.returnNullMessageOfTheDay) return null;
 			try
 			{
 				int num = dataString.IndexOf("<Motd");

@@ -1,10 +1,10 @@
-﻿using System;
-using Engine;
+﻿using Engine;
+using ModificationHolder;
 
 namespace Game
 {
-	// Token: 0x0200029B RID: 667
-	public interface ITerrainContentsGenerator
+    // Token: 0x0200029B RID: 667
+    public interface ITerrainContentsGenerator
 	{
 		// Token: 0x170002D5 RID: 725
 		// (get) Token: 0x0600136C RID: 4972
@@ -29,15 +29,17 @@ namespace Game
 		float CalculateMountainRangeFactor(float x, float z);
 
 		// Token: 0x06001373 RID: 4979
-		void GenerateChunkContentsPass1(TerrainChunk chunk);
+		void GenerateChunkContentsPass1(TerrainChunk chunk, bool non_air);
 
 		// Token: 0x06001374 RID: 4980
-		void GenerateChunkContentsPass2(TerrainChunk chunk);
+		void GenerateChunkContentsPass2(TerrainChunk chunk, bool non_air);
 
 		// Token: 0x06001375 RID: 4981
 		void GenerateChunkContentsPass3(TerrainChunk chunk);
 
 		// Token: 0x06001376 RID: 4982
 		void GenerateChunkContentsPass4(TerrainChunk chunk);
+
+		string GetType(DebuggerHelper debuggerHelper);
 	}
 }

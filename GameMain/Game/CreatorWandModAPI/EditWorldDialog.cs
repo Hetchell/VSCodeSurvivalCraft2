@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using TemplatesDatabase;
 using Color = Engine.Color;
-using TerrainContentsGenerator22 = Game.TerrainChunkGeneratorProviderActive;
+using TerrainContentsGenerator22 = ModificationHolder.ChunkGeneratorOverworldProvider;
 
 namespace CreatorWandModAPI
 {
