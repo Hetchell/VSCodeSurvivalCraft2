@@ -1,0 +1,122 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+	<CanvasWidget Size="780, 380" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<RectangleWidget FillColor="0, 0, 0, 20" OutlineColor="128, 128, 128, 255" OutlineThickness="2" />
+		<ScrollPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3, 3">
+			<StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="球体" Size="240, 60" Name="Sphere" />
+						<BevelledButtonWidget Text="棱体" Size="240, 60" Name="FCC Octahedron" />
+						<BevelledButtonWidget Text="棱锥" Size="240, 60" Name="BCC Octahedron" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="圆柱" Size="240, 60" Name="Cylinder" />
+						<BevelledButtonWidget Text="棱柱" Size="240, 60" Name="FCC Square Column" />
+						<BevelledButtonWidget Text="柱子" Size="240, 60" Name="BCC Square Column" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="矩形" Size="240, 60" Name="Cuboid" />
+						<BevelledButtonWidget Text="圆环" Size="240, 60" Name="Torus" />
+						<BevelledButtonWidget Text="迷宫" Size="240, 60" Name="Maze" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="设点" Size="240, 60" Name="Set the Point" />
+						<BevelledButtonWidget Text="撤回" Size="240, 60" Name="Undo" />
+						<BevelledButtonWidget Text="复制粘贴" Size="240, 60" Name="Copy and Paste" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="填充" Size="240, 60" Name="Fill" />
+						<BevelledButtonWidget Text="山脉" Size="240, 60" Name="Mountains" />
+						<BevelledButtonWidget Text="传送" Size="240, 60" Name="Teleport" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="方块替换" Size="240, 60" Name="Replace" />
+						<BevelledButtonWidget Text="螺旋" Size="240, 60" Name="Spiral" />
+						<BevelledButtonWidget Text="连线" Size="240, 60" Name="Connect 2 Points" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="等级" Size="240, 60" Name="Level" />
+						<BevelledButtonWidget Text="平铺" Size="240, 60" Name="Tile" />
+						<BevelledButtonWidget Text="设置" Size="240, 60" Name="Mod Settings" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="穿透" Size="240, 60" Name="Disable Collision" />
+						<BevelledButtonWidget Text="一键生成" Size="240, 60" Name="One Click Generation" />
+						<BevelledButtonWidget Text="出生点" Size="240, 60" Name="Set the Spawn Point" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="清除缓存" Size="240, 60" Name="Clear Cache" />
+						<BevelledButtonWidget Text="变更模式" Size="240, 60" Name="Game Mode" />
+						<BevelledButtonWidget Text="变更难度" Size="240, 60" Name="Init Difficulty" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="编辑世界" Size="240, 60" Name="World Settings" />
+						<BevelledButtonWidget Text="编辑区域" Size="240, 60" Name="Edit Chunk" />
+						<BevelledButtonWidget Text="清除掉落" Size="240, 60" Name="Remove Drops" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="清除动物" Size="240, 60" Name="Despawn Entities" />
+						<BevelledButtonWidget Text="清理方块" Size="240, 60" Name="Clear Blocks" />
+						<BevelledButtonWidget Text="测试地形" Size="240, 60" Name="Terrain" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="模组专用" Size="240, 60" Name="Custom Module" />
+						<BevelledButtonWidget Text="精准设点" Size="240, 60" Name="Custom Point" />
+						<BevelledButtonWidget Text="点位调整" Size="240, 60" Name="Point adjustment" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="3点成面" Size="240, 60" Name="Connect 3 Points" />
+						<BevelledButtonWidget Text="4点空间" Size="240, 60" Name="Connect 4 Points" />
+						<BevelledButtonWidget Text="发光世界" Size="240, 60" Name="Light Up Blocks" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+				<UniformSpacingPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+					<StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Margin="5, 0">
+						<BevelledButtonWidget Text="天气" Size="240, 60" Name="Weather" />
+						<BevelledButtonWidget Text="语言设置" Size="240, 60" Name="Language" Color="0, 206, 209" />
+						<BevelledButtonWidget Text="敬请期待" Size="240, 60" Name="Coming Soon" Color="70, 128, 170" />
+					</StackPanelWidget>
+				</UniformSpacingPanelWidget>
+
+			</StackPanelWidget>
+		</ScrollPanelWidget>
+	</CanvasWidget>
+</CanvasWidget>

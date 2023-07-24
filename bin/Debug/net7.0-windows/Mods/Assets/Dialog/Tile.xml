@@ -1,0 +1,31 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 400" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 25">
+      
+	  <LabelWidget Name="Tile" Text="Tile" HorizontalAlignment="Center" Color="127,255,127"/>
+	  
+	  <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center" Name="Data3">
+        <SliderWidget Name="Slider1" Size="360, 50" Granularity="1" MinValue="1" MaxValue="100" HorizontalAlignment="Center" Margin="30, 0" />
+	  </StackPanelWidget>
+	  
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+        <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		  <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+          <TextBoxWidget Name="BlockID" Title="BlockID" Size="360, 50" Text="3:2" Description="" VerticalAlignment="Center" MaximumLength="128" Margin="10, 0"/>
+        </CanvasWidget>
+      </StackPanelWidget>
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="OK" Size="120, 50"  Name="OK" Margin="20, 0" />
+        <BevelledButtonWidget Text="Cancel" Size="120, 50"  Name="Cancel" Margin="20, 0"/>
+      </StackPanelWidget>
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>

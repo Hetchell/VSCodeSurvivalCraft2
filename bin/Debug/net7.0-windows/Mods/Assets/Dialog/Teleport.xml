@@ -1,0 +1,57 @@
+<CanvasWidget xmlns="runtime-namespace:Game">
+
+  <RectangleWidget FillColor="0, 0, 0, 192" OutlineColor="0, 0, 0, 0" IsHitTestVisible="true" />
+
+  <CanvasWidget Size="600, 360" ClampToBounds="true" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" OutlineThickness="2" />
+    <StackPanelWidget Direction="Vertical" HorizontalAlignment="Center" VerticalAlignment="Near" Margin="0, 15">
+      
+      <LabelWidget Name="Teleport" Text="Teleport" HorizontalAlignment="Center" Color="127,255,127"/>
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="X:" Text="X: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="X" Title="Coordinates X" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+      <CanvasWidget Size="0, Infinity" />
+	  
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="Y:" Text="Y: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="Y" Title="Coordinates Y" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+	  
+	  <CanvasWidget Size="0, Infinity" />
+	  
+        <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <LabelWidget Name="Z:" Text="Z: " HorizontalAlignment="Center"/>
+          <CanvasWidget Size="360, 50" VerticalAlignment="Center">
+		    <RectangleWidget FillColor="0, 0, 0, 255" OutlineColor="128, 128, 128, 128" />
+            <TextBoxWidget Name="Z" Title="Coordinates Z" Size="360, 50" Description="" VerticalAlignment="Center" MaximumLength="16" Margin="10, 0"/>
+          </CanvasWidget>
+        </StackPanelWidget>
+		
+		
+		
+	  
+      <CanvasWidget Size="0, Infinity" />
+
+      <StackPanelWidget Direction="Horizontal" HorizontalAlignment="Center">
+	    <BevelledButtonWidget Text="传送" Style="{Styles/ButtonStyle_160x60}" Name="OK" Margin="20, 0" />
+        <BevelledButtonWidget Text="取消" Style="{Styles/ButtonStyle_160x60}" Name="Cancel" Margin="20, 0"/>
+      </StackPanelWidget>
+
+	  
+	  
+    </StackPanelWidget>
+	
+  </CanvasWidget>
+
+</CanvasWidget>
